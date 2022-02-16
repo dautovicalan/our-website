@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import "./styles-navbar.css";
+import logo from "../../assets/logo.png";
 
 const Navbar = () => {
   const [showNav, setshowNav] = useState(false);
@@ -19,13 +20,11 @@ const Navbar = () => {
       window.addEventListener("resize", changeWidth);
     };
   }, []);
+  //https://www.webdesign-muenchen.de/
   return (
     <nav>
       <div className="picture">
-        <img
-          src="https://wilcity.com/wp-content/uploads/2018/12/sample-logo-design-png-3-1.png"
-          alt="Sample Picture"
-        />
+        <img src={logo} alt="Logo Picture" />
       </div>
       {(showNav || screenWidth > 760) && (
         <div className="contents">

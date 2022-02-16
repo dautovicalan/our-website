@@ -1,0 +1,36 @@
+.main_container {
+  padding-top: 10em;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.services {
+  padding: 1em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 8em;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  gap: 1.5em;
+}
+
+.item > img {
+  width: 200px;
+  height: 200px;
+}
+
+.item > ul {
+  list-style: none;
+}
+
+.item > ul > li {
+  margin: 0.2em;
+  font-size: 1.5em;
+}

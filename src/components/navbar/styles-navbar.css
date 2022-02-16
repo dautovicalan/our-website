@@ -1,14 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap");
 
+:root {
+  --main-color: rgb(245, 230, 223);
+}
+
+body {
+  background-color: var(--main-color);
+}
+
 nav {
   display: flex;
   position: fixed;
   z-index: 1000;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
   height: auto;
+  background-color: var(--main-color);
 }
 
 nav > .contents {
@@ -32,6 +41,7 @@ nav > .contents > a {
   border-radius: 0.5em;
   text-decoration: none;
   font-family: "Oswald", sans-serif;
+  font-size: 1.2rem;
   color: black;
   text-transform: uppercase;
   font-weight: bold;
@@ -44,7 +54,7 @@ nav > .contents > a:hover {
 
 nav > .picture > img {
   width: auto;
-  height: 100px;
+  height: 150px;
 }
 
 nav > .menu {
