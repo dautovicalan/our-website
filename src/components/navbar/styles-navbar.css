@@ -1,30 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap");
 
-:root {
-  --main-color: rgb(245, 230, 223);
-}
-
-body {
-  background-color: var(--main-color);
-}
-
 nav {
   display: flex;
-  position: fixed;
+  position: absolute;
   z-index: 1000;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
   height: auto;
-  background-color: var(--main-color);
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 nav > .contents {
   display: flex;
   gap: 2em;
   margin-right: 1em;
-  animation: flyin 0.5s linear;
+  /* animation: flyin 0.5s linear; */
 }
 
 @keyframes flyin {
@@ -38,23 +32,44 @@ nav > .contents {
 
 nav > .contents > a {
   padding: 0.5em 0.5em;
-  border-radius: 0.5em;
   text-decoration: none;
   font-family: "Oswald", sans-serif;
   font-size: 1.2rem;
   color: black;
   text-transform: uppercase;
   font-weight: bold;
-  transition: 0.2s;
+  background-image: linear-gradient(
+    90deg,
+    rgb(237, 30, 121),
+    rgb(237, 30, 121)
+  );
+  background-size: 0% 3px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  transition: background-size 300ms ease;
+}
+
+nav > .contents > .active {
+  color: rgb(237, 30, 121);
 }
 
 nav > .contents > a:hover {
-  background-color: orange;
+  background-size: 100% 3px;
+}
+
+nav > .picture {
+  width: 150px;
+  height: 150px;
 }
 
 nav > .picture > img {
-  width: auto;
-  height: 150px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+nav > .picture > img:hover {
+  cursor: pointer;
 }
 
 nav > .menu {
@@ -71,11 +86,11 @@ nav > .menu:hover {
   }
   nav > .contents {
     flex-direction: column;
+    align-items: center;
     width: 100%;
   }
   nav > .contents > a {
-    border-radius: 0;
-    border-bottom: 1px solid black;
+    border-bottom: 3px solid rgb(237, 30, 121);
   }
   nav > .menu {
     display: block;

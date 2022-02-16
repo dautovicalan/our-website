@@ -1,13 +1,15 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import { Link, useNavigate, NavLink } from "react-router-dom";
 import "./styles-navbar.css";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/Boutique-removebg-preview.png";
 
 const Navbar = () => {
   const [showNav, setshowNav] = useState(false);
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
   const toggleNav = () => setshowNav((prevVal) => !prevVal);
+  const navigator = useNavigate();
 
   useEffect(() => {
     const changeWidth = () => {
@@ -24,15 +26,19 @@ const Navbar = () => {
   return (
     <nav>
       <div className="picture">
-        <img src={logo} alt="Logo Picture" />
+        <img src={logo} alt="Logo Picture" onClick={() => navigator("/")} />
       </div>
       {(showNav || screenWidth > 760) && (
         <div className="contents">
-          <a href="">Agentur</a>
-          <a href="">Leistungen</a>
-          <a href="">Cases</a>
-          <a href="">Jobs</a>
-          <a href="">Kontakt</a>
+          <NavLink
+            className={(navData) => (navData.isActive ? "active" : "")}
+            to="/"
+          >
+            Home
+          </NavLink>
+          <NavLink to="/services">Services</NavLink>
+          <NavLink to="/about-us">About Us</NavLink>
+          <NavLink to="/contact">Kontakt</NavLink>
         </div>
       )}
       <div className="menu">

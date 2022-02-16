@@ -3,3 +3,12 @@
   margin: 0;
   padding: 0;
 }
+
+:root {
+  --main-color: white;
+  --pink-color: rgb(237, 30, 121);
+}
+
+body {
+  background-color: var(--main-color);
+}
