@@ -1,35 +1,46 @@
 import React from "react";
 import styles from "./styles-aboutus.module.css";
+import laptopPic from "../../assets/laptop.jpg";
+import Button from "@mui/material/Button";
+import SendIcon from "@mui/icons-material/Send";
+import { useNavigate } from "react-router-dom";
 
 const AboutUs = () => {
+  const navigator = useNavigate();
+
+  const handleClick = () => navigator("/contact");
   return (
     <div className={styles.main_container}>
-      <div className={styles.image_container}>
-        <img
-          src="https://thumbs.dreamstime.com/b/professional-development-programmer-working-programming-website-software-coding-technology-writing-codes-data-code-132331729.jpg"
-          alt="Some sample picture"
-        />
-      </div>
       <div className={styles.text_container}>
-        <div>
-          <h1>We are ....</h1>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
-          inventore doloremque fugit temporibus obcaecati labore omnis a quaerat
-          minus, rerum eveniet vero debitis! Architecto ea, in atque blanditiis
-          impedit deleniti?
-        </div>
+        <h2>ABOUT US</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
-          porro nihil delectus repellendus provident tenetur ducimus nostrum
-          impedit a! Maiores blanditiis ut vel fuga fugiat provident culpa
-          aperiam. Minima, rerum?
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga eveniet
+          minus obcaecati repudiandae qui. Sed illum quasi explicabo autem,
+          nesciunt magnam repudiandae cum ut cumque id animi consequuntur alias
+          voluptatem? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Fuga eveniet minus obcaecati repudiandae qui. Sed illum quasi
+          explicabo autem, nesciunt magnam repudiandae cum ut cumque id animi
+          consequuntur alias voluptatem? Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Fuga eveniet minus obcaecati repudiandae qui. Sed
+          illum quasi explicabo autem, nesciunt magnam repudiandae cum ut cumque
+          id animi consequuntur alias voluptatem?
         </p>
         <div>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, nihil
-          soluta expedita, unde placeat illo maiores culpa consequuntur magnam
-          fugit nulla nostrum magni, deserunt vero. Sed numquam accusamus enim
-          sequi!
+          <Button
+            variant="contained"
+            endIcon={<SendIcon />}
+            onClick={handleClick}
+            style={{
+              backgroundColor: "rgb(237,30,121)",
+              marginTop: "1.3em",
+            }}
+          >
+            Send Us a message
+          </Button>
         </div>
+      </div>
+      <div className={styles.picture_container}>
+        <img src={laptopPic} alt="About Us picture" srcset="" />
       </div>
     </div>
   );

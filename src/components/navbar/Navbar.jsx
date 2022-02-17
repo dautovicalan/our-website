@@ -3,10 +3,15 @@ import { useState, useEffect } from "react";
 import { Link, useNavigate, NavLink } from "react-router-dom";
 import "./styles-navbar.css";
 import logo from "../../assets/Boutique-removebg-preview.png";
+import { LanguageContext } from "../../context/LanguageContext.js";
+import { useContext } from "react";
+import languages from "../../assets/languages";
 
 const Navbar = () => {
   const [showNav, setshowNav] = useState(false);
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  const { language, setLanguage } = useContext(LanguageContext);
+  console.log(language);
 
   const toggleNav = () => setshowNav((prevVal) => !prevVal);
   const navigator = useNavigate();
@@ -39,6 +44,15 @@ const Navbar = () => {
           <NavLink to="/services">Services</NavLink>
           <NavLink to="/about-us">About Us</NavLink>
           <NavLink to="/contact">Kontakt</NavLink>
+          <button
+            onClick={() =>
+              language.langId === 1
+                ? setLanguage(languages.Croatian)
+                : setLanguage(languages.English)
+            }
+          >
+            Change Language
+          </button>
         </div>
       )}
       <div className="menu">

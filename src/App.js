@@ -6,17 +6,22 @@ import Services from "./components/services-page/Services";
 import AboutUs from "./components/about-us-page/AboutUs";
 import Contact from "./components/contact-page/Contact";
 import { Routes, Route } from "react-router-dom";
+import Footer from "./components/footer/Footer";
+import LanguageContextProvider from "./context/LanguageContext";
 
 function App() {
   return (
     <React.Fragment>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Sections />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/about-us" element={<AboutUs />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
+      <LanguageContextProvider>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Sections />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+        <Footer />
+      </LanguageContextProvider>
     </React.Fragment>
   );
 }

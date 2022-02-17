@@ -1,52 +1,55 @@
-import React from "react";
+import React, { useState } from "react";
 import TextField from "@mui/material/TextField";
-import FormControl from "@mui/material/FormControl";
 import InputLabel from "@mui/material/InputLabel";
 import styles from "./styles-contact.module.css";
 import Button from "@mui/material/Button";
 import SendIcon from "@mui/icons-material/Send";
+import { useContext } from "react";
+import { LanguageContext } from "../../context/LanguageContext.js";
 
 const Contact = () => {
+  const { language } = useContext(LanguageContext);
+  const { contact } = language;
+
   return (
     <div className={styles.contact_container}>
-      <h1>Send Us a Message</h1>
+      <h1>{contact.header}</h1>
       <div className={styles.square}></div>
       <form
         action="mailto:dautovic2000@gmail.com"
         className={styles.form_container}
-        enctype="text/plain"
         method="get"
       >
-        <InputLabel htmlFor="name">Name</InputLabel>
+        <InputLabel htmlFor="name">{contact.name.label}</InputLabel>
 
         <TextField
           id="name"
-          label="Please enter your name..."
+          label={contact.name.placeholder}
           variant="outlined"
           required
           autoComplete="off"
         />
-        <InputLabel htmlFor="surname">Surname</InputLabel>
+        <InputLabel htmlFor="surname">{contact.surname.label}</InputLabel>
         <TextField
           id="surname"
-          label="Please enter your surname..."
+          label={contact.surname.placeholder}
           variant="outlined"
           required
           autoComplete="off"
         />
-        <InputLabel htmlFor="email">Email</InputLabel>
+        <InputLabel htmlFor="email">{contact.email.label}</InputLabel>
         <TextField
           id="email"
-          label="Please enter your email..."
+          label={contact.email.placeholder}
           variant="outlined"
           type="email"
           required
           autoComplete="off"
         />
-        <InputLabel htmlFor="message">Message</InputLabel>
+        <InputLabel htmlFor="message">{contact.message.label}</InputLabel>
         <TextField
           id="message"
-          label="Please enter your message..."
+          label={contact.message.placeholder}
           variant="outlined"
           type="text"
           required
@@ -64,7 +67,7 @@ const Contact = () => {
             marginTop: "1.3em",
           }}
         >
-          Send
+          {contact.send}
         </Button>
       </form>
     </div>
