@@ -11,7 +11,7 @@ const Navbar = () => {
   const [showNav, setshowNav] = useState(false);
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   const { language, setLanguage } = useContext(LanguageContext);
-  console.log(language);
+  const { navbar } = language;
 
   const toggleNav = () => setshowNav((prevVal) => !prevVal);
   const navigator = useNavigate();
@@ -39,11 +39,11 @@ const Navbar = () => {
             className={(navData) => (navData.isActive ? "active" : "")}
             to="/"
           >
-            Home
+            {navbar.home}
           </NavLink>
-          <NavLink to="/services">Services</NavLink>
-          <NavLink to="/about-us">About Us</NavLink>
-          <NavLink to="/contact">Kontakt</NavLink>
+          <NavLink to="/services">{navbar.services}</NavLink>
+          <NavLink to="/about-us">{navbar.aboutUs}</NavLink>
+          <NavLink to="/contact">{navbar.contactUs}</NavLink>
           <button
             onClick={() =>
               language.langId === 1

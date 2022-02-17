@@ -20,6 +20,12 @@ const languages = {
       },
       send: "Send",
     },
+    navbar: {
+      home: "Home",
+      services: "Services",
+      aboutUs: "About Us",
+      contactUs: "Contact Us",
+    },
     langId: 1,
   },
   Croatian: {
@@ -42,6 +48,12 @@ const languages = {
         placeholder: "Unesite svoju Poruka",
       },
       send: "Posalji",
+    },
+    navbar: {
+      home: "Glavni Izbornik",
+      services: "Djelatnosti",
+      aboutUs: "O nama",
+      contactUs: "Kontaktiraj nas",
     },
     langId: 2,
   },
