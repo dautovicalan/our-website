@@ -1,18 +1,19 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import { Link, useNavigate, NavLink } from "react-router-dom";
+import { useNavigate, NavLink } from "react-router-dom";
 import "./styles-navbar.css";
 import logo from "../../assets/Boutique-removebg-preview.png";
 import { LanguageContext } from "../../context/LanguageContext.js";
 import { useContext } from "react";
 import languages from "../../assets/languages";
+import LanguageIcon from "@mui/icons-material/Language";
+import Button from "@mui/material/Button";
 
 const Navbar = () => {
   const [showNav, setshowNav] = useState(false);
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   const { language, setLanguage } = useContext(LanguageContext);
   const { navbar } = language;
-
   const toggleNav = () => setshowNav((prevVal) => !prevVal);
   const navigator = useNavigate();
 
@@ -22,12 +23,11 @@ const Navbar = () => {
     };
     window.addEventListener("resize", changeWidth);
 
-    //If you remove component, we do not want to keep addevent listener in memory
     return () => {
       window.addEventListener("resize", changeWidth);
     };
   }, []);
-  //https://www.webdesign-muenchen.de/
+
   return (
     <nav>
       <div className="picture">
@@ -38,21 +38,48 @@ const Navbar = () => {
           <NavLink
             className={(navData) => (navData.isActive ? "active" : "")}
             to="/"
+            onClick={() => {
+              setshowNav((prevVal) => !prevVal);
+            }}
           >
             {navbar.home}
           </NavLink>
-          <NavLink to="/services">{navbar.services}</NavLink>
-          <NavLink to="/about-us">{navbar.aboutUs}</NavLink>
-          <NavLink to="/contact">{navbar.contactUs}</NavLink>
-          <button
+          <NavLink
+            to="/services"
+            onClick={() => {
+              setshowNav((prevVal) => !prevVal);
+            }}
+          >
+            {navbar.services}
+          </NavLink>
+          <NavLink
+            onClick={() => {
+              setshowNav((prevVal) => !prevVal);
+            }}
+            to="/about-us"
+          >
+            {navbar.aboutUs}
+          </NavLink>
+          <NavLink
+            onClick={() => {
+              setshowNav((prevVal) => !prevVal);
+            }}
+            to="/contact"
+          >
+            {navbar.contactUs}
+          </NavLink>
+          <Button
+            variant="outlined"
+            startIcon={<LanguageIcon />}
             onClick={() =>
               language.langId === 1
                 ? setLanguage(languages.Croatian)
                 : setLanguage(languages.English)
             }
+            style={showNav || screenWidth > 760 ? { marginBottom: "1em" } : {}}
           >
             Change Language
-          </button>
+          </Button>
         </div>
       )}
       <div className="menu">

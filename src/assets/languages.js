@@ -30,7 +30,7 @@ const languages = {
   },
   Croatian: {
     contact: {
-      header: "Posalji nam poruku",
+      header: "Pošalji nam poruku",
       name: {
         label: "Ime",
         placeholder: "Unesite svoje ime",
@@ -47,7 +47,7 @@ const languages = {
         label: "Poruka",
         placeholder: "Unesite svoju Poruka",
       },
-      send: "Posalji",
+      send: "Pošalji",
     },
     navbar: {
       home: "Glavni Izbornik",

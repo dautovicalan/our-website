@@ -40,7 +40,7 @@ const AboutUs = () => {
         </div>
       </div>
       <div className={styles.picture_container}>
-        <img src={laptopPic} alt="About Us picture" srcset="" />
+        <img src={laptopPic} alt="About Us picture" />
       </div>
     </div>
   );

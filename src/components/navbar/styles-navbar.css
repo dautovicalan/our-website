@@ -95,7 +95,7 @@ nav > .menu:hover {
   nav > .menu {
     display: block;
     position: absolute;
-    top: 35px;
+    top: 48px;
     right: 15px;
   }
 }

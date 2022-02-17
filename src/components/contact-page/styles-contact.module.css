@@ -37,3 +37,13 @@
   z-index: 0;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
+@media all and (max-width: 760px) {
+  .contact_container > h1 {
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  .form_container {
+    width: 95%;
+  }
+}
