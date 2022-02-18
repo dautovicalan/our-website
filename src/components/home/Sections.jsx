@@ -1,101 +1,77 @@
 import React from "react";
 import styles from "./styles-sections.module.css";
 import background_picture from "../../assets/background-pic.jpg";
+import earth_picture from "../../assets/earth.jpg";
+import video from "../../assets/coding.mp4";
 
 const Sections = () => {
   return (
     <div className={styles.main_container}>
       <div className={styles.background_image_container}>
-        <img width="100%" height="900px" src={background_picture} alt="" />
-      </div>
-      <div className={styles.services}>
-        <div className={styles.item}>
-          <h2>Beratung</h2>
-          <img
-            src="https://previews.123rf.com/images/fariza892/fariza8921411/fariza892141100035/33764977-illustration-of-a-cartoon-pencil-writing.jpg"
-            alt="Some picture"
-          />
-          <ul>
-            <li>Konzeption</li>
-            <li>Struktur und Inhalten</li>
-            <li>Strategie</li>
-          </ul>
-        </div>
-        <div className={styles.item}>
-          <h2>Beratung</h2>
-          <img
-            src="https://previews.123rf.com/images/fariza892/fariza8921411/fariza892141100035/33764977-illustration-of-a-cartoon-pencil-writing.jpg"
-            alt="Some picture"
-          />
-          <ul>
-            <li>Konzeption</li>
-            <li>Struktur und Inhalten</li>
-            <li>Strategie</li>
-          </ul>
-        </div>
-        <div className={styles.item}>
-          <h2>Beratung</h2>
-          <img
-            src="https://previews.123rf.com/images/fariza892/fariza8921411/fariza892141100035/33764977-illustration-of-a-cartoon-pencil-writing.jpg"
-            alt="Some picture"
-          />
-          <ul>
-            <li>Konzeption</li>
-            <li>Struktur und Inhalten</li>
-            <li>Strategie</li>
-          </ul>
-        </div>
+        <video autoPlay muted={true} loop>
+          <source src={video} type="video/mp4" />
+        </video>
+        <h2>"Zitat ide ovdije"</h2>
       </div>
       <div className={styles.about_us_container}>
-        <h1>Neki naslov za sekciju</h1>
         <div className={styles.about_us_info}>
-          <p className={styles.first_info_item}>
+          <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores
             fugiat voluptatem reiciendis. Cupiditate saepe modi reprehenderit
             sit a necessitatibus aliquid aspernatur culpa maiores assumenda,
             velit qui asperiores earum illum dolor!
           </p>
-          <form action="">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor magni
-            cumque nam aperiam delectus magnam explicabo tempore doloribus,
-            illo, quia, voluptatum autem ea animi nesciunt consequuntur
-            necessitatibus quasi adipisci eos?
-          </form>
+          <img src={background_picture} alt="Some picture" />
         </div>
       </div>
-      <div className={styles.about_us_container}>
-        <h1>Neki naslov</h1>
-        <div className={styles.about_us_info}>
-          <p className={styles.first_info_item}>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores
-            fugiat voluptatem reiciendis. Cupiditate saepe modi reprehenderit
-            sit a necessitatibus aliquid aspernatur culpa maiores assumenda,
-            velit qui asperiores earum illum dolor!
+      <div className={styles.paragraphed_container}>
+        <h1>Text naslov</h1>
+        <div className={styles.paragraph_items}>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde nihil
+            natus eum minus atque possimus ducimus minima, explicabo perferendis
+            dicta quod impedit voluptatibus quae ad? Tempore atque obcaecati ad
+            corrupti.
           </p>
-          <form action="">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor magni
-            cumque nam aperiam delectus magnam explicabo tempore doloribus,
-            illo, quia, voluptatum autem ea animi nesciunt consequuntur
-            necessitatibus quasi adipisci eos?
-          </form>
+          <p>
+            Exercitationem reiciendis temporibus maxime, quas totam minus ea
+            repudiandae aliquam perspiciatis dolores eveniet optio deleniti
+            porro asperiores doloremque odio voluptatem eaque expedita facilis
+            tempora provident? Impedit blanditiis autem laboriosam porro.
+          </p>
         </div>
       </div>
-      <div className={styles.about_us_container}>
-        <h1>Neki naslov za zadnju sekciju prije footera</h1>
-        <div className={styles.about_us_info}>
-          <p className={styles.first_info_item}>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores
-            fugiat voluptatem reiciendis. Cupiditate saepe modi reprehenderit
-            sit a necessitatibus aliquid aspernatur culpa maiores assumenda,
-            velit qui asperiores earum illum dolor!
-          </p>
-          <form action="">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor magni
-            cumque nam aperiam delectus magnam explicabo tempore doloribus,
-            illo, quia, voluptatum autem ea animi nesciunt consequuntur
-            necessitatibus quasi adipisci eos?
-          </form>
+      <div className={styles.boxes_container}>
+        <div className={styles.box}>
+          <h1>Analiza</h1>
         </div>
+        <div className={styles.box}>
+          <h1>Konzept</h1>
+        </div>
+        <div className={styles.box}>
+          <h1>Design</h1>
+        </div>
+        <div className={styles.box}>
+          <h1>Content</h1>
+        </div>
+      </div>
+      <div className={styles.boxes_container}>
+        <div className={styles.box}>
+          <h1>Analiza</h1>
+        </div>
+        <div className={styles.box}>
+          <h1>Konzept</h1>
+        </div>
+        <div className={styles.box}>
+          <h1>Design</h1>
+        </div>
+        <div className={styles.box}>
+          <h1>Content</h1>
+        </div>
+      </div>
+      <div className={styles.earth_container}>
+        <h1>"Svijet pokrecemo s vama"</h1>
+        <img src={earth_picture} alt="Slikica" />
       </div>
     </div>
   );
