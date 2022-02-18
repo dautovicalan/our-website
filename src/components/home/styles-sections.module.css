@@ -120,6 +120,7 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
+    gap: 1em;
   }
 
   .about_us_info > p {
