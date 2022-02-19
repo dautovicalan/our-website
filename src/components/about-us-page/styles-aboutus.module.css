@@ -3,27 +3,24 @@
   padding-left: 2em;
   padding-right: 2em;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1.5em;
+  gap: 2.5em;
+  font-family: "Roboto Serif", sans-serif;
 }
 
-.text_container {
+.text_picture_container {
+  text-align: center;
   display: flex;
   flex-direction: column;
   gap: 1.5em;
-  width: 50%;
 }
 
-.text_container > h2 {
-  font-size: 2.5em;
+.text_picture_container > h2 {
+  text-transform: uppercase;
   letter-spacing: 0.1em;
-}
-
-.text_container > p {
-  font-size: 1.2em;
-  letter-spacing: 0.1em;
+  font-size: 2.2em;
 }
 
 .picture_container {
@@ -37,13 +34,77 @@
   border-radius: 5em;
 }
 
+.text_container_first {
+  display: flex;
+  justify-content: space-around;
+}
+
+.text_container_first > p {
+  width: 33%;
+  text-align: justify;
+}
+
+.text_container_second {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5em;
+}
+
+.text_container_second > p {
+  width: 50%;
+}
+
+.text_container_second > .list_icons {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 4em;
+  animation: flyInAnimation 15s linear infinite;
+}
+
+.text_container_second > .list_icons > div {
+  width: 25%;
+  height: 100px;
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  padding: 0.5em;
+}
+
+.text_container_second > .list_icons > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes flyInAnimation {
+  0% {
+    transform: translateX(200%);
+  }
+  100% {
+    transform: translateX(-220%);
+  }
+}
+
 @media all and (max-width: 760px) {
   .main_container {
     flex-direction: column;
   }
-
-  .text_container {
+  .text_container_first {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+  }
+  .text_container_first > p {
     width: 95%;
-    text-align: justify;
+  }
+  .text_container_second > p {
+    width: 80%;
+  }
+  .text_container_second > .list_icons > div {
+    width: 60%;
+    background-color: red;
   }
 }

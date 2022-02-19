@@ -7,6 +7,7 @@ import Contact from "./components/contact-page/Contact";
 import { Routes, Route } from "react-router-dom";
 import Footer from "./components/footer/Footer";
 import LanguageContextProvider from "./context/LanguageContext";
+import Services from "./components/services-page/Services";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/" element={<Sections />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/services" element={<Services />} />
         </Routes>
         <Footer />
       </LanguageContextProvider>
