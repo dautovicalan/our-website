@@ -7,6 +7,8 @@ import jsLogo from "./assets/js-logo.png";
 import twLogo from "./assets/tailwind-logo.png";
 import muiLogo from "./assets/mui-logo.png";
 import { useSpring, animated } from "react-spring";
+import { useContext } from "react";
+import { LanguageContext } from "../../context/LanguageContext.js";
 
 const AboutUs = () => {
   const props = useSpring({
@@ -15,35 +17,24 @@ const AboutUs = () => {
     delay: 200,
   });
 
+  const { language, setLanguage } = useContext(LanguageContext);
+  const { aboutUs } = language;
+
   return (
     <div className={styles.main_container}>
-      <div className={styles.text_picture_container}>
-        <animated.h2 style={props}>About Us</animated.h2>
+      <animated.div style={props} className={styles.text_picture_container}>
+        <h2>About Us</h2>
         <div className={styles.picture_container}>
           <img src={laptopPic} alt="About Us picture" />
         </div>
-      </div>
+      </animated.div>
+      <h1>{aboutUs.firstTitle}</h1>
       <div className={styles.text_container_first}>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum
-          inventore veritatis dolorem saepe tempora esse consequatur molestiae
-          quasi asperiores sint vero quam magni, dolores et culpa totam
-          exercitationem quidem odio!
-        </p>
-        <p>
-          Beatae, quo labore. Nobis, deleniti! Aliquid ratione aperiam fugit
-          veritatis maxime unde harum omnis natus, quis quam officiis nostrum
-          reiciendis soluta commodi dolorum pariatur praesentium atque odio
-          adipisci voluptatum iste!
-        </p>
+        <p>{aboutUs.firstSection}</p>
+        <p>{aboutUs.secondSection}</p>
       </div>
       <div className={styles.text_container_second}>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad hic iste,
-          consequuntur quis, laboriosam, tempora magnam magni nam neque error
-          unde. Officiis accusantium recusandae error? Incidunt quia veniam
-          eaque repellendus.
-        </p>
+        <p>{aboutUs.thirdSection}</p>
         <div className={styles.list_icons}>
           <div>
             <img src={reactLogo} alt="React Logo" />

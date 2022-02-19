@@ -3,6 +3,16 @@ import styles from "./styles-services.module.css";
 import laptopPic from "../../assets/second-pic.jpg";
 import rocket from "../../assets/rocket.jpg";
 import { useSpring, animated } from "react-spring";
+import { useContext } from "react";
+import { LanguageContext } from "../../context/LanguageContext.js";
+import AnalyticsIcon from "@mui/icons-material/Analytics";
+import BarChartIcon from "@mui/icons-material/BarChart";
+import PersonIcon from "@mui/icons-material/Person";
+import DesignServicesIcon from "@mui/icons-material/DesignServices";
+import FileCopyIcon from "@mui/icons-material/FileCopy";
+import CodeIcon from "@mui/icons-material/Code";
+import AccountTreeIcon from "@mui/icons-material/AccountTree";
+import RocketLaunchIcon from "@mui/icons-material/RocketLaunch";
 
 const Services = () => {
   const props = useSpring({
@@ -10,84 +20,66 @@ const Services = () => {
     to: { x: 0 },
     delay: 200,
   });
+  const { language } = useContext(LanguageContext);
+  const { services } = language;
   return (
     <div className={styles.main_container}>
       <animated.div style={props} className={styles.picture_container}>
-        <h1>Neki naslov</h1>
+        <h1>{services.pageTitle}</h1>
         <img src={laptopPic} alt="lap pic" />
       </animated.div>
       <div className={styles.services_container}>
         <div className={styles.single_service} data-aos="fade-right">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-            doloremque quam dolore? Ut architecto expedita labore quos neque
-            tenetur aspernatur dolorem, dolore eos placeat dolores quo fugiat a
-            possimus reiciendis.
-          </p>
-          <div>Ikonica</div>
+          <p>{services.firstBoxText}</p>
+          <div>
+            <AnalyticsIcon />
+          </div>
         </div>
         <div className={styles.single_service} data-aos="fade-right">
-          <p>
-            Nisi rerum eius quo harum eligendi quae obcaecati reprehenderit amet
-            minus labore et perspiciatis fugit dolorem maiores inventore
-            architecto impedit exercitationem a, adipisci, quas sequi
-            accusantium voluptas aspernatur facere. Natus.
-          </p>
-          <div>Ikonica</div>
+          <p>{services.secondBoxText}</p>
+          <div>
+            <BarChartIcon />
+          </div>
         </div>
         <div className={styles.single_service} data-aos="fade-right">
-          <p>
-            Perspiciatis dicta odit id similique autem unde voluptate quia
-            officiis cupiditate numquam, necessitatibus fuga omnis, iste
-            sapiente, veniam eaque ab error iusto. Ut alias deserunt, eveniet
-            voluptas aliquid nam eum?
-          </p>
-          <div>Ikonica</div>
+          <p>{services.thirdBoxText}</p>
+          <div>
+            <PersonIcon />
+          </div>
         </div>
         <div className={styles.single_service} data-aos="fade-right">
-          <p>
-            Commodi rerum odio temporibus distinctio minus accusamus quo autem
-            obcaecati. Animi, alias pariatur facere laboriosam unde vero odio
-            cum at, voluptates sint ipsum voluptas esse vitae perferendis neque
-            sed ad?
-          </p>
-          <div>Ikonica</div>
+          <p>{services.fourthBoxText}</p>
+          <div>{services.fourthBoxTitle}</div>
         </div>
         <div className={styles.single_service} data-aos="fade-right">
-          <p>
-            Officiis ipsum necessitatibus eos recusandae consectetur amet vitae
-            natus quis nesciunt? Aliquam veritatis enim voluptate rem libero
-            modi? Magni cupiditate odit sapiente quod id tenetur ex dolorum,
-            aspernatur tempore quibusdam?
-          </p>
-          <div>Ikonica</div>
+          <p>{services.fifthBoxText}</p>
+          <div>
+            <DesignServicesIcon />
+          </div>
         </div>
         <div className={styles.single_service} data-aos="fade-right">
-          <p>
-            Rem saepe ipsam temporibus est fugit voluptatibus voluptas sit ipsum
-            exercitationem, facilis doloremque soluta, cupiditate accusantium
-            numquam aspernatur ad? Deserunt architecto, repudiandae mollitia
-            optio aspernatur ut minus! Tempore, numquam veniam!
-          </p>
-          <div>Ikonica</div>
+          <p>{services.sixthBoxText}</p>
+          <div>
+            <FileCopyIcon />
+          </div>
         </div>
         <div className={styles.single_service} data-aos="fade-right">
-          <p>
-            At quisquam quas et sed necessitatibus nobis quo maiores molestias
-            dicta odio incidunt, debitis fugiat vel officiis ea quia laudantium
-            voluptates, mollitia, facere aliquam error sit! Fugit velit deleniti
-            adipisci.
-          </p>
-          <div>Ikonica</div>
+          <p>{services.seventhBoxText}</p>
+          <div>
+            <CodeIcon />
+          </div>
         </div>
         <div className={styles.single_service} data-aos="fade-right">
-          <p>
-            Illum eligendi magni magnam quibusdam provident quod optio delectus
-            voluptatibus vel, autem est rerum cupiditate voluptate hic eum ipsum
-            maxime perspiciatis maiores veritatis ipsa. Debitis accusantium
-            necessitatibus amet neque veritatis?
-          </p>
-          <div>Ikonica</div>
+          <p>{services.eigthBoxText}</p>
+          <div>
+            <AccountTreeIcon />
+          </div>
+        </div>
+        <div className={styles.single_service} data-aos="fade-right">
+          <p>{services.ninthBoxText}</p>
+          <div>
+            <RocketLaunchIcon />
+          </div>
         </div>
       </div>
       <div className={styles.picture_container} data-aos="fade-up">
