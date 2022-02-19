@@ -66,3 +66,9 @@
   border: 2px solid black;
   border-radius: 25px;
 }
+
+@media all and (max-width: 760px) {
+  .picture_container > h1 {
+    font-size: 24px;
+  }
+}
