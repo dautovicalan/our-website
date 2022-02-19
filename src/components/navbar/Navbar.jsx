@@ -8,14 +8,22 @@ import { useContext } from "react";
 import languages from "../../assets/languages";
 import LanguageIcon from "@mui/icons-material/Language";
 import Button from "@mui/material/Button";
+import { useTransition } from "react-spring";
 
 const Navbar = () => {
   const [showNav, setshowNav] = useState(false);
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   const { language, setLanguage } = useContext(LanguageContext);
   const { navbar } = language;
+
   const toggleNav = () => setshowNav((prevVal) => !prevVal);
   const navigator = useNavigate();
+
+  const transition = useTransition(showNav, {
+    from: { x: -100, y: 800, opacity: 0 },
+    enter: { x: 0, y: 0, opacity: 1 },
+    leave: { x: 100, y: 800, opacity: 0 },
+  });
 
   useEffect(() => {
     const changeWidth = () => {
