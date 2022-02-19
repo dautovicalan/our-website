@@ -8,8 +8,11 @@ import { Routes, Route } from "react-router-dom";
 import Footer from "./components/footer/Footer";
 import LanguageContextProvider from "./context/LanguageContext";
 import Services from "./components/services-page/Services";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
+  AOS.init({ duration: 2000, delay: 5000 });
   return (
     <React.Fragment>
       <LanguageContextProvider>

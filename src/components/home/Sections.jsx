@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./styles-sections.module.css";
 import background_picture from "../../assets/background-pic.jpg";
 import earth_picture from "../../assets/earth.jpg";
-import video from "../../assets/coding.mp4";
+import video from "../../assets/new-video.mp4";
 
 const Sections = () => {
   return (

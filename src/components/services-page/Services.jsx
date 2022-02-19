@@ -1,17 +1,23 @@
 import React from "react";
 import styles from "./styles-services.module.css";
-import laptopPic from "../../assets/laptop.jpg";
+import laptopPic from "../../assets/second-pic.jpg";
 import rocket from "../../assets/rocket.jpg";
+import { useSpring, animated } from "react-spring";
 
 const Services = () => {
+  const props = useSpring({
+    from: { x: -2000 },
+    to: { x: 0 },
+    delay: 200,
+  });
   return (
     <div className={styles.main_container}>
-      <div className={styles.picture_container}>
+      <animated.div style={props} className={styles.picture_container}>
         <h1>Neki naslov</h1>
         <img src={laptopPic} alt="lap pic" />
-      </div>
+      </animated.div>
       <div className={styles.services_container}>
-        <div className={styles.single_service}>
+        <div className={styles.single_service} data-aos="fade-right">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
             doloremque quam dolore? Ut architecto expedita labore quos neque
@@ -20,7 +26,7 @@ const Services = () => {
           </p>
           <div>Ikonica</div>
         </div>
-        <div className={styles.single_service}>
+        <div className={styles.single_service} data-aos="fade-right">
           <p>
             Nisi rerum eius quo harum eligendi quae obcaecati reprehenderit amet
             minus labore et perspiciatis fugit dolorem maiores inventore
@@ -29,7 +35,7 @@ const Services = () => {
           </p>
           <div>Ikonica</div>
         </div>
-        <div className={styles.single_service}>
+        <div className={styles.single_service} data-aos="fade-right">
           <p>
             Perspiciatis dicta odit id similique autem unde voluptate quia
             officiis cupiditate numquam, necessitatibus fuga omnis, iste
@@ -38,7 +44,7 @@ const Services = () => {
           </p>
           <div>Ikonica</div>
         </div>
-        <div className={styles.single_service}>
+        <div className={styles.single_service} data-aos="fade-right">
           <p>
             Commodi rerum odio temporibus distinctio minus accusamus quo autem
             obcaecati. Animi, alias pariatur facere laboriosam unde vero odio
@@ -47,7 +53,7 @@ const Services = () => {
           </p>
           <div>Ikonica</div>
         </div>
-        <div className={styles.single_service}>
+        <div className={styles.single_service} data-aos="fade-right">
           <p>
             Officiis ipsum necessitatibus eos recusandae consectetur amet vitae
             natus quis nesciunt? Aliquam veritatis enim voluptate rem libero
@@ -56,7 +62,7 @@ const Services = () => {
           </p>
           <div>Ikonica</div>
         </div>
-        <div className={styles.single_service}>
+        <div className={styles.single_service} data-aos="fade-right">
           <p>
             Rem saepe ipsam temporibus est fugit voluptatibus voluptas sit ipsum
             exercitationem, facilis doloremque soluta, cupiditate accusantium
@@ -65,7 +71,7 @@ const Services = () => {
           </p>
           <div>Ikonica</div>
         </div>
-        <div className={styles.single_service}>
+        <div className={styles.single_service} data-aos="fade-right">
           <p>
             At quisquam quas et sed necessitatibus nobis quo maiores molestias
             dicta odio incidunt, debitis fugiat vel officiis ea quia laudantium
@@ -74,7 +80,7 @@ const Services = () => {
           </p>
           <div>Ikonica</div>
         </div>
-        <div className={styles.single_service}>
+        <div className={styles.single_service} data-aos="fade-right">
           <p>
             Illum eligendi magni magnam quibusdam provident quod optio delectus
             voluptatibus vel, autem est rerum cupiditate voluptate hic eum ipsum
@@ -84,7 +90,7 @@ const Services = () => {
           <div>Ikonica</div>
         </div>
       </div>
-      <div className={styles.picture_container}>
+      <div className={styles.picture_container} data-aos="fade-up">
         <h1>24/7 Support</h1>
         <img src={rocket} alt="" />
       </div>

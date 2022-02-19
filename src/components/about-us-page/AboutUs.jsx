@@ -1,23 +1,24 @@
 import React from "react";
 import styles from "./styles-aboutus.module.css";
-import laptopPic from "../../assets/laptop.jpg";
-import Button from "@mui/material/Button";
-import SendIcon from "@mui/icons-material/Send";
-import { useNavigate } from "react-router-dom";
+import laptopPic from "../../assets/first-pic.jpg";
 import reactLogo from "./assets/react-logo.png";
 import reactSpringLogo from "./assets/react-spring.png";
 import jsLogo from "./assets/js-logo.png";
 import twLogo from "./assets/tailwind-logo.png";
 import muiLogo from "./assets/mui-logo.png";
+import { useSpring, animated } from "react-spring";
 
 const AboutUs = () => {
-  const navigator = useNavigate();
+  const props = useSpring({
+    to: { opacity: 1 },
+    from: { opacity: 0 },
+    delay: 200,
+  });
 
-  const handleClick = () => navigator("/contact");
   return (
     <div className={styles.main_container}>
       <div className={styles.text_picture_container}>
-        <h2>About Us</h2>
+        <animated.h2 style={props}>About Us</animated.h2>
         <div className={styles.picture_container}>
           <img src={laptopPic} alt="About Us picture" />
         </div>

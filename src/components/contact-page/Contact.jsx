@@ -6,13 +6,20 @@ import Button from "@mui/material/Button";
 import SendIcon from "@mui/icons-material/Send";
 import { useContext } from "react";
 import { LanguageContext } from "../../context/LanguageContext.js";
+import { useSpring, animated } from "react-spring";
 
 const Contact = () => {
   const { language } = useContext(LanguageContext);
   const { contact } = language;
 
+  const props = useSpring({
+    to: { opacity: 1 },
+    from: { opacity: 0 },
+    delay: 100,
+  });
+
   return (
-    <div className={styles.contact_container}>
+    <animated.div style={props} className={styles.contact_container}>
       <h1>{contact.header}</h1>
       <div className={styles.square}></div>
       <form
@@ -70,7 +77,7 @@ const Contact = () => {
           {contact.send}
         </Button>
       </form>
-    </div>
+    </animated.div>
   );
 };
 
