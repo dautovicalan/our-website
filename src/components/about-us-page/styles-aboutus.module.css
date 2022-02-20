@@ -44,7 +44,8 @@
 .text_container_first > p {
   width: 33%;
   text-align: justify;
-  font-size: 1.2em;
+  font-size: 1.5em;
+  font-family: "Rajdhani", sans-serif;
 }
 
 .text_container_second {
@@ -61,6 +62,7 @@
   text-align: center;
   font-size: 2em;
   letter-spacing: 0.1em;
+  font-family: "Rajdhani", sans-serif;
 }
 
 .text_container_second > .list_icons {
@@ -80,9 +82,7 @@
   width: 100%;
   height: 190px;
   border-radius: 25px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
-    rgba(0, 0, 0, 0.22) 0px 10px 10px;
-  animation: flyInAnimation 7s linear infinite;
+  animation: flyInAnimation 15s linear infinite;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -99,7 +99,7 @@
     transform: translateX(700%);
   }
   100% {
-    transform: translateX(-620%); /* The image width */
+    transform: translateX(-870%); /* The image width */
   }
 }
 

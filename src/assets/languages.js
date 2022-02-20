@@ -40,13 +40,15 @@ const languages = {
     services: {
       pageTitle: `Our services`,
       firstBoxTitle: `Analysis`,
-      firstBoxText: `Don't worry, WE ARE HERE FOR YOU.
+      firstBoxText: `Not satisfied with the current Website?
+      Don't worry, WE ARE HERE FOR YOU.
       We analyze all your projects in detail to make your step into the digital world even better.
       
       We fully concentrate on your target groups. An individual and original look is guaranteed.
-      `,
-      secondBoxTitle: `SEO-Analyse`,
-      secondBoxText: `With programming and designing sites, our business is disappearing.
+      
+      SEO-Analyze
+      
+      With programming and designing sites, our business is disappearing.
       We also make sure that your site is a competitor in the market
       
       Google and Co. They have special technical requirements, and technical infrastructure is extremely important.
@@ -55,19 +57,19 @@ const languages = {
       
       We are developing the best SEO Strategy for you so that your site is always FIRST.
       `,
-      thirdBoxTitle: `Consulting`,
-      thirdBoxText: `We are with you from start to finish.
+      secondBoxTitle: `Consulting`,
+      secondBoxText: `We are with you from start to finish.
       We develop individual solutions for all your needs.
       After the completion of the project, we remain your main partner for all questions.
       Our support is 24’7. Tu ya vas.
       `,
-      fourthBoxTitle: `Concept`,
-      fourthBoxText: `With you we develop a strategy and concept to successfully achieve Corporate Goals.
+      thirdBoxTitle: `Concept`,
+      thirdBoxText: `With you we develop a strategy and concept to successfully achieve Corporate Goals.
       We get to know your philosophy in detail, and together we define the goals we want to achieve.
       After successfully testing all prototypes, we move on to finalizing the project.
       `,
-      fifthBoxTitle: `Design`,
-      fifthBoxText: `One of the most important items is just design. With love for detail, we program your site in a modern and compact way.
+      fourthBoxTitle: `Design`,
+      fourthBoxText: `One of the most important items is just design. With love for detail, we program your site in a modern and compact way.
 
       Beautiful Design is not forgotten so quickly.
       
@@ -80,30 +82,32 @@ const languages = {
       
       Now put the icons on your laptop, tablet and cell phone, but with the effect that they come to this place.
       `,
-      sixthBoxTitle: `Content`,
-      sixthBoxText: `Another feature that adorns us is the individual creation of Content.
+      fifthBoxTitle: `Content`,
+      fifthBoxText: `Another feature that adorns us is the individual creation of Content.
       We make texts, images and videos according to your wishes, and integrate them into the Website.
       
       Our professional team attaches great importance to the theme of Content, because we at WEB Boutique believe that this is the heart and soul of the site.
       `,
-      seventhBoxTitle: `Code`,
-      seventhBoxText: `Do you not want ready-made Web pages that you cannot create according to your wishes?
+      sixthBoxTitle: `Code`,
+      sixthBoxText: `Do you not want ready-made Web pages that you cannot create according to your wishes?
       Professional coding of pages is our specialty.
       We create the complete technical infrastructure in the most modern programs, and even after the completion of the project we enrich your site with the latest Feauturs and Updates.
       `,
-      eigthBoxTitle: `Project`,
-      eigthBoxText: `we pay attention to each of our clients and together with you we create Web Projects.
+      seventhBoxTitle: `Project`,
+      seventhBoxText: `we pay attention to each of our clients and together with you we create Web Projects.
       All our projects are aimed at fulfilling all your wishes.
       Your successes are also our successes because only together can we change the world
       Each of our projects is accompanied by a presentation with which we present in detail all the functionalities of the site.
-      Our Support is 247 here for you
-      `,
-      ninthBoxTitle: `Launch`,
-      ninthBoxText: `Before the Website is launched into the digital world, each item is thoroughly checked and after your Feedback, we post the website on the Internet.
+      Our Support is 24/7 here for you`,
+      eigthBoxTitle: `Launch`,
+      eigthBoxText: `Before the Website is launched into the digital world, each item is thoroughly checked and after your Feedback, we post the website on the Internet.
       For all other issues we remain your strong partner.
       `,
     },
     home: {
+      quote: "I dream of painting and then I paint my dream.",
+      homeHeaderFirstPart: "With you from",
+      homeHeaderSecondPart: "start to finish",
       firstText: `From the very beginning, we work out your wishes and ideas with you down to the smallest detail.
       Our work begins with a detailed analysis of the project before us. Together we create the concept, structure and the first Web solutions.
       We put your Corporate Identity first, and as such we improve and enhance it.
@@ -150,77 +154,81 @@ const languages = {
       firstSection: `Mi smo jedan mladi tim koji sve vase snove pretvara u stvarnost.
       Iza kulisa stvaramo Web rješenja koja će unaprijediti vase poslovanje i dignuti ga na još veći nivo.
       Specijalizirani smo na najmodernije usluge na internetu.
-      Individualnost, kreativnost, pedantnost… samo su jedne od vrlina koje krase nas tim.
-      Naši klijenti su naši partneri , koje pratimo na putu ka ostavrivanju svih vaših ciljeva.
       `,
-      secondSection: `Od prvog Kontakta s nama dobijate detaljnu razradu cijelog projekta.`,
+      secondSection: `Individualnost, kreativnost, pedantnost… samo su jedne od vrlina koje krase nas tim.
+      Naši klijenti su naši partneri , koje pratimo na putu ka ostavrivanju svih vaših ciljeva.
+      Od prvog Kontakta s nama dobijate detaljnu razradu cijelog projekta.`,
       thirdSection: `Mi smo vaš snažni partner na putu u digitalni svijet.`,
     },
     services: {
-      pageTitle: `Nasi servisi`,
+      pageTitle: `Naše usluge`,
       firstBoxTitle: `Analiza`,
-      firstBoxText: `Analiza- Niste zadovoljni sa dosadašnjom Webstranicom?
-      Ne brinite ,MI SMO TU ZA VAS .
-      Detaljno analiziramo sve vaše projekte kako bi vas korak u digitalni svijet bio još bolji.
+      firstBoxText: `Niste zadovoljni trenutnom web-stranicom?
+      Ne brinite, MI SMO TU ZA VAS.
+       Detaljno analiziramo sve vaše projekte kako bismo vaš korak u digitalni svijet učinili još boljim.
       
-      U potpunosti se koncentriramo na vaše target skupine. Individualan i originalan izgled je zagarantiran
-      `,
-      secondBoxTitle: `SEO-Analyse`,
-      secondBoxText: `Uz programiranje i dizajniranje stranica, nas posao tu nestaje.
-      Mi se također brinemo da vaša stranica bude konkurenta na tržištu
+       U potpunosti se koncentriramo na vaše ciljne skupine. Individualni i originalni izgled je zajamčen.
       
-      Google i Co. Imaju posebne tehničke Zahtjeve , te je tehnička infrastruktura iznimno važna.
+       SEO-analiza
       
-      S nama ćete biti uvijek 2 koraka ispred konkurencije.
+       S programiranjem i dizajniranjem stranica naš posao nestaje.
+       Također se brinemo da vaša stranica bude konkurent na tržištu
       
-      Za Vas razvijamo , najbolju SEO-Strategiju kako bi vaša stranica uvijek bila PRVA.
+       Google and Co. Imaju posebne tehničke zahtjeve, a tehnička infrastruktura je iznimno važna.
+      
+       S nama ćete uvijek biti 2 koraka ispred konkurencije.
+      
+       Razvijamo najbolju SEO strategiju za vas kako bi vaša stranica uvijek bila PRVA.
       `,
-      thirdBoxTitle: `Consulting`,
-      thirdBoxText: `S Vama smo od početka do kraja .
-      Razradujemo individualna rješenja upravo za sve vaše potrebe.
-      Nakon završetka samog projekta mi ostajemo vas glavni partner za sva pitanja.
-      Nasa podrška je 24’7. Tu ya vas.
+      secondBoxTitle: `Savjetovanje`,
+      secondBoxText: `Uz vas smo od početka do kraja.
+      Razvijamo individualna rješenja za sve Vaše potrebe.
+      Nakon završetka projekta ostajemo Vaš glavni partner za sva pitanja.
+      Naša podrška je 24'7. tu za vas.
       `,
-      fourthBoxTitle: `Konzept`,
-      fourthBoxText: `S vama razvijamo strategiju i koncept kako bi uspješno ostvarili Corporate Goals.
-      Detaljno se upoznajemo s vašom filozofijom , te zajedno definiramo ciljeve koje želimo ostvariti.
-      Nakon uspješnog testiranja svih prototipa , krecemo u finalizaciju projekta.
+      thirdBoxTitle: `Koncept`,
+      thirdBoxText: `S vama razvijamo strategiju i koncept za uspješno postizanje korporativnih ciljeva.
+      Detaljno upoznajemo vašu filozofiju, te zajedno definiramo ciljeve koje želimo postići.
+      Nakon uspješnog testiranja svih prototipova, prelazimo na finalizaciju projekta.
       `,
-      fifthBoxTitle: `Design`,
-      fifthBoxText: `Jedna od najvažnijih stavki je upravo design. S ljubavlju za detalj, programiramo vasu stranicu na jedan moderan i kompaktan način.
+      fourthBoxTitle: `Dizajn`,
+      fourthBoxText: `Jedna od najvažnijih stvari je upravo dizajn. S ljubavlju prema detaljima, programiramo vašu stranicu na moderan i kompaktan način.
 
-      Lijepi Design se ne zaboravlja tako brzo Osim sto se lijepi design ne zaboravlja, on osvaja i nova srca.
-      Nas Design Stranice je za sve skupine Usera iznimno lagan ya koristenje.
-      Naše su stranice kompatibilne za sve formate i vrste uređaja.
-      Posebnu važnost u ovom brzom svijetu pridodajemo mobilnim uređajima.
-      
-      Naše stranice prolaze kroz detaljna testiranja u svim formatima kako bi bez obzira koji uređaj koristili imali potpunu funkcionalnost.
-      .
+      Prekrasan dizajn se ne zaboravlja tako brzo.
+     
+      Osim što se lijep dizajn ne zaboravlja, osvaja i nova srca.
+      Naše dizajnerske stranice iznimno su jednostavne za korištenje za sve grupe korisnika.
+      Naše stranice su kompatibilne za sve formate i vrste uređaja.
+      Pridajemo posebnu važnost mobilnim uređajima u ovom brzom svijetu.
+     
+      Naša stranica prolazi kroz detaljno testiranje u svim formatima kako bi imala punu funkcionalnost bez obzira koji uređaj koristite.
+     
+      Sada stavite ikone na svoj laptop, tablet i mobitel, ali s učinkom da dolaze na ovo mjesto.
       `,
-      sixthBoxTitle: `Content`,
-      sixthBoxText: `Još jedna odlika koja nas krasi je i individualno stvaranje Contenta.
-      Textove, slike i videa radimo po vašim željama , te ih integriramo u Webstranicu.
-      
-      Nas profesionalni tim pridodaje iznimnu važnost samoj temi Contenta, jer mi u WEB Boutique smatramo da je to srce i duša stranice.
+      fifthBoxTitle: `Sadržaj`,
+      fifthBoxText: `Još jedna značajka koja nas krasi je individualna izrada sadržaja.
+      Tekstove, slike i video zapise izrađujemo prema vašim željama i integriramo u web stranicu.
+     
+      Naš stručni tim pridaje veliku važnost temi Sadržaja, jer mi u WEB Boutiqueu vjerujemo da je to srce i duša stranice.
       `,
-      seventhBoxTitle: `Code`,
-      seventhBoxText: `Ne želite gotove Web Stranice koje ne možete sami po vasim željama kreirati?
-      Profesionalno codiranje stranica je naša specijalnost.
-      Kompletnu tehničku infrastrukturu stvaramo u najmodernijim programima, te i nakon završetka projekta obogaćujemo vasu stranicu sa najnovijim Feautursima i Updatima .
+      sixthBoxTitle: `Code`,
+      sixthBoxText: `Ne želite gotove web stranice koje ne možete izraditi prema svojim željama?
+      Profesionalno kodiranje stranica naša je specijalnost.
+      Izrađujemo kompletnu tehničku infrastrukturu u najsuvremenijim programima, a i nakon završetka projekta obogaćujemo Vašu stranicu najnovijim značajkama i ažuriranjima.
       `,
-      eigthBoxTitle: `Projekt`,
-      eigthBoxText: `svakom našem klijentu posvećujemo pažnju i skupa s vama kreiramo Web Projekte.
-      Svi naši projekti su usmjereni ka ostvarivanju svih vaših želja. 
-      Vasi uspjesi su i naši uspjesi jer samo zajedno možemo mjenjati svijet
-      Svaki nas projekt je popraćen i prezentacijom s kojom detaljno predstavljamo sve funkcionalnosti stranice.
-      Nas Support je 247 tu ya vas.
-      `,
-      ninthBoxTitle: `Launch`,
-      ninthBoxText: `Prije nego sto Web-stranica bude lansirana u digitalni svijet, svaka stavka se detaljno provjerava i nakon vašeg Feedback , web stranicu postavljamo na Internet.
-      Za sva ostala pitanja ostajemo vas snažan partner .
+      seventhBoxTitle: `Projekt`,
+      seventhBoxText: `Obraćamo pažnju na svakog našeg klijenta i zajedno s vama izrađujemo web projekte.
+      Svi naši projekti usmjereni su na ispunjenje svih Vaših želja.
+      Vaši uspjesi su i naši uspjesi jer samo zajedno možemo promijeniti svijet
+      Svaki naš projekt popraćen je prezentacijom kojom detaljno prezentiramo sve funkcionalnosti stranice.
+      Naša podrška je tu za vas 24/7`,
+      eigthBoxTitle: `Lansiranje`,
+      eigthBoxText: `Prije nego što web stranica bude lansirana u digitalni svijet, svaka se stavka temeljito provjerava i nakon vaših povratnih informacija, web stranicu objavljujemo na Internetu.
+      Za sva ostala pitanja ostajemo Vaš snažan partner.
       `,
     },
     home: {
+      quote: "I dream of painting and then I paint my dream.",
       firstText: `Od samog početka s Vama razradujemo vaše želje i ideje do najsitnijih detalja.
       Naš rad počinje sa detaljnom Analizom projekta koji je pred nama. Skupa svama stvaramo konzept ,Strukturu te prva Web rješenja. 
       Vaš Corporate Identity stavljamo na prvo mjesto , te ga kao takvog unaprijeđujemo i poboljsavamo.

@@ -21,6 +21,7 @@ const Services = () => {
     to: { x: 0 },
     delay: 200,
   });
+
   const { language } = useContext(LanguageContext);
   const { services } = language;
   return (
@@ -62,29 +63,23 @@ const Services = () => {
         <div className={styles.single_service} data-aos="fade-right">
           <p>{services.seventhBoxText}</p>
           <div>
-            <CodeIcon />
+            <FileCopyIcon />
           </div>
         </div>
         <div className={styles.single_service} data-aos="fade-right">
           <p>{services.sixthBoxText}</p>
           <div>
-            <FileCopyIcon />
+            <CodeIcon />
           </div>
         </div>
         <div className={styles.single_service} data-aos="fade-right">
           <p>{services.eigthBoxText}</p>
           <div>
-            <AccountTreeIcon />
-          </div>
-        </div>
-        <div className={styles.single_service} data-aos="fade-right">
-          <p>{services.ninthBoxText}</p>
-          <div>
             <RocketLaunchIcon />
           </div>
         </div>
       </div>
-      <div className={styles.picture_container} data-aos="fade-up">
+      <div className={styles.picture_container} data-aos="fade-up-right">
         <h1>24/7 Support</h1>
       </div>
       {/* // TODO Napravi raketu za animaciju rakete na donjem dijelu stranice */}

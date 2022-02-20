@@ -2,6 +2,7 @@ import React from "react";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import styles from "./styles-footer.module.css";
 import { NavLink } from "react-router-dom";
 import { LanguageContext } from "../../context/LanguageContext.js";
@@ -15,14 +16,17 @@ const Footer = () => {
     <footer>
       <div className={styles.footer_items}>
         <div className={styles.social_container}>
-          <a href="https://www.facebook.com">
+          <a href="https://www.facebook.com/webboutiquesolutions">
             <FacebookIcon fontSize="large" />
           </a>
-          <a href="https://www.instagram.com">
+          <a href="https://www.instagram.com/webboutiquesolutions/">
             <InstagramIcon fontSize="large" />
           </a>
-          <a href="https://www.twitter.com">
+          <a href="https://twitter.com/WebBoutiqueSol">
             <TwitterIcon fontSize="large" />
+          </a>
+          <a href="https://www.twitter.com">
+            <LinkedInIcon fontSize="large" />
           </a>
         </div>
         <div className={styles.mini_navbar}>

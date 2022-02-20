@@ -98,6 +98,7 @@
   font-family: "Comfortaa", cursive;
   text-transform: uppercase;
   letter-spacing: 0.1em;
+  text-align: center;
 }
 
 .paragraphed_container > .paragraph_items {
@@ -150,6 +151,7 @@
 
 .boxes_container > .box:hover {
   transform: scale(1.08);
+  cursor: pointer;
 }
 
 @media all and (max-width: 760px) {

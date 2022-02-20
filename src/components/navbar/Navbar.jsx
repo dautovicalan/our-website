@@ -10,6 +10,8 @@ import LanguageIcon from "@mui/icons-material/Language";
 import Button from "@mui/material/Button";
 import { useTransition, animated } from "react-spring";
 import Hamburger from "hamburger-react";
+import HomeIcon from "@mui/icons-material/Home";
+import { fontSize } from "@mui/system";
 
 const Navbar = () => {
   const [showNav, setshowNav] = useState(false);
@@ -51,7 +53,7 @@ const Navbar = () => {
               setshowNav((prevVal) => !prevVal);
             }}
           >
-            {navbar.home}
+            <HomeIcon style={{ fontSize: "1.5em" }} />
           </NavLink>
           <NavLink
             to="/services"
