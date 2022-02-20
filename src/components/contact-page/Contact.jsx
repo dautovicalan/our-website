@@ -86,15 +86,18 @@ const Contact = () => {
           flexDirection: "column",
           textAlign: "center",
           gap: "1.5em",
+          fontFamily: '"Roboto Serif", sans-serif',
+          textTransform: "uppercase",
+          letterSpacing: "0.1em",
         }}
       >
         <h1>Pronadite nas na sljedecim lokacijama</h1>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d170347.25271623838!2d11.40174941657878!3d48.15505469600179!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479e75f9a38c5fd9%3A0x10cb84a7db1987d!2sMunich%2C%20Germany!5e0!3m2!1sen!2shr!4v1645311297962!5m2!1sen!2shr"
-          width="100%"
+          width="90%"
           height="450"
-          allowFullScreen=""
           loading="lazy"
+          style={{ margin: "auto", border: "1px solid black" }}
         ></iframe>
       </div>
     </React.Fragment>

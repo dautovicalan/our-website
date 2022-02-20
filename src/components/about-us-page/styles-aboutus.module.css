@@ -44,6 +44,7 @@
 .text_container_first > p {
   width: 33%;
   text-align: justify;
+  font-size: 1.2em;
 }
 
 .text_container_second {
@@ -56,7 +57,10 @@
 }
 
 .text_container_second > p {
-  width: 50%;
+  width: 100%;
+  text-align: center;
+  font-size: 2em;
+  letter-spacing: 0.1em;
 }
 
 .text_container_second > .list_icons {

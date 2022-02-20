@@ -15,14 +15,19 @@ const Sections = () => {
         <video autoPlay muted={true} loop>
           <source src={video} type="video/mp4" />
         </video>
-        <h2>
-          "Ich träume vom meinem Bild und dann male ich meinen Traum" ~ Vincent
-          Van Gogh
-        </h2>
+        <h2>"Ich träume vom meinem Bild und dann male ich meinen Traum"</h2>
+        <h2 className={styles.second_header}>~ Vincent Van Gogh</h2>
       </div>
       <div className={styles.about_us_container}>
         <div className={styles.about_us_info}>
-          <p>{home.singleParagraph}</p>
+          <p>
+            <span style={{ color: "rgb(13,25,80)" }}>
+              {home.singleParagraphFirstPart}
+            </span>{" "}
+            <span style={{ color: "var(--pink-color)" }}>
+              {home.singleParagraphSecondPart}
+            </span>
+          </p>
           <img src={background_picture} alt="Some picture" />
         </div>
       </div>
@@ -41,29 +46,25 @@ const Sections = () => {
           <h1>Konzept</h1>
         </div>
         <div className={styles.box}>
-          <h1>Design</h1>
+          <h1>Consulting</h1>
         </div>
         <div className={styles.box}>
-          <h1>Content</h1>
+          <h1>Design</h1>
         </div>
       </div>
       <div className={styles.boxes_container}>
         <div className={styles.box}>
-          <h1>Analiza</h1>
-        </div>
-        <div className={styles.box}>
-          <h1>Konzept</h1>
-        </div>
-        <div className={styles.box}>
-          <h1>Design</h1>
-        </div>
-        <div className={styles.box}>
           <h1>Content</h1>
         </div>
-      </div>
-      <div className={styles.earth_container}>
-        <h1>"Svijet pokrecemo s vama"</h1>
-        <img src={earth_picture} alt="Slikica" />
+        <div className={styles.box}>
+          <h1>Code</h1>
+        </div>
+        <div className={styles.box}>
+          <h1>Project</h1>
+        </div>
+        <div className={styles.box}>
+          <h1>Launch</h1>
+        </div>
       </div>
     </div>
   );

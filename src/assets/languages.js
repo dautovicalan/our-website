@@ -31,10 +31,10 @@ const languages = {
       firstSection: `We are one young team that turns all your dreams into reality.
       Behind the scenes, we create Web solutions that will improve your business and raise it to an even higher level.
       We specialize in the most modern services on the Internet.
-      Individuality, creativity, meticulousness… are just some of the virtues that adorn our team.
-      Our clients are our partners, whom we follow on the way to achieving all your goals.
       `,
-      secondSection: `From the first Contact with us you get a detailed elaboration of the whole project.`,
+      secondSection: `Individuality, creativity, meticulousness… are just some of the virtues that adorn our team.
+      Our clients are our partners, whom we follow on the way to achieving all your goals.
+      From the first Contact with us you get a detailed elaboration of the whole project.`,
       thirdSection: `We are your strong partner on the road to the digital world.`,
     },
     services: {
@@ -113,7 +113,8 @@ const languages = {
       When the whole mosaic is assembled, your page will be available on all devices and in different formats.
       No worries and after launching the site into the digital world we remain your main partner for all questions.
       `,
-      singleParagraph: `The most modern and professional Web design for your journey into the digital world `,
+      singleParagraphFirstPart: `The most modern and professional Web design`,
+      singleParagraphSecondPart: `for your journey into the digital world`,
     },
     langId: 1,
   },

@@ -5,10 +5,11 @@ import rocket from "../../assets/rocket.jpg";
 import { useSpring, animated } from "react-spring";
 import { useContext } from "react";
 import { LanguageContext } from "../../context/LanguageContext.js";
-import AnalyticsIcon from "@mui/icons-material/Analytics";
-import BarChartIcon from "@mui/icons-material/BarChart";
-import PersonIcon from "@mui/icons-material/Person";
+import DataSaverOnIcon from "@mui/icons-material/DataSaverOn";
+import LightbulbIcon from "@mui/icons-material/Lightbulb";
+import ConnectWithoutContactIcon from "@mui/icons-material/ConnectWithoutContact";
 import DesignServicesIcon from "@mui/icons-material/DesignServices";
+import TextSnippetIcon from "@mui/icons-material/TextSnippet";
 import FileCopyIcon from "@mui/icons-material/FileCopy";
 import CodeIcon from "@mui/icons-material/Code";
 import AccountTreeIcon from "@mui/icons-material/AccountTree";
@@ -31,41 +32,43 @@ const Services = () => {
         <div className={styles.single_service} data-aos="fade-right">
           <p>{services.firstBoxText}</p>
           <div>
-            <AnalyticsIcon />
+            <DataSaverOnIcon />
           </div>
         </div>
         <div className={styles.single_service} data-aos="fade-right">
           <p>{services.secondBoxText}</p>
           <div>
-            <BarChartIcon />
+            <LightbulbIcon style={{ color: "var(--pink-color)" }} />
           </div>
         </div>
         <div className={styles.single_service} data-aos="fade-right">
           <p>{services.thirdBoxText}</p>
           <div>
-            <PersonIcon />
+            <ConnectWithoutContactIcon />
           </div>
         </div>
         <div className={styles.single_service} data-aos="fade-right">
           <p>{services.fourthBoxText}</p>
-          <div>{services.fourthBoxTitle}</div>
+          <div>
+            <DesignServicesIcon style={{ color: "var(--pink-color)" }} />
+          </div>
         </div>
         <div className={styles.single_service} data-aos="fade-right">
           <p>{services.fifthBoxText}</p>
           <div>
-            <DesignServicesIcon />
-          </div>
-        </div>
-        <div className={styles.single_service} data-aos="fade-right">
-          <p>{services.sixthBoxText}</p>
-          <div>
-            <FileCopyIcon />
+            <TextSnippetIcon />
           </div>
         </div>
         <div className={styles.single_service} data-aos="fade-right">
           <p>{services.seventhBoxText}</p>
           <div>
             <CodeIcon />
+          </div>
+        </div>
+        <div className={styles.single_service} data-aos="fade-right">
+          <p>{services.sixthBoxText}</p>
+          <div>
+            <FileCopyIcon />
           </div>
         </div>
         <div className={styles.single_service} data-aos="fade-right">
@@ -83,8 +86,8 @@ const Services = () => {
       </div>
       <div className={styles.picture_container} data-aos="fade-up">
         <h1>24/7 Support</h1>
-        <img src={rocket} alt="" />
       </div>
+      {/* // TODO Napravi raketu za animaciju rakete na donjem dijelu stranice */}
     </div>
   );
 };

@@ -28,6 +28,14 @@ footer {
   transition: transform 0.2s ease-in-out;
 }
 
+/* .social_container > a > svg:nth-child(odd) {
+  color: var(--pink-color);
+}
+
+.social_container > a > svg:nth-child(even) {
+  color: rgb(80, 53, 13);
+} */
+
 .social_container > a:hover {
   transform: scale(1.3);
 }

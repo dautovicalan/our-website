@@ -28,12 +28,28 @@
 
 .background_image_container > h2 {
   position: absolute;
+  width: 60%;
+  margin: auto;
   margin-right: 1.5em;
   color: white;
-  font-size: 3em;
+  font-size: 3.5em;
   text-align: center;
   text-shadow: black 3px 5px 2px;
-  font-family: "Supermercado One", cursive;
+  font-family: "Dancing Script", cursive;
+}
+
+.background_image_container > .second_header {
+  position: absolute;
+  padding-top: 4em;
+  padding-left: 11em;
+  width: 60%;
+  margin: auto;
+  margin-right: 1.5em;
+  color: white;
+  font-size: 3.5em;
+  text-align: center;
+  text-shadow: black 3px 5px 2px;
+  font-family: "Dancing Script", cursive;
 }
 
 .about_us_container {
@@ -56,10 +72,12 @@
 
 .about_us_container > .about_us_info > p {
   width: 100%;
+  padding: 1.5em;
   text-align: center;
   font-size: 1.5em;
   text-transform: uppercase;
   letter-spacing: 0.1em;
+  font-family: "Comfortaa", cursive;
 }
 
 .about_us_container > .about_us_info > img {
@@ -76,6 +94,12 @@
   align-items: center;
 }
 
+.paragraphed_container > h1 {
+  font-family: "Comfortaa", cursive;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
 .paragraphed_container > .paragraph_items {
   display: flex;
   gap: 5em;
@@ -84,17 +108,19 @@
 
 .paragraph_items > p {
   width: 50%;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 1.5em;
+  padding-left: 0.7em;
+  padding-right: 0.7em;
 }
 
 .boxes_container {
   padding: 1em;
   display: flex;
   justify-content: space-between;
-  overflow: hidden;
 }
 
 .boxes_container > .box {
-  background-color: var(--pink-color);
   color: white;
   gap: 2em;
   width: 15%;
@@ -109,31 +135,21 @@
   transition: transform 0.5s linear;
 }
 
+.boxes_container > .box > h1 {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.boxes_container > .box:nth-child(odd) {
+  background-color: var(--pink-color);
+}
+
+.boxes_container > .box:nth-child(even) {
+  background-color: rgb(13, 25, 80);
+}
+
 .boxes_container > .box:hover {
-  transform: scale(1.2);
-}
-
-.earth_container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.earth_container > h1 {
-  position: absolute;
-  color: white;
-  text-align: center;
-  z-index: 20;
-  font-family: "Supermercado One", cursive;
-  font-size: 3.5em;
-  text-shadow: black 3px 5px 2px;
-}
-
-.earth_container > img {
-  position: relative;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
+  transform: scale(1.08);
 }
 
 @media all and (max-width: 760px) {

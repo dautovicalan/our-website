@@ -29,8 +29,7 @@
   color: white;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  text-shadow: #474747 3px 5px 2px;
-  color: var(--pink-color);
+  color: rgb(13, 25, 80);
 }
 
 .services_container {
@@ -46,6 +45,11 @@
 .single_service {
   display: flex;
   justify-content: space-between;
+}
+
+.single_service > p {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 1.3em;
 }
 
 .single_service > div > svg {

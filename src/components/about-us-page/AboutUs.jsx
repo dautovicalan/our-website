@@ -28,7 +28,7 @@ const AboutUs = () => {
           <img src={laptopPic} alt="About Us picture" />
         </div>
       </animated.div>
-      <h1>{aboutUs.firstTitle}</h1>
+      <h1 style={{ textAlign: "center" }}>{aboutUs.firstTitle}</h1>
       <div className={styles.text_container_first}>
         <p>{aboutUs.firstSection}</p>
         <p>{aboutUs.secondSection}</p>
