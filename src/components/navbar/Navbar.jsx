@@ -9,6 +9,7 @@ import languages from "../../assets/languages";
 import LanguageIcon from "@mui/icons-material/Language";
 import Button from "@mui/material/Button";
 import { useTransition, animated } from "react-spring";
+import Hamburger from "hamburger-react";
 
 const Navbar = () => {
   const [showNav, setshowNav] = useState(false);
@@ -146,11 +147,7 @@ const Navbar = () => {
           )
       )}
       <div className="menu">
-        <svg viewBox="0 0 100 80" width="40" height="40" onClick={toggleNav}>
-          <rect width="100" height="20"></rect>
-          <rect y="30" width="100" height="20"></rect>
-          <rect y="60" width="100" height="20"></rect>
-        </svg>
+        <Hamburger toggled={showNav} toggle={setshowNav} />
       </div>
     </nav>
   );
