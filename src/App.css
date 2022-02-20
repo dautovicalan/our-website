@@ -17,3 +17,7 @@
 body {
   background-color: var(--main-color);
 }
+/*Removing cast button from video*/
+video::-internal-media-controls-overlay-cast-button {
+  display: none;
+}

@@ -1,5 +1,5 @@
 .main_container {
-  padding-top: 9em;
+  padding-top: 10em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -67,7 +67,6 @@
 
 .single_service > p {
   width: 50%;
-  height: 200px;
   padding: 0.5em;
 }
 
@@ -79,12 +78,12 @@
 }
 
 @media all and (max-width: 760px) {
-  .picture_container > h1 {
-    font-size: 24px;
+  .main_container {
+    padding-top: 10em;
   }
 
   .single_service {
-    height: fit-content;
+    height: 100%;
     flex-direction: column;
     align-items: center;
   }
@@ -93,5 +92,8 @@
   }
   .single_service:nth-child(even) {
     flex-direction: column;
+  }
+  .single_service > p {
+    width: 90%;
   }
 }
