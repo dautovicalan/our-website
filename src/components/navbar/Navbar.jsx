@@ -8,7 +8,7 @@ import { useContext } from "react";
 import languages from "../../assets/languages";
 import LanguageIcon from "@mui/icons-material/Language";
 import Button from "@mui/material/Button";
-import { useTransition } from "react-spring";
+import { useTransition, animated } from "react-spring";
 
 const Navbar = () => {
   const [showNav, setshowNav] = useState(false);
@@ -41,7 +41,7 @@ const Navbar = () => {
       <div className="picture">
         <img src={logo} alt="Logo Picture" onClick={() => navigator("/")} />
       </div>
-      {(showNav || screenWidth > 760) && (
+      {screenWidth > 760 && (
         <div className="contents">
           <NavLink
             className={(navData) => (navData.isActive ? "active" : "")}
@@ -89,6 +89,61 @@ const Navbar = () => {
             Change Language
           </Button>
         </div>
+      )}
+      {transition(
+        (style, item) =>
+          item &&
+          screenWidth < 760 && (
+            <animated.div style={style} className="contents">
+              <NavLink
+                className={(navData) => (navData.isActive ? "active" : "")}
+                to="/"
+                onClick={() => {
+                  setshowNav((prevVal) => !prevVal);
+                }}
+              >
+                {navbar.home}
+              </NavLink>
+              <NavLink
+                to="/services"
+                onClick={() => {
+                  setshowNav((prevVal) => !prevVal);
+                }}
+              >
+                {navbar.services}
+              </NavLink>
+              <NavLink
+                onClick={() => {
+                  setshowNav((prevVal) => !prevVal);
+                }}
+                to="/about-us"
+              >
+                {navbar.aboutUs}
+              </NavLink>
+              <NavLink
+                onClick={() => {
+                  setshowNav((prevVal) => !prevVal);
+                }}
+                to="/contact"
+              >
+                {navbar.contactUs}
+              </NavLink>
+              <Button
+                variant="outlined"
+                startIcon={<LanguageIcon />}
+                onClick={() =>
+                  language.langId === 1
+                    ? setLanguage(languages.Croatian)
+                    : setLanguage(languages.English)
+                }
+                style={
+                  showNav || screenWidth > 760 ? { marginBottom: "1em" } : {}
+                }
+              >
+                Change Language
+              </Button>
+            </animated.div>
+          )
       )}
       <div className="menu">
         <svg viewBox="0 0 100 80" width="40" height="40" onClick={toggleNav}>
