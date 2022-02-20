@@ -75,6 +75,14 @@ const Navbar = () => {
             onClick={() => {
               setshowNav((prevVal) => !prevVal);
             }}
+            to="/add-ons"
+          >
+            {navbar.addOns}
+          </NavLink>
+          <NavLink
+            onClick={() => {
+              setshowNav((prevVal) => !prevVal);
+            }}
             to="/contact"
           >
             {navbar.contactUs}
@@ -122,6 +130,14 @@ const Navbar = () => {
                 to="/about-us"
               >
                 {navbar.aboutUs}
+              </NavLink>
+              <NavLink
+                onClick={() => {
+                  setshowNav((prevVal) => !prevVal);
+                }}
+                to="/add-ons"
+              >
+                {navbar.addOns}
               </NavLink>
               <NavLink
                 onClick={() => {

@@ -25,6 +25,7 @@ const languages = {
       home: "Home",
       services: "Services",
       aboutUs: "About Us",
+      addOns: "Add Ons",
       contactUs: "Contact Us",
     },
     aboutUs: {

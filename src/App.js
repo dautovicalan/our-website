@@ -11,6 +11,7 @@ import Services from "./components/services-page/Services";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import BoxContent from "./components/box-content-page/BoxContent";
 
 function App() {
   AOS.init({ duration: 2000, delay: 5000 });
@@ -23,6 +24,9 @@ function App() {
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/add-ons" element={<BoxContent />} />
+          <Route path="/add-ons/test" element={<AboutUs />} />
+          <Route path="/add-ons/cool" element={<p>Mars</p>} />
         </Routes>
         <Footer />
       </LanguageContextProvider>

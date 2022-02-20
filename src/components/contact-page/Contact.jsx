@@ -24,22 +24,15 @@ const Contact = () => {
         <h1>{contact.header}</h1>
         <div className={styles.square}></div>
         <form
-          action="mailto:dautovic2000@gmail.com"
+          action="https://formsubmit.co/webboutiquesolutions@gmail.com"
           className={styles.form_container}
-          method="get"
+          method="post"
         >
           <InputLabel htmlFor="name">{contact.name.label}</InputLabel>
           <TextField
             id="name"
+            name="name"
             label={contact.name.placeholder}
-            variant="outlined"
-            required
-            autoComplete="off"
-          />
-          <InputLabel htmlFor="surname">{contact.surname.label}</InputLabel>
-          <TextField
-            id="surname"
-            label={contact.surname.placeholder}
             variant="outlined"
             required
             autoComplete="off"
@@ -50,12 +43,14 @@ const Contact = () => {
             label={contact.email.placeholder}
             variant="outlined"
             type="email"
+            name="email"
             required
             autoComplete="off"
           />
           <InputLabel htmlFor="message">{contact.message.label}</InputLabel>
           <TextField
             id="message"
+            name="message"
             label={contact.message.placeholder}
             variant="outlined"
             type="text"
@@ -76,6 +71,12 @@ const Contact = () => {
           >
             {contact.send}
           </Button>
+          <input type="hidden" name="_next" value="http://localhost:3000" />
+          <input
+            type="hidden"
+            name="_autoresponse"
+            value="We will reach you in shortest time"
+          />
         </form>
       </animated.div>
       <div
