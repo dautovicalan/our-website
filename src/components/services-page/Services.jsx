@@ -63,7 +63,7 @@ const Services = () => {
         <div className={styles.single_service} data-aos="fade-right">
           <p>{services.seventhBoxText}</p>
           <div>
-            <FileCopyIcon />
+            <FileCopyIcon style={{ color: "var(--pink-color)" }} />
           </div>
         </div>
         <div className={styles.single_service} data-aos="fade-right">
@@ -75,14 +75,13 @@ const Services = () => {
         <div className={styles.single_service} data-aos="fade-right">
           <p>{services.eigthBoxText}</p>
           <div>
-            <RocketLaunchIcon />
+            <RocketLaunchIcon style={{ color: "var(--pink-color)" }} />
           </div>
         </div>
       </div>
       <div className={styles.picture_container} data-aos="fade-up-right">
         <h1>24/7 Support</h1>
       </div>
-      {/* // TODO Napravi raketu za animaciju rakete na donjem dijelu stranice */}
     </div>
   );
 };

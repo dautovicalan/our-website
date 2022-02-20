@@ -108,7 +108,7 @@
     transform: translateX(300%);
   }
   100% {
-    transform: translateX(-690%); /* The image width */
+    transform: translateX(-950%); /* The image width */
   }
 }
 

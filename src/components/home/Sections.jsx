@@ -50,32 +50,32 @@ const Sections = () => {
           <p>{home.secondText}</p>
         </div>
       </div>
-      <div className={styles.boxes_container}>
+      <div className={styles.boxes_container} data-aos="fade-up-right">
         <div className={styles.box} onClick={handleClick}>
-          <h1>Analiza</h1>
+          <h1>{home.boxes.one}</h1>
         </div>
         <div className={styles.box} onClick={handleClick}>
-          <h1>Konzept</h1>
+          <h1>{home.boxes.second}</h1>
         </div>
         <div className={styles.box} onClick={handleClick}>
-          <h1>Consult</h1>
+          <h1>{home.boxes.thrid}</h1>
         </div>
         <div className={styles.box} onClick={handleClick}>
-          <h1>Design</h1>
+          <h1>{home.boxes.fourth}</h1>
         </div>
       </div>
-      <div className={styles.boxes_container}>
+      <div className={styles.boxes_container} data-aos="fade-up-right">
         <div className={styles.box} onClick={handleClick}>
-          <h1>Content</h1>
+          <h1>{home.boxes.fifth}</h1>
         </div>
         <div className={styles.box} onClick={handleClick}>
-          <h1>Code</h1>
+          <h1>{home.boxes.sixth}</h1>
         </div>
         <div className={styles.box} onClick={handleClick}>
-          <h1>Project</h1>
+          <h1>{home.boxes.seventh}</h1>
         </div>
         <div className={styles.box} onClick={handleClick}>
-          <h1>Launch</h1>
+          <h1>{home.boxes.eigth}</h1>
         </div>
       </div>
     </div>

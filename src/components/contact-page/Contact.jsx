@@ -15,7 +15,7 @@ const Contact = () => {
   const props = useSpring({
     to: { opacity: 1 },
     from: { opacity: 0 },
-    delay: 100,
+    delay: 300,
   });
 
   return (
@@ -91,7 +91,7 @@ const Contact = () => {
           letterSpacing: "0.1em",
         }}
       >
-        <h1>Pronadite nas na sljedecim lokacijama</h1>
+        <h1>{contact.findUsHere}</h1>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d170347.25271623838!2d11.40174941657878!3d48.15505469600179!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479e75f9a38c5fd9%3A0x10cb84a7db1987d!2sMunich%2C%20Germany!5e0!3m2!1sen!2shr!4v1645311297962!5m2!1sen!2shr"
           width="90%"

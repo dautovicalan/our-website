@@ -42,11 +42,11 @@ const AboutUs = () => {
       >
         {aboutUs.firstTitle}
       </animated.h1>
-      <div className={styles.text_container_first}>
+      <animated.div style={props} className={styles.text_container_first}>
         <p>{aboutUs.firstSection}</p>
         <p>{aboutUs.secondSection}</p>
-      </div>
-      <div className={styles.text_container_second}>
+      </animated.div>
+      <animated.div style={props} className={styles.text_container_second}>
         <p>{aboutUs.thirdSection}</p>
         <Carousel style={{ margin: "auto" }}>
           <Carousel.Item>
@@ -95,7 +95,7 @@ const AboutUs = () => {
             <img src={cssLogo} alt="React Logo" />
           </div>
         </div>
-      </div>
+      </animated.div>
     </div>
   );
 };
