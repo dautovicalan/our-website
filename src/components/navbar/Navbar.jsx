@@ -11,7 +11,6 @@ import Button from "@mui/material/Button";
 import { useTransition, animated } from "react-spring";
 import Hamburger from "hamburger-react";
 import HomeIcon from "@mui/icons-material/Home";
-import { fontSize } from "@mui/system";
 
 const Navbar = () => {
   const [showNav, setshowNav] = useState(false);
@@ -19,7 +18,6 @@ const Navbar = () => {
   const { language, setLanguage } = useContext(LanguageContext);
   const { navbar } = language;
 
-  const toggleNav = () => setshowNav((prevVal) => !prevVal);
   const navigator = useNavigate();
 
   const transition = useTransition(showNav, {
@@ -42,7 +40,11 @@ const Navbar = () => {
   return (
     <nav>
       <div className="picture">
-        <img src={logo} alt="Logo Picture" onClick={() => navigator("/")} />
+        <img
+          src={logo}
+          alt="Web Boutique Solutions Logo"
+          onClick={() => navigator("/")}
+        />
       </div>
       {screenWidth > 760 && (
         <div className="contents">

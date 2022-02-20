@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./styles-services.module.css";
 import laptopPic from "../../assets/second-pic.jpg";
-import rocket from "../../assets/rocket.jpg";
 import { useSpring, animated } from "react-spring";
 import { useContext } from "react";
 import { LanguageContext } from "../../context/LanguageContext.js";
@@ -12,7 +11,6 @@ import DesignServicesIcon from "@mui/icons-material/DesignServices";
 import TextSnippetIcon from "@mui/icons-material/TextSnippet";
 import FileCopyIcon from "@mui/icons-material/FileCopy";
 import CodeIcon from "@mui/icons-material/Code";
-import AccountTreeIcon from "@mui/icons-material/AccountTree";
 import RocketLaunchIcon from "@mui/icons-material/RocketLaunch";
 
 const Services = () => {

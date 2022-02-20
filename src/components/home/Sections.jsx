@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./styles-sections.module.css";
 import background_picture from "../../assets/third-pic.jpg";
-import earth_picture from "../../assets/earth.jpg";
 import video from "../../assets/again-video.mp4";
 import { useContext } from "react";
 import { LanguageContext } from "../../context/LanguageContext.js";
@@ -33,7 +32,7 @@ const Sections = () => {
               {home.singleParagraphSecondPart}
             </span>
           </p>
-          <img src={background_picture} alt="Some picture" />
+          <img src={background_picture} alt="Background" />
         </div>
       </div>
       <div className={styles.paragraphed_container}>

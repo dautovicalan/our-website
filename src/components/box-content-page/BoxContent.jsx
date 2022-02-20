@@ -2,7 +2,6 @@ import React from "react";
 import styles from "./styles-box-content.module.css";
 import officePic from "../../assets/office-aboutus.jpg";
 import Button from "@mui/material/Button";
-import { Routes, Route, Link, Outlet } from "react-router-dom";
 
 const BoxContent = () => {
   return (

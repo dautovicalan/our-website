@@ -11,7 +11,6 @@ import Services from "./components/services-page/Services";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import BoxContent from "./components/box-content-page/BoxContent";
 import NotFoundPage from "./components/not-found-page/NotFoundPage";
 
 function App() {

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import TextField from "@mui/material/TextField";
 import InputLabel from "@mui/material/InputLabel";
 import styles from "./styles-contact.module.css";
@@ -99,6 +99,7 @@ const Contact = () => {
           height="450"
           loading="lazy"
           style={{ margin: "auto", border: "1px solid black" }}
+          title="Web Boutique Solutions Locations"
         ></iframe>
       </div>
     </React.Fragment>

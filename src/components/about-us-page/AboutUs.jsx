@@ -22,7 +22,7 @@ const AboutUs = () => {
     delay: 400,
   });
 
-  const { language, setLanguage } = useContext(LanguageContext);
+  const { language } = useContext(LanguageContext);
   const { aboutUs } = language;
 
   return (
