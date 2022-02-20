@@ -14,7 +14,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import NotFoundPage from "./components/not-found-page/NotFoundPage";
 
 function App() {
-  AOS.init({ duration: 2000, delay: 5000 });
+  AOS.init({ duration: 2000, delay: 5000, once: true });
   return (
     <React.Fragment>
       <LanguageContextProvider>
