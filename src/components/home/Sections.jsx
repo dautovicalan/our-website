@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./styles-sections.module.css";
-import background_picture from "../../assets/background-pic.jpg";
+import background_picture from "../../assets/third-pic.jpg";
 import earth_picture from "../../assets/earth.jpg";
-import video from "../../assets/new-video.mp4";
+import video from "../../assets/again-video.mp4";
 import { useContext } from "react";
 import { LanguageContext } from "../../context/LanguageContext.js";
 
@@ -15,13 +15,14 @@ const Sections = () => {
         <video autoPlay muted={true} loop>
           <source src={video} type="video/mp4" />
         </video>
-        <h2>"Zitat ide ovdije"</h2>
+        <h2>
+          "Ich träume vom meinem Bild und dann male ich meinen Traum" ~ Vincent
+          Van Gogh
+        </h2>
       </div>
       <div className={styles.about_us_container}>
         <div className={styles.about_us_info}>
-          <p>
-            {home.singleParagraph}
-          </p>
+          <p>{home.singleParagraph}</p>
           <img src={background_picture} alt="Some picture" />
         </div>
       </div>

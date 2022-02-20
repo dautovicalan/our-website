@@ -25,7 +25,6 @@ const Services = () => {
   return (
     <div className={styles.main_container}>
       <animated.div style={props} className={styles.picture_container}>
-        <h1>{services.pageTitle}</h1>
         <img src={laptopPic} alt="lap pic" />
       </animated.div>
       <div className={styles.services_container}>
