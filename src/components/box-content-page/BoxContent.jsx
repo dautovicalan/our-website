@@ -2,8 +2,10 @@ import React from "react";
 import styles from "./styles-box-content.module.css";
 import officePic from "../../assets/office-aboutus.jpg";
 import Button from "@mui/material/Button";
+import { Outlet, useNavigate } from "react-router-dom";
 
 const BoxContent = () => {
+  const navigator = useNavigate();
   return (
     <React.Fragment>
       <h1
@@ -46,7 +48,11 @@ const BoxContent = () => {
         <div className={styles.box_content}>
           <div>
             <h1>Marketing</h1>
-            <Button variant="outlined" style={{ backgroundColor: "pink" }}>
+            <Button
+              variant="outlined"
+              style={{ backgroundColor: "pink" }}
+              onClick={() => navigator("/add-ons/marketing")}
+            >
               More Information
             </Button>
           </div>
@@ -71,6 +77,7 @@ const BoxContent = () => {
           <img src={officePic} alt="" />
         </div>
       </div>
+      <Outlet />
     </React.Fragment>
   );
 };

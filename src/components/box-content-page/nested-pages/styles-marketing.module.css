@@ -1,0 +1,32 @@
+.main_container {
+  padding-top: 5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2em;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 1.2em;
+}
+
+.main_container_item {
+  display: flex;
+  justify-content: space-around;
+}
+
+.main_container_item:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+.main_container_item > div {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+}
+
+.main_container_item > div > svg {
+  font-size: 3.5em;
+}
+
+.main_container_item > p {
+  width: 35%;
+}

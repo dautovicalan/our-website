@@ -30,14 +30,15 @@ function App() {
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/services" element={<Services />} />
-          <Route path="/add-ons" element={<BoxContent />} />
-          <Route
-            path="/add-ons/software-solution"
-            element={<SoftwareSolution />}
-          />
-          <Route path="/add-ons/seo" element={<SeoSection />} />
-          <Route path="/add-ons/marketing" element={<MarketingSection />} />
-          <Route path="/add-ons/creativity" element={<CreativitySection />} />
+          <Route path="/add-ons" element={<BoxContent />}>
+            <Route
+              path="/add-ons/software-solution"
+              element={<SoftwareSolution />}
+            />
+            <Route path="/add-ons/seo" element={<SeoSection />} />
+            <Route path="/add-ons/marketing" element={<MarketingSection />} />
+            <Route path="/add-ons/creativity" element={<CreativitySection />} />
+          </Route>
         </Routes>
         <Footer />
       </LanguageContextProvider>
