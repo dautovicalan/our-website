@@ -1,16 +1,18 @@
 import React from "react";
+import styles from "./styles-seosection.module.css";
+import seoPic from "../../../assets/seo-pic.jpg";
 
 const SeoSection = () => {
   return (
-    <div style={{ paddingTop: "11em", textAlign: "center" }}>
-      <h1>Slika nekog laptopa</h1>
+    <div className={styles.main_container}>
+      <img src={seoPic} alt="" />
       <p>Jedna od nasih zadaca je da vasa stranica uvijek bude u vrhu</p>
       <p>
         Brzo ucitavanje, vrhunska infrastruktura, Content. Sve su to
         predispozicije koje mi ispunjavamo kako bi vasa stranica uvijek bila
         PRVA
       </p>
-      <div style={{ backgroundColor: "red", width: "50%", margin: "auto" }}>
+      <div className={styles.list_section}>
         <h1>Seo Paket</h1>
         <ul>
           <li>Kezwordrecherce</li>

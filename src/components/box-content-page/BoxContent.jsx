@@ -39,7 +39,11 @@ const BoxContent = () => {
         <div className={styles.box_content}>
           <div>
             <h1>SEO</h1>
-            <Button variant="outlined" style={{ backgroundColor: "pink" }}>
+            <Button
+              variant="outlined"
+              style={{ backgroundColor: "pink" }}
+              onClick={() => navigator("/add-ons/seo")}
+            >
               More Information
             </Button>
           </div>
