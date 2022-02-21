@@ -5,7 +5,9 @@ export default function ScrollToTop() {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    if (pathname !== "/add-ons/marketing") {
+      window.scrollTo(0, 0);
+    }
   }, [pathname]);
 
   return null;
