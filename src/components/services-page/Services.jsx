@@ -15,8 +15,8 @@ import RocketLaunchIcon from "@mui/icons-material/RocketLaunch";
 
 const Services = () => {
   const props = useSpring({
-    from: { x: -2000 },
-    to: { x: 0 },
+    from: { opacity: 0 },
+    to: { opacity: 1 },
     delay: 200,
   });
 

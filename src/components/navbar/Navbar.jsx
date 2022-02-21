@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import { useNavigate, NavLink } from "react-router-dom";
+import { useNavigate, NavLink, Link } from "react-router-dom";
 import "./styles-navbar.css";
 import logo from "../../assets/Boutique-removebg-preview.png";
 import { LanguageContext } from "../../context/LanguageContext.js";
@@ -89,7 +89,7 @@ const Navbar = () => {
           >
             {navbar.contactUs}
           </NavLink>
-          <Button
+          {/* <Button
             variant="outlined"
             startIcon={<LanguageIcon />}
             onClick={() =>
@@ -100,7 +100,7 @@ const Navbar = () => {
             style={showNav || screenWidth > 760 ? { marginBottom: "1em" } : {}}
           >
             Change Language
-          </Button>
+          </Button> */}
         </div>
       )}
       {transition(
@@ -149,7 +149,7 @@ const Navbar = () => {
               >
                 {navbar.contactUs}
               </NavLink>
-              <Button
+              {/* <Button
                 variant="outlined"
                 startIcon={<LanguageIcon />}
                 onClick={() =>
@@ -162,7 +162,7 @@ const Navbar = () => {
                 }
               >
                 Change Language
-              </Button>
+              </Button> */}
             </animated.div>
           )
       )}
