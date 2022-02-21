@@ -1,12 +1,10 @@
 import React, { Suspense } from "react";
 import styles from "./styles-sections.module.css";
 import background_picture from "../../assets/third-pic.jpg";
-// import video from "../../assets/again-video.mp4";
+import video from "../../assets/again-video.mp4";
 import { useContext } from "react";
 import { LanguageContext } from "../../context/LanguageContext.js";
 import { useNavigate } from "react-router-dom";
-
-const Video = React.lazy(() => import("../../assets/again-video.mp4"));
 
 const Sections = () => {
   const { language } = useContext(LanguageContext);
@@ -20,7 +18,7 @@ const Sections = () => {
       <Suspense fallback={<div>Loading...</div>}>
         <div className={styles.background_image_container}>
           <video autoPlay muted={true} loop>
-            <source src={Video} type="video/mp4" />
+            <source src={video} type="video/mp4" />
           </video>
           <h2>{home.quote}</h2>
           <h2 className={styles.second_header}>~ Vincent Van Gogh</h2>

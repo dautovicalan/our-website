@@ -1,0 +1,19 @@
+.icons_container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.screen_shape {
+  position: relative;
+  width: 25%;
+  height: 250px;
+  margin: 20px 0;
+  background: red;
+  border-radius: 50% / 20%;
+  color: white;
+  text-align: center;
+  text-indent: 0.1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
