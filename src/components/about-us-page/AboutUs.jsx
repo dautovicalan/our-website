@@ -15,6 +15,35 @@ import { useContext } from "react";
 import { LanguageContext } from "../../context/LanguageContext.js";
 import { Carousel } from "react-bootstrap";
 
+const language = {
+  english: {
+    aboutUs: {
+      firstTitle: "Who is behind Web Botique Solutions?",
+      firstSection: `We are one young team that turns all your dreams into reality.
+      Behind the scenes, we create Web solutions that will improve your business and raise it to an even higher level.
+      We specialize in the most modern services on the Internet.
+      `,
+      secondSection: `Individuality, creativity, meticulousness… are just some of the virtues that adorn our team.
+      Our clients are our partners, whom we follow on the way to achieving all your goals.
+      From the first Contact with us you get a detailed elaboration of the whole project.`,
+      thirdSection: `We are your strong partner on the road to the digital world.`,
+    },
+  },
+  croatian: {
+    aboutUs: {
+      firstTitle: "Tko stoji iza Web Botique Solutions?",
+      firstSection: `Mi smo jedan mladi tim koji sve vase snove pretvara u stvarnost.
+      Iza kulisa stvaramo Web rješenja koja će unaprijediti vase poslovanje i dignuti ga na još veći nivo.
+      Specijalizirani smo na najmodernije usluge na internetu.
+      `,
+      secondSection: `Individualnost, kreativnost, pedantnost… samo su jedne od vrlina koje krase nas tim.
+      Naši klijenti su naši partneri , koje pratimo na putu ka ostavrivanju svih vaših ciljeva.
+      Od prvog Kontakta s nama dobijate detaljnu razradu cijelog projekta.`,
+      thirdSection: `Mi smo vaš snažni partner na putu u digitalni svijet.`,
+    },
+  },
+};
+
 const AboutUs = () => {
   const props = useSpring({
     to: { opacity: 1 },
@@ -22,8 +51,8 @@ const AboutUs = () => {
     delay: 400,
   });
 
-  const { language } = useContext(LanguageContext);
-  const { aboutUs } = language;
+  const { languageId } = useContext(LanguageContext);
+  let selectedLang = languageId === 0 && language.english.aboutUs;
 
   return (
     <div className={styles.main_container}>
@@ -40,18 +69,17 @@ const AboutUs = () => {
           props)
         }
       >
-        {aboutUs.firstTitle}
+        {selectedLang.firstTitle}
       </animated.h1>
       <animated.div style={props} className={styles.text_container_first}>
-        <p>{aboutUs.firstSection}</p>
-        <p>{aboutUs.secondSection}</p>
+        <p>{selectedLang.firstSection}</p>
+        <p>{selectedLang.secondSection}</p>
       </animated.div>
       <animated.div style={props} className={styles.text_container_second}>
-        <p>{aboutUs.thirdSection}</p>
+        <p>{selectedLang.thirdSection}</p>
         <Carousel style={{ margin: "auto" }}>
           <Carousel.Item>
             <img className="d-block w-100" src={officePic} alt="First slide" />
-            <Carousel.Caption></Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
             <img
@@ -59,8 +87,6 @@ const AboutUs = () => {
               src={startupPic}
               alt="Second slide"
             />
-
-            <Carousel.Caption></Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
             <img
@@ -68,8 +94,6 @@ const AboutUs = () => {
               src={teleworkPic}
               alt="Third slide"
             />
-
-            <Carousel.Caption></Carousel.Caption>
           </Carousel.Item>
         </Carousel>
         <div className={styles.list_icons}>

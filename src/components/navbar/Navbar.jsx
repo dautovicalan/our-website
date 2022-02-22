@@ -12,11 +12,31 @@ import { useTransition, animated } from "react-spring";
 import Hamburger from "hamburger-react";
 import HomeIcon from "@mui/icons-material/Home";
 
+const language = {
+  english: {
+    navbar: {
+      home: "Home",
+      services: "Services",
+      aboutUs: "About Us",
+      addOns: "Add Ons",
+      contactUs: "Contact Us",
+    },
+  },
+  croatian: {
+    navbar: {
+      home: "Glavni Izbornik",
+      services: "Djelatnosti",
+      aboutUs: "O nama",
+      contactUs: "Kontaktiraj nas",
+    },
+  },
+};
+
 const Navbar = () => {
   const [showNav, setshowNav] = useState(false);
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-  const { language, setLanguage } = useContext(LanguageContext);
-  const { navbar } = language;
+  const { languageId, setLanguageId } = useContext(LanguageContext);
+  let selectedLang = languageId === 0 && language.english.navbar;
 
   const navigator = useNavigate();
 
@@ -63,7 +83,7 @@ const Navbar = () => {
               setshowNav((prevVal) => !prevVal);
             }}
           >
-            {navbar.services}
+            {selectedLang.services}
           </NavLink>
           <NavLink
             onClick={() => {
@@ -71,7 +91,7 @@ const Navbar = () => {
             }}
             to="/about-us"
           >
-            {navbar.aboutUs}
+            {selectedLang.aboutUs}
           </NavLink>
           <NavLink
             onClick={() => {
@@ -79,7 +99,7 @@ const Navbar = () => {
             }}
             to="/add-ons"
           >
-            {navbar.addOns}
+            {selectedLang.addOns}
           </NavLink>
           <NavLink
             onClick={() => {
@@ -87,7 +107,7 @@ const Navbar = () => {
             }}
             to="/contact"
           >
-            {navbar.contactUs}
+            {selectedLang.contactUs}
           </NavLink>
           {/* <Button
             variant="outlined"
@@ -115,7 +135,7 @@ const Navbar = () => {
                   setshowNav((prevVal) => !prevVal);
                 }}
               >
-                {navbar.home}
+                {selectedLang.home}
               </NavLink>
               <NavLink
                 to="/services"
@@ -123,7 +143,7 @@ const Navbar = () => {
                   setshowNav((prevVal) => !prevVal);
                 }}
               >
-                {navbar.services}
+                {selectedLang.services}
               </NavLink>
               <NavLink
                 onClick={() => {
@@ -131,7 +151,7 @@ const Navbar = () => {
                 }}
                 to="/about-us"
               >
-                {navbar.aboutUs}
+                {selectedLang.aboutUs}
               </NavLink>
               <NavLink
                 onClick={() => {
@@ -139,7 +159,7 @@ const Navbar = () => {
                 }}
                 to="/add-ons"
               >
-                {navbar.addOns}
+                {selectedLang.addOns}
               </NavLink>
               <NavLink
                 onClick={() => {
@@ -147,7 +167,7 @@ const Navbar = () => {
                 }}
                 to="/contact"
               >
-                {navbar.contactUs}
+                {selectedLang.contactUs}
               </NavLink>
               {/* <Button
                 variant="outlined"
