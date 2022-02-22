@@ -109,18 +109,16 @@ const Navbar = () => {
           >
             {selectedLang.contactUs}
           </NavLink>
-          {/* <Button
+          <Button
             variant="outlined"
             startIcon={<LanguageIcon />}
             onClick={() =>
-              language.langId === 1
-                ? setLanguage(languages.Croatian)
-                : setLanguage(languages.English)
+              language.langId === 0 ? setLanguageId(1) : setLanguageId(0)
             }
             style={showNav || screenWidth > 760 ? { marginBottom: "1em" } : {}}
           >
             Change Language
-          </Button> */}
+          </Button>
         </div>
       )}
       {transition(
@@ -169,20 +167,18 @@ const Navbar = () => {
               >
                 {selectedLang.contactUs}
               </NavLink>
-              {/* <Button
+              <Button
                 variant="outlined"
                 startIcon={<LanguageIcon />}
                 onClick={() =>
-                  language.langId === 1
-                    ? setLanguage(languages.Croatian)
-                    : setLanguage(languages.English)
+                  language.langId === 0 ? setLanguageId(1) : setLanguageId(0)
                 }
                 style={
                   showNav || screenWidth > 760 ? { marginBottom: "1em" } : {}
                 }
               >
                 Change Language
-              </Button> */}
+              </Button>
             </animated.div>
           )
       )}
