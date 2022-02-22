@@ -23,7 +23,7 @@ function App() {
   return (
     <React.Fragment>
       <LanguageContextProvider>
-        <Navbar />
+        {/* <Navbar /> */}
         <Routes>
           <Route path="*" element={<NotFoundPage />} />
           <Route path="/" element={<Sections />} />
@@ -40,7 +40,7 @@ function App() {
             <Route path="/add-ons/creativity" element={<CreativitySection />} />
           </Route>
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </LanguageContextProvider>
     </React.Fragment>
   );

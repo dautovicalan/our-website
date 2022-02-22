@@ -1,13 +1,17 @@
-import React, { useState, useMemo } from "react";
-import languages from "../assets/languages";
+import React, { useMemo, useState } from "react";
 
 export const LanguageContext = React.createContext({ language: null });
 
 const LanguageContextProvider = (props) => {
-  const [language, setLanguage] = useState(languages.English);
+  const [languageId, setLanguageId] = useState(0);
+
+  const providedValue = useMemo(
+    () => ({ languageId, setLanguageId }),
+    [languageId, setLanguageId]
+  );
 
   return (
-    <LanguageContext.Provider value={{ language, setLanguage }}>
+    <LanguageContext.Provider value={providedValue}>
       {props.children}
     </LanguageContext.Provider>
   );
