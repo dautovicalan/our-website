@@ -4,7 +4,7 @@ import seoPic from "../../../assets/seo-pic.jpg";
 
 const SeoSection = () => {
   return (
-    <div className={styles.main_container}>
+    <div className={styles.main_container} id="outlet_container">
       <img src={seoPic} alt="" />
       <p>Jedna od nasih zadaca je da vasa stranica uvijek bude u vrhu</p>
       <p>

@@ -17,6 +17,19 @@ div {
 :root {
   --main-color: white;
   --pink-color: rgb(237, 30, 121);
+  --blue-color: rgb(13, 25, 80);
+}
+body::-webkit-scrollbar {
+  width: 12px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--blue-color); /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--pink-color); /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
 }
 
 body {
