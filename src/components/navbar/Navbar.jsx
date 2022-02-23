@@ -2,7 +2,6 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { useNavigate, NavLink } from "react-router-dom";
 import "./styles-navbar.css";
-import logo from "../../assets/Boutique-removebg-preview.png";
 import { LanguageContext } from "../../context/LanguageContext.js";
 import { useContext } from "react";
 import LanguageIcon from "@mui/icons-material/Language";
@@ -10,6 +9,7 @@ import Button from "@mui/material/Button";
 import { useTransition, animated } from "react-spring";
 import Hamburger from "hamburger-react";
 import HomeIcon from "@mui/icons-material/Home";
+import { IKImage } from "imagekitio-react";
 
 const language = {
   english: {
@@ -62,9 +62,10 @@ const Navbar = () => {
   return (
     <nav>
       <div className="picture">
-        <img
-          src={logo}
-          alt="Web Boutique Solutions Logo"
+        <IKImage
+          urlEndpoint={"https://ik.imagekit.io/gmlbvtkzbzzf/our-website"}
+          path="Boutique-removebg-preview_2f_1WgCxCHx.png"
+          width="400"
           onClick={() => navigator("/")}
         />
       </div>

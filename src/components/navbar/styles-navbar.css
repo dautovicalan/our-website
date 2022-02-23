@@ -78,7 +78,7 @@ nav > .menu:hover {
   cursor: pointer;
 }
 
-@media all and (max-width: 760px) {
+@media all and (max-width: 1205px) {
   nav {
     flex-direction: row;
   }

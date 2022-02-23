@@ -57,7 +57,6 @@ const AboutUs = () => {
       <animated.h1
         style={
           ({
-            textAlign: "center",
             fontFamily: '"Rajdhani", sans-serif',
             textTransform: "uppercase",
             letterSpacing: "0.1em",

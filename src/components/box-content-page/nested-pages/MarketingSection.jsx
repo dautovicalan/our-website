@@ -4,7 +4,7 @@ import TimelineIcon from "@mui/icons-material/Timeline";
 import GroupsIcon from "@mui/icons-material/Groups";
 import FactCheckIcon from "@mui/icons-material/FactCheck";
 import { useSpring, animated } from "react-spring";
-import LanguageContext from "../../../context/LanguageContext";
+import { LanguageContext } from "../../../context/LanguageContext";
 
 const language = {
   english: {
@@ -30,7 +30,7 @@ const language = {
 };
 
 const MarketingSection = () => {
-  const { languageId, setLanguageId } = useContext(LanguageContext);
+  const { languageId } = useContext(LanguageContext);
   let selectedLang = languageId === 0 && language.english.marketing;
 
   const props = useSpring({

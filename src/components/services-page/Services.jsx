@@ -216,9 +216,6 @@ const Services = () => {
           </div>
         </div>
       </div>
-      <div className={styles.picture_container} data-aos="fade-up-right">
-        <h1>24/7 Support</h1>
-      </div>
     </div>
   );
 };

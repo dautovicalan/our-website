@@ -13,7 +13,8 @@ const language = {
       home: "Home",
       services: "Services",
       aboutUs: "About Us",
-      addOns: "Add Ons",
+      addOns: "Expertise",
+      appDev: "Application Development",
       contactUs: "Contact Us",
     },
   },
@@ -22,13 +23,15 @@ const language = {
       home: "Glavni Izbornik",
       services: "Djelatnosti",
       aboutUs: "O nama",
+      addOns: "Stručnost",
+      appDev: "Razvoj Aplikacija",
       contactUs: "Kontaktiraj nas",
     },
   },
 };
 
 const Footer = () => {
-  const { languageId, setLanguageId } = useContext(LanguageContext);
+  const { languageId } = useContext(LanguageContext);
   let selectedLang = languageId === 0 && language.english.navbar;
 
   return (
@@ -48,6 +51,8 @@ const Footer = () => {
         <div className={styles.mini_navbar}>
           <NavLink to="/">{selectedLang.home}</NavLink>
           <NavLink to="/services">{selectedLang.services}</NavLink>
+          <NavLink to="/application-development">{selectedLang.appDev}</NavLink>
+          <NavLink to="/add-ons">{selectedLang.addOns}</NavLink>
           <NavLink to="/about-us">{selectedLang.aboutUs}</NavLink>
           <NavLink to="/contact">{selectedLang.contactUs}</NavLink>
         </div>
