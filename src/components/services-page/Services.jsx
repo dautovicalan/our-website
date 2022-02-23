@@ -1,7 +1,5 @@
 import React from "react";
 import styles from "./styles-services.module.css";
-import laptopPic from "../../assets/first-pic.webp";
-import { useSpring, animated } from "react-spring";
 import { useContext } from "react";
 import { LanguageContext } from "../../context/LanguageContext.js";
 import DataSaverOnIcon from "@mui/icons-material/DataSaverOn";

@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./styles-box-content.module.css";
-import officePic from "../../assets/office-aboutus.jpg";
 import { Outlet, useNavigate } from "react-router-dom";
 import { IKImage } from "imagekitio-react";
 

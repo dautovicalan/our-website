@@ -1,6 +1,5 @@
-import React, { Suspense, useEffect, useState } from "react";
+import React from "react";
 import styles from "./styles-sections.module.css";
-import background_picture from "../../assets/third-pic.jpg";
 import video from "../../assets/again-video.mp4";
 import { useContext } from "react";
 import { LanguageContext } from "../../context/LanguageContext.js";

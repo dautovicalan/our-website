@@ -1,11 +1,10 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import { useNavigate, NavLink, Link } from "react-router-dom";
+import { useNavigate, NavLink } from "react-router-dom";
 import "./styles-navbar.css";
 import logo from "../../assets/Boutique-removebg-preview.png";
 import { LanguageContext } from "../../context/LanguageContext.js";
 import { useContext } from "react";
-import languages from "../../assets/languages";
 import LanguageIcon from "@mui/icons-material/Language";
 import Button from "@mui/material/Button";
 import { useTransition, animated } from "react-spring";
