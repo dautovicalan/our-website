@@ -1,3 +1,4 @@
+import { IKImage } from "imagekitio-react";
 import React from "react";
 import style from "./styles-softwaresolutions.module.css";
 
@@ -5,46 +6,49 @@ const SoftwareSolution = () => {
   return (
     <div
       style={{
-        paddingTop: "11em",
+        paddingTop: "5em",
         width: "100%",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
+        gap: "1.5em",
       }}
     >
-      <p>Vasa stranica je vase ogledalo</p>
-      <p>
-        Postoje mnoga gotova rjesenja koja na prvi pogled se cine kao brza i
-        jednostavna, no ustvari oni su sve osim toga. Kriva i losa primidzva na
-        Internetu moze svaki Biznis ugoriziti i nanijti mu stetu
-      </p>
-      <p>Ne brinite mi smo tim koji cini razliku</p>
-      <p>Mi stvaramo i kreiramo najslozenija softverska rjesenja</p>
-      <p>
-        Jedinstevni kodovi koji odgovarju na suvremene izazove u digaltom
-        svijetu
-      </p>
-      <div className={style.icons_container}>
-        <div className={style.screen_shape}>
+      <h1
+        style={{
+          fontFamily: '"Comfortaa", cursive',
+          color: "var(--blue-color)",
+        }}
+      >
+        Software Solution
+      </h1>
+      <div className={style.text_container} data-aos="fade-right">
+        <div>
+          <p>Vasa stranica je vase ogledalo</p>
           <p>
-            Nigdje ne mogu anci pouzadnog partnera koji ce mi nparaviti unikatnu
-            web stranicu
+            Postoje mnoga gotova rjesenja koja na prvi pogled se cine kao brza i
+            jednostavna, no ustvari oni su sve osim toga.
+          </p>
+          <p>
+            Kriva i losa primidzva na Internetu moze svaki Biznis ugoriziti i
+            nanijti mu stetu
           </p>
         </div>
-        <div className={style.screen_shape}>
+        <div>
+          <p>Ne brinite mi smo tim koji cini razliku</p>
+          <p>Mi stvaramo i kreiramo najslozenija softverska rjesenja</p>
           <p>
-            Mozda da probas sa gotovim toolsima na internetu to je rbzo i
-            jednostavno
+            Jedinstevni kodovi koji odgovarju na suvremene izazove u digaltom
+            svijetu
           </p>
         </div>
-        <div className={style.screen_shape}>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Voluptatum, dolorem debitis numquam iste cum dolorum necessitatibus
-            perferendis provident doloremque minus temporibus ex, placeat natus
-            reprehenderit eveniet dolores alias! Quidem, incidunt?
-          </p>
-        </div>
+      </div>
+      <div className={style.image_container} data-aos="fade-right">
+        <h1>Think different!</h1>
+        <IKImage
+          urlEndpoint={"https://ik.imagekit.io/gmlbvtkzbzzf/our-website"}
+          path="background-g208a3d0a5_640_i-98E4pYY.jpg"
+        />
       </div>
     </div>
   );

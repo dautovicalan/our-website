@@ -31,7 +31,24 @@
 .main_container > .box_content > div > h1 {
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: orangered;
+  color: var(--pink-color);
+  font-weight: bolder;
+}
+
+.main_container > .box_content > div > a {
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: white;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 1.2em;
+  background-color: var(--blue-color);
+  border-radius: 25px;
+  padding: 0.5em;
+}
+
+.main_container > .box_content > div > a:hover {
+  cursor: pointer;
 }
 
 .main_container > .box_content > div > p {

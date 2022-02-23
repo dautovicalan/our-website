@@ -14,6 +14,7 @@ import { useSpring, animated } from "react-spring";
 import { useContext } from "react";
 import { LanguageContext } from "../../context/LanguageContext.js";
 import { Carousel } from "react-bootstrap";
+import { IKImage } from "imagekitio-react";
 
 const language = {
   english: {
@@ -77,22 +78,26 @@ const AboutUs = () => {
       </animated.div>
       <animated.div style={props} className={styles.text_container_second}>
         <p>{selectedLang.thirdSection}</p>
-        <Carousel style={{ margin: "auto" }}>
+        <Carousel>
           <Carousel.Item>
-            <img className="d-block w-100" src={officePic} alt="First slide" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={startupPic}
-              alt="Second slide"
+            <IKImage
+              urlEndpoint={"https://ik.imagekit.io/gmlbvtkzbzzf/our-website"}
+              path="office-aboutus_N8oqDGtS5.jpg"
+              width="400"
             />
           </Carousel.Item>
           <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={teleworkPic}
-              alt="Third slide"
+            <IKImage
+              urlEndpoint={"https://ik.imagekit.io/gmlbvtkzbzzf/our-website"}
+              path="office-aboutus_N8oqDGtS5.jpg"
+              width="400"
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <IKImage
+              urlEndpoint={"https://ik.imagekit.io/gmlbvtkzbzzf/our-website"}
+              path="office-aboutus_N8oqDGtS5.jpg"
+              width="400"
             />
           </Carousel.Item>
         </Carousel>

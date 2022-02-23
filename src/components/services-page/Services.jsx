@@ -12,6 +12,7 @@ import TextSnippetIcon from "@mui/icons-material/TextSnippet";
 import FileCopyIcon from "@mui/icons-material/FileCopy";
 import CodeIcon from "@mui/icons-material/Code";
 import RocketLaunchIcon from "@mui/icons-material/RocketLaunch";
+import { IKImage } from "imagekitio-react";
 
 const language = {
   english: {
@@ -161,7 +162,11 @@ const Services = () => {
   return (
     <div className={styles.main_container}>
       <div className={styles.picture_container}>
-        <img src={laptopPic} alt="lap pic" />
+        <IKImage
+          urlEndpoint={"https://ik.imagekit.io/gmlbvtkzbzzf/our-website"}
+          path="first-pic_HuAv2cqi2.webp"
+          width="400"
+        />
       </div>
       <div className={styles.services_container}>
         <div className={styles.single_service} data-aos="fade-right">

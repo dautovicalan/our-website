@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./styles-box-content.module.css";
 import officePic from "../../assets/office-aboutus.jpg";
 import { Outlet, useNavigate } from "react-router-dom";
+import { IKImage } from "imagekitio-react";
 
 const BoxContent = () => {
   const navigator = useNavigate();
@@ -13,9 +14,11 @@ const BoxContent = () => {
           paddingTop: "6em",
           paddingBottom: "0.5em",
           textAlign: "center",
+          color: "var(--blue-color)",
+          textTransform: "uppercase",
         }}
       >
-        Smart software and Design
+        Expertise
       </h1>
       <div className={styles.main_container}>
         <div className={styles.box_content}>
@@ -28,7 +31,11 @@ const BoxContent = () => {
               Show information
             </a>
           </div>
-          <img src={officePic} alt="" />
+          <IKImage
+            urlEndpoint={"https://ik.imagekit.io/gmlbvtkzbzzf/our-website"}
+            path="third-pic_9UfloUQsK.jpg"
+            width="400"
+          />
         </div>
         <div className={styles.box_content}>
           <div>
@@ -37,7 +44,11 @@ const BoxContent = () => {
               Show information
             </a>
           </div>
-          <img src={officePic} alt="" />
+          <IKImage
+            urlEndpoint={"https://ik.imagekit.io/gmlbvtkzbzzf/our-website"}
+            path="third-pic_9UfloUQsK.jpg"
+            width="400"
+          />
         </div>
         <div className={styles.box_content}>
           <div>
@@ -46,7 +57,11 @@ const BoxContent = () => {
               Show information
             </a>
           </div>
-          <img src={officePic} alt="" />
+          <IKImage
+            urlEndpoint={"https://ik.imagekit.io/gmlbvtkzbzzf/our-website"}
+            path="third-pic_9UfloUQsK.jpg"
+            width="400"
+          />
         </div>
         <div className={styles.box_content}>
           <div>
@@ -58,7 +73,11 @@ const BoxContent = () => {
               Show information
             </a>
           </div>
-          <img src={officePic} alt="" />
+          <IKImage
+            urlEndpoint={"https://ik.imagekit.io/gmlbvtkzbzzf/our-website"}
+            path="third-pic_9UfloUQsK.jpg"
+            width="400"
+          />
         </div>
         <div className={styles.box_content}>
           <div>
@@ -70,7 +89,11 @@ const BoxContent = () => {
               Show information
             </a>
           </div>
-          <img src={officePic} alt="" />
+          <IKImage
+            urlEndpoint={"https://ik.imagekit.io/gmlbvtkzbzzf/our-website"}
+            path="third-pic_9UfloUQsK.jpg"
+            width="400"
+          />
         </div>
         <div className={styles.box_content}>
           <div>
@@ -82,7 +105,11 @@ const BoxContent = () => {
               Show information
             </a>
           </div>
-          <img src={officePic} alt="" />
+          <IKImage
+            urlEndpoint={"https://ik.imagekit.io/gmlbvtkzbzzf/our-website"}
+            path="third-pic_9UfloUQsK.jpg"
+            width="400"
+          />
         </div>
       </div>
       <div id="outlet_container">

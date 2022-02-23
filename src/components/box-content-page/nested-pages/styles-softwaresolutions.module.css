@@ -1,19 +1,27 @@
-.icons_container {
+.text_container {
   display: flex;
   justify-content: space-around;
 }
 
-.screen_shape {
-  position: relative;
-  width: 25%;
-  height: 250px;
-  margin: 20px 0;
-  background: red;
-  border-radius: 50% / 20%;
-  color: white;
-  text-align: center;
-  text-indent: 0.1em;
+.text_container > div {
+  width: 30%;
+}
+
+.text_container > div > h1 {
+  font-family: "Comfortaa", cursive;
+}
+
+.text_container > div > p {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 1.5em;
+}
+
+.image_container {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+.image_container > h1 {
+  position: absolute;
 }

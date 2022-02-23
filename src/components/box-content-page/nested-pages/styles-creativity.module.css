@@ -1,0 +1,53 @@
+.main_container {
+  padding-top: 5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+}
+
+.main_container > h1 {
+  font-family: "Comfortaa", cursive;
+  font-size: 3em;
+  text-align: center;
+}
+
+.list_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  list-style: none;
+  width: 100%;
+  padding: 1.5em;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 25px;
+  font-size: 1.7em;
+  font-family: "Rajdhani", sans-serif;
+}
+
+.circle_container {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  row-gap: 3em;
+  column-gap: 5em;
+}
+
+.circle_container > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background-color: var(--blue-color);
+  border-radius: 50%;
+}
+
+.circle_container > div > svg {
+  color: var(--pink-color);
+  font-size: 4em;
+}

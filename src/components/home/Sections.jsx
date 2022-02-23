@@ -5,6 +5,7 @@ import video from "../../assets/again-video.mp4";
 import { useContext } from "react";
 import { LanguageContext } from "../../context/LanguageContext.js";
 import { useNavigate } from "react-router-dom";
+import { IKImage } from "imagekitio-react";
 
 const language = {
   english: {
@@ -89,7 +90,11 @@ const Sections = () => {
               {selectedLang.singleParagraphSecondPart}
             </span>
           </p>
-          <img src={background_picture} alt="Background" />
+          <IKImage
+            urlEndpoint={"https://ik.imagekit.io/gmlbvtkzbzzf/our-website"}
+            path="third-pic_9UfloUQsK.jpg"
+            width="400"
+          />
         </div>
       </div>
       <div className={styles.paragraphed_container}>
