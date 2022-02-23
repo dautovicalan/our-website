@@ -17,6 +17,9 @@ import SoftwareSolution from "./components/box-content-page/nested-pages/Softwar
 import SeoSection from "./components/box-content-page/nested-pages/SeoSection";
 import MarketingSection from "./components/box-content-page/nested-pages/MarketingSection";
 import CreativitySection from "./components/box-content-page/nested-pages/CreativitySection";
+import SupportSection from "./components/box-content-page/nested-pages/SupportSection";
+import ConsultingSection from "./components/box-content-page/nested-pages/ConsultingSection";
+import ReactPage from "./components/react-page/ReactPage";
 
 function App() {
   AOS.init({ duration: 2000, delay: 5000, once: true });
@@ -30,6 +33,7 @@ function App() {
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/application-development" element={<ReactPage />} />
           <Route path="/add-ons" element={<BoxContent />}>
             <Route
               path="/add-ons/software-solution"
@@ -38,6 +42,8 @@ function App() {
             <Route path="/add-ons/seo" element={<SeoSection />} />
             <Route path="/add-ons/marketing" element={<MarketingSection />} />
             <Route path="/add-ons/creativity" element={<CreativitySection />} />
+            <Route path="/add-ons/support" element={<SupportSection />} />
+            <Route path="/add-ons/consulting" element={<ConsultingSection />} />
           </Route>
         </Routes>
         <Footer />

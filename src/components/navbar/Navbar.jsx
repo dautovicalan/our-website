@@ -19,6 +19,7 @@ const language = {
       services: "Services",
       aboutUs: "About Us",
       addOns: "Expertise",
+      appDev: "Application Development",
       contactUs: "Contact Us",
     },
   },
@@ -28,6 +29,7 @@ const language = {
       services: "Djelatnosti",
       aboutUs: "O nama",
       addOns: "Stručnost",
+      appDev: "Razvoj Aplikacija",
       contactUs: "Kontaktiraj nas",
     },
   },
@@ -98,6 +100,14 @@ const Navbar = () => {
             onClick={() => {
               setshowNav((prevVal) => !prevVal);
             }}
+            to="/application-development"
+          >
+            {selectedLang.appDev}
+          </NavLink>
+          <NavLink
+            onClick={() => {
+              setshowNav((prevVal) => !prevVal);
+            }}
             to="/add-ons"
           >
             {selectedLang.addOns}
@@ -151,6 +161,14 @@ const Navbar = () => {
                 to="/about-us"
               >
                 {selectedLang.aboutUs}
+              </NavLink>
+              <NavLink
+                onClick={() => {
+                  setshowNav((prevVal) => !prevVal);
+                }}
+                to="/application-development"
+              >
+                {selectedLang.appDev}
               </NavLink>
               <NavLink
                 onClick={() => {
