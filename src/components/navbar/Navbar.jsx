@@ -1,5 +1,5 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { useNavigate, NavLink } from "react-router-dom";
 import "./styles-navbar.css";
 import { LanguageContext } from "../../context/LanguageContext.js";
@@ -41,6 +41,7 @@ const Navbar = () => {
   let selectedLang = languageId === 0 && language.english.navbar;
 
   const navigator = useNavigate();
+  console.log(showNav);
 
   const transition = useTransition(showNav, {
     from: { x: -100, y: 800, opacity: 0 },
@@ -69,7 +70,7 @@ const Navbar = () => {
           onClick={() => navigator("/")}
         />
       </div>
-      {screenWidth > 760 && (
+      {screenWidth > 1205 && (
         <div className="contents">
           <NavLink
             className={(navData) => (navData.isActive ? "active" : "")}
@@ -135,7 +136,7 @@ const Navbar = () => {
       {transition(
         (style, item) =>
           item &&
-          screenWidth < 760 && (
+          screenWidth < 1205 && (
             <animated.div style={style} className="contents">
               <NavLink
                 className={(navData) => (navData.isActive ? "active" : "")}
