@@ -35,3 +35,12 @@
 .list_section > ul {
   list-style-type: none;
 }
+
+@media all and (max-width: 768px) {
+  .list_section {
+    width: 80%;
+  }
+  .main_container > img {
+    width: 300px;
+  }
+}

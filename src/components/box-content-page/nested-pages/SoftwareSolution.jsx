@@ -48,6 +48,7 @@ const SoftwareSolution = () => {
         <IKImage
           urlEndpoint={"https://ik.imagekit.io/gmlbvtkzbzzf/our-website"}
           path="background-g208a3d0a5_640_i-98E4pYY.jpg"
+          srcset=""
         />
       </div>
     </div>

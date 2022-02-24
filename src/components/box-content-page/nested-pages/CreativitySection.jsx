@@ -1,5 +1,4 @@
 import React from "react";
-import { Button } from "@mui/material";
 import style from "./styles-creativity.module.css";
 import CodeIcon from "@mui/icons-material/Code";
 import CameraIcon from "@mui/icons-material/Camera";
@@ -8,6 +7,7 @@ import SupportAgentIcon from "@mui/icons-material/SupportAgent";
 import GroupsIcon from "@mui/icons-material/Groups";
 import FilePresentIcon from "@mui/icons-material/FilePresent";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const CreativitySection = () => {
   const navigator = useNavigate();
@@ -49,13 +49,9 @@ const CreativitySection = () => {
           <FilePresentIcon />
         </div>
       </div>
-      <Button
-        onClick={() => navigator("/contact")}
-        variant="contained"
-        color="success"
-      >
-        Success
-      </Button>
+      <Link to="/contact" className={style["button-64"]} role="button">
+        <span className={style.text}>Send Us A Message</span>
+      </Link>
     </div>
   );
 };

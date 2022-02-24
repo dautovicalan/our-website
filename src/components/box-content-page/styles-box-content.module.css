@@ -2,7 +2,8 @@
   padding-left: 0.5em;
   padding-right: 0.5em;
   display: grid;
-  grid-template-columns: 33% 33% 33%;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 33%));
+  justify-content: center;
   row-gap: 0.5em;
   column-gap: 0.5em;
   width: 100%;
@@ -26,6 +27,7 @@
   text-align: center;
   font-family: "Rajdhani", sans-serif;
   padding: 0.5em;
+  width: 100%;
 }
 
 .main_container > .box_content > div > h1 {
@@ -53,4 +55,10 @@
 
 .main_container > .box_content > div > p {
   font-weight: bold;
+}
+
+@media all and (max-width: 760px) {
+  .main_container > .box_content > div > a {
+    font-size: 1em;
+  }
 }
