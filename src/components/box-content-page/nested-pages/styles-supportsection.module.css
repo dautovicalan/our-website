@@ -1,6 +1,9 @@
 .column_container {
+  padding-top: 2em;
   display: flex;
   justify-content: space-around;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 1.5em;
 }
 
 .expand_container {
