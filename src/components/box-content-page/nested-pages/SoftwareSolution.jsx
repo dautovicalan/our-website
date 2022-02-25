@@ -59,13 +59,13 @@ const SoftwareSolution = () => {
       <div className={style.image_container} data-aos="fade-right">
         {transition(({ opacity }, item) =>
           item ? (
-            <animated.h1
+            <animated.h1ps
               style={{
                 opacity: opacity.to({ range: [0.0, 1.0], output: [0, 1] }),
               }}
             >
               Think different!
-            </animated.h1>
+            </animated.h1ps>
           ) : (
             <animated.h1
               style={{

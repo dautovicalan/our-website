@@ -47,6 +47,11 @@
   height: 100px;
   background-color: var(--blue-color);
   border-radius: 50%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.circle_container > div:hover {
+  transform: scale(1.3);
 }
 
 .circle_container > div > svg {

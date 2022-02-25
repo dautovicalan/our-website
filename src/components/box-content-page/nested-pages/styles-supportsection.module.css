@@ -39,10 +39,12 @@
   background-repeat: no-repeat;
   background-position: left bottom;
   transition: background-size 300ms ease;
+  user-select: none;
 }
 
 .expand_container > div > h2:hover {
   background-size: 100% 3px;
+  cursor: pointer;
 }
 
 .expand_container > div > div {
