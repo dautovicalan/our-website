@@ -7,6 +7,7 @@ import SendIcon from "@mui/icons-material/Send";
 import { useContext } from "react";
 import { LanguageContext } from "../../context/LanguageContext.js";
 import { useSpring, animated } from "react-spring";
+import { Form } from "react-bootstrap";
 
 const language = {
   english: {
@@ -99,16 +100,18 @@ const Contact = () => {
           <InputLabel htmlFor="message">
             {selectedLang.message.label}
           </InputLabel>
-          <TextField
-            id="message"
-            name="message"
-            label={selectedLang.message.placeholder}
-            variant="outlined"
-            type="text"
-            required
-            autoComplete="off"
-            size="medium"
-          />
+          <Form.Group className="mb-3">
+            <Form.Control
+              style={{ resize: "none" }}
+              as="textarea"
+              rows={5}
+              id="message"
+              name="message"
+              required
+              autoComplete="off"
+              placeholder={selectedLang.message.placeholder}
+            />
+          </Form.Group>
           <Button
             variant="contained"
             endIcon={<SendIcon />}

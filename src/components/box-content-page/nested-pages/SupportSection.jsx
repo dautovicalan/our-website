@@ -28,7 +28,7 @@ const SupportSection = () => {
           </ul>
         </div>
       </div>
-      <div>
+      <div className={style.expand_container}>
         <div>
           <h2 onClick={() => setOpenOne((prevVal) => !prevVal)}>
             Was bedeztet 24/7 support
