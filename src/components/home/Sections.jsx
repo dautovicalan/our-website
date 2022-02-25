@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./styles-sections.module.css";
 import video from "../../assets/again-video.mp4";
 import { useContext } from "react";
@@ -69,6 +69,7 @@ const Sections = () => {
 
   const navigator = useNavigate();
   const handleClick = () => navigator("/services");
+
 
   return (
     <div className={styles.main_container}>
