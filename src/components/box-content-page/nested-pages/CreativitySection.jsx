@@ -19,16 +19,16 @@ const CreativitySection = () => {
       <h1>Think different</h1>
       <div>
         <div className={style.list_section}>
-          <p>Najmodernija tehnologija</p>
-          <p>ideje</p>
+          <p>State-of-the-art technology</p>
+          <p>Ideas</p>
           <p>Teamwork</p>
-          <p>Posvecenost</p>
-          <p>Individualna pristup</p>
+          <p>Dedication</p>
+          <p>Individual approach</p>
           <p>Web development</p>
-          <p>Najbolji rezultati</p>
+          <p>Best results</p>
         </div>
       </div>
-      <h1>Kako vam mozemo pomoci</h1>
+      <h1>HOW WE CAN HELP YOU?</h1>
       <div className={style.circle_container}>
         <div onClick={handleClick}>
           <CodeIcon />

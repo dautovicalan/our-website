@@ -10,22 +10,22 @@ const SeoSection = () => {
         path="network-g060846f23_640_N5lBHd98v.png"
       />
       <div>
-        <p>Jedna od nasih zadaca je da vasa stranica uvijek bude u vrhu</p>
+        <p>One of our tasks is to keep your site at the top</p>
         <p>
-          Brzo ucitavanje, vrhunska infrastruktura, Content. Sve su to
-          predispozicije koje mi ispunjavamo kako bi vasa stranica uvijek bila
-          PRVA
+          One of our tasks is to keep your site at the top. Fast loading,
+          superior infrastructure, Content. These are all predispositions that
+          we fulfill so that your page is always FIRST
         </p>
       </div>
       <div className={styles.list_section}>
-        <h1>Seo Paket</h1>
+        <h1>SEO Package</h1>
         <ul>
-          <li>Kezwordrecherce</li>
+          <li>Keyword research</li>
           <li>Content</li>
           <li>Tracking setup</li>
-          <li>Tagmanager</li>
+          <li>Day manager</li>
           <li>Webmaster</li>
-          <li>Suchmaschinene</li>
+          <li>Search engine</li>
           <li>Updated</li>
           <li>Tracking, Monitoring</li>
           <li>Reporting</li>

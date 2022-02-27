@@ -13,22 +13,22 @@ const ReactPage = () => {
     <animated.div style={props} className={style.main_container}>
       <div className={style.text_container}>
         <p>
-          Korištenjem gotovih designova i funkcija često dovodi do loše
-          promidžbe na internetu te ujedno i do gubitka novca. Mi u WebBoutique
-          stvaramo i kreiramo drugacije. Svako naše softversko rješenje je
-          prilagođeno vama i vašim potrebama. Ona su individualno programirana
-          uz pomoć najnovije development tehnologije. Osim Web rjesenja , mi u
-          Web Botique razvijamo i suvremene MObilne aplikacije. Živimo u jednoj
-          eri u kojoj Informacije i ostale usluge želimo imati u svakom trenutku
-          i bilo gdje. Mi smo se pobrinuli da svi nasi softveri budu prilagođeni
-          svim uređajima i formatima. Nas se tim koristi najsuvremenijom
-          development tehnologijom koja nam omogucava najbolje rezultate na
-          tržištu. React je jedan od naših najviše korištenih programa za izradu
-          kompleksnih sofwarskih rjesenja. On nam sluzi za izradu interaktivnih
-          korisničkih sučelja te smanjuje trošenje memorije i povećava
-          performanse software. Ujedno vrlo je bitan i za jednosmjerno
-          povezivanje podataka sto znaci povećanje fleksibilnosti i
-          učinkovitosti aplikacije.
+          Using ready-made designs and functions often leads to poor publicity
+          on the Internet and at the same time to the loss of money. We at
+          WebBoutique create and design differently. Each of our software
+          solutions is tailored to you and your needs. They are individually
+          programmed with the help of the latest development technology. In
+          addition to Web solutions, we at Web Botique also develop modern
+          Mobile applications. We live in an era where we want to have
+          Information and other services anytime, anywhere. We have made sure
+          that all our software is adapted to all devices and formats. Our team
+          uses the most modern development technology that enables us the best
+          results on the market. React is one of our most widely used programs
+          for creating complex software solutions. It is used to create
+          interactive user interfaces and reduces memory consumption and
+          increases software performance. It is also very important for one-way
+          data connection, which means increasing the flexibility and efficiency
+          of the application.
         </p>
         <div className={style.picture_container}>
           <IKImage

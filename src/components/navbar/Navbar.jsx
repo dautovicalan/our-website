@@ -173,7 +173,7 @@ const Navbar = () => {
                 onClick={() => {
                   setshowNav((prevVal) => !prevVal);
                 }}
-                to="/add-ons"
+                to="/expertise"
               >
                 {selectedLang.addOns}
               </NavLink>

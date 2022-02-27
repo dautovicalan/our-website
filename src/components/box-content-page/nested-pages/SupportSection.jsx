@@ -14,15 +14,15 @@ const SupportSection = () => {
         <div>
           <h1>Hosting</h1>
           <ul>
-            <li>Schnelle Ladezeit</li>
-            <li>Seo Vorteile</li>
-            <li>Schutz</li>
+            <li>Fast loading time</li>
+            <li>SEO advantages</li>
+            <li>Protection</li>
           </ul>
         </div>
         <div>
-          <h1>Betreuung</h1>
+          <h1>Support</h1>
           <ul>
-            <li>Kontrolle</li>
+            <li>Control</li>
             <li>Updates</li>
             <li>Support 24/7</li>
           </ul>
@@ -31,7 +31,7 @@ const SupportSection = () => {
       <div className={style.expand_container}>
         <div>
           <h2 onClick={() => setOpenOne((prevVal) => !prevVal)}>
-            Was bedeztet 24/7 support
+            What does 24/7 support mean?
           </h2>
           <Collapse in={openOne}>
             <div id="example-collapse-text">
@@ -44,7 +44,7 @@ const SupportSection = () => {
         </div>
         <div>
           <h2 onClick={() => setOpenTwo((prevVal) => !prevVal)}>
-            Sto nakon zavrsetka
+            What after the end?
           </h2>
           <Collapse in={openTwo}>
             <div id="example-collapse-text">
@@ -57,7 +57,7 @@ const SupportSection = () => {
         </div>
         <div>
           <h2 onClick={() => setOpenThree((prevVal) => !prevVal)}>
-            Koristimo li gotovi design
+            Do we use ready-made design?
           </h2>
           <Collapse in={openThree}>
             <div id="example-collapse-text">
@@ -70,7 +70,7 @@ const SupportSection = () => {
         </div>
         <div>
           <h2 onClick={() => setOpenFour((prevVal) => !prevVal)}>
-            Zelim da moja stranica bude meduprvima na googlu, ali kako?
+            I want my site to be among the first on google, but how?
           </h2>
           <Collapse in={openFour}>
             <div id="example-collapse-text">
@@ -83,7 +83,7 @@ const SupportSection = () => {
         </div>
         <div>
           <h2 onClick={() => setOpenFive((prevVal) => !prevVal)}>
-            Sto je react
+            What is react?
           </h2>
           <Collapse in={openFive}>
             <div id="example-collapse-text">

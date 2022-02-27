@@ -37,22 +37,22 @@ const SoftwareSolution = () => {
       </h1>
       <div className={style.text_container} data-aos="fade-right">
         <div>
-          <p>Vasa stranica je vase ogledalo</p>
+          <p>Your page is your mirror</p>
           <p>
-            Postoje mnoga gotova rjesenja koja na prvi pogled se cine kao brza i
-            jednostavna, no ustvari oni su sve osim toga.
+            There are many ready-made solutions that at first glance seem quick
+            and easy, but in fact they are everything but that.
           </p>
           <p>
-            Kriva i losa primidzva na Internetu moze svaki Biznis ugoriziti i
-            nanijti mu stetu
+            Wrong and bad remarks on the Internet can burn and damage any
+            business
           </p>
         </div>
         <div>
-          <p>Ne brinite mi smo tim koji cini razliku</p>
-          <p>Mi stvaramo i kreiramo najslozenija softverska rjesenja</p>
+          <p>Don't worry we're a team that makes a difference</p>
+          <p>We create and create the most complex software solutions</p>
           <p>
-            Jedinstevni kodovi koji odgovarju na suvremene izazove u digaltom
-            svijetu
+            Unique codes that respond to contemporary challenges in the digital
+            world
           </p>
         </div>
       </div>

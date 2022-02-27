@@ -5,6 +5,13 @@
   align-items: center;
 }
 
+.main_container > h1 {
+  font-family: "Comfortaa", cursive;
+  font-size: 2.2em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
 .pictures_container {
   display: flex;
   justify-content: space-around;
@@ -20,34 +27,53 @@
 }
 
 .circlesbox {
-  margin-top: 7em;
+  margin-top: 5em;
   position: relative;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
   flex-wrap: nowrap;
   justify-content: space-between;
   width: 80%;
 }
 
-.circlesbox:before {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  height: 3px;
-  width: 100%;
-  background: #000;
-}
-
 .circle {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   position: relative;
   z-index: 2;
   border: 2px solid #222;
   background: #fff;
   box-shadow: 0 0 0 20px #fff;
-  width: 50px;
-  height: 50px;
+  width: 500px;
+  padding: 5.5em;
+  height: 250px;
   border-radius: 50%;
+}
+
+.circle > h1 {
+  font-family: "Comfortaa", cursive;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.circle > p {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.line {
+  width: 5px;
+  height: 100px;
+  background-color: var(--pink-color);
+  border-radius: 25px;
+}
+
+@media all and (max-width: 768px) {
+  .circle {
+    width: 350px;
+  }
 }
