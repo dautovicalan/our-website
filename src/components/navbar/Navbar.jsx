@@ -41,8 +41,6 @@ const Navbar = () => {
   let selectedLang = languageId === 0 && language.english.navbar;
 
   const navigator = useNavigate();
-  console.log("bok iz navbara");
-
   const transition = useTransition(showNav, {
     from: { x: -100, y: 800, opacity: 0 },
     enter: { x: 0, y: 0, opacity: 1 },

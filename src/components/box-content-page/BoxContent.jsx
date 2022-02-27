@@ -2,12 +2,18 @@ import React from "react";
 import styles from "./styles-box-content.module.css";
 import { Outlet, useNavigate } from "react-router-dom";
 import { IKImage } from "imagekitio-react";
+import { useSpring, animated } from "react-spring";
 
 const BoxContent = () => {
   const navigator = useNavigate();
   const handleClick = (path) => navigator(`/add-ons/${path}`);
+  const props = useSpring({
+    to: { opacity: 1 },
+    from: { opacity: 0 },
+    delay: 400,
+  });
   return (
-    <React.Fragment>
+    <animated.div style={props}>
       <h1
         style={{
           paddingTop: "6em",
@@ -114,7 +120,7 @@ const BoxContent = () => {
       <div id="outlet_container">
         <Outlet />
       </div>
-    </React.Fragment>
+    </animated.div>
   );
 };
 

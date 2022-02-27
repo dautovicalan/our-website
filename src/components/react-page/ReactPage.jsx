@@ -1,9 +1,16 @@
 import React from "react";
 import style from "./styles-reactpage.module.css";
+import { IKImage } from "imagekitio-react";
+import { useSpring, animated } from "react-spring";
 
 const ReactPage = () => {
+  const props = useSpring({
+    to: { opacity: 1 },
+    from: { opacity: 0 },
+    delay: 400,
+  });
   return (
-    <div className={style.main_container}>
+    <animated.div style={props} className={style.main_container}>
       <div className={style.text_container}>
         <p>
           Korištenjem gotovih designova i funkcija često dovodi do loše
@@ -23,9 +30,15 @@ const ReactPage = () => {
           povezivanje podataka sto znaci povećanje fleksibilnosti i
           učinkovitosti aplikacije.
         </p>
-        <p>nesto</p>
+        <div className={style.picture_container}>
+          <IKImage
+            urlEndpoint={"https://ik.imagekit.io/gmlbvtkzbzzf/our-website"}
+            path="third-pic_9UfloUQsK.jpg"
+            width="400"
+          />
+        </div>
       </div>
-    </div>
+    </animated.div>
   );
 };
 
