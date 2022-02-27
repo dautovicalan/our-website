@@ -35,9 +35,9 @@ const SupportSection = () => {
           </h2>
           <Collapse in={openOne}>
             <div id="example-collapse-text">
-              Kod nas 24’7 Support znaci da smo svaki dan ime svako doba dana tu
-              za vas. Naša kontrola Sustava omogućava nam pravovremeno
-              uklanjanje svih tehničkih poteškoća.
+              With us, 24’7 Support means that we are a name for you every day.
+              Our control of the System allows us to eliminate all technical
+              difficulties in a timely manner.
             </div>
           </Collapse>
         </div>
