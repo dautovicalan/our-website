@@ -74,7 +74,7 @@ const Contact = () => {
         <h1>{selectedLang.header}</h1>
         <div className={styles.square}></div>
         <form
-          action="https://formsubmit.co/webboutiquesolutions@gmail.com"
+          data-netlify="true"
           className={styles.form_container}
           method="post"
         >
@@ -125,12 +125,7 @@ const Contact = () => {
           >
             {selectedLang.send}
           </Button>
-          <input type="hidden" name="_next" value="http://localhost:3000" />
-          <input
-            type="hidden"
-            name="_autoresponse"
-            value="We will reach you in shortest time"
-          />
+          <input type="hidden" name="form-name" value="contact" />
         </form>
       </animated.div>
       <div
