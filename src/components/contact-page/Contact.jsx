@@ -66,17 +66,17 @@ const Contact = () => {
   const [formEmail, setFormEmail] = useState("");
   const [formMessage, setFormMessage] = useState("");
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    const data = { name: formName, email: formEmail, message: formMessage };
-    const response = await fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encodeURIComponent({ "form-name": "contact", ...data }),
-    });
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   const data = { name: formName, email: formEmail, message: formMessage };
+  //   const response = await fetch("/", {
+  //     method: "POST",
+  //     headers: { "Content-Type": "application/x-www-form-urlencoded" },
+  //     body: encodeURIComponent({ "form-name": "contact", ...data }),
+  //   });
 
-    if (response) alert("Thank you for sending us a message");
-  };
+  //   if (response) alert("Thank you for sending us a message");
+  // };
 
   const props = useSpring({
     to: { opacity: 1 },
@@ -90,10 +90,9 @@ const Contact = () => {
         <h1>{selectedLang.header}</h1>
         <div className={styles.square}></div>
         <form
-          data-netlify="true"
+          netlify
           className={styles.form_container}
           method="post"
-          onSubmit={handleSubmit}
           name="Contact"
         >
           <InputLabel htmlFor="name">{selectedLang.name.label}</InputLabel>
