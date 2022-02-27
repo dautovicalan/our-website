@@ -81,7 +81,6 @@ const Contact = () => {
           data-netlify="true"
           className={styles.form_container}
           method="post"
-          onSubmit={handleSubmit}
         >
           <InputLabel htmlFor="name">{selectedLang.name.label}</InputLabel>
           <TextField
