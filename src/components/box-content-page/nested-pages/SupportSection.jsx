@@ -35,10 +35,9 @@ const SupportSection = () => {
           </h2>
           <Collapse in={openOne}>
             <div id="example-collapse-text">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life
-              accusamus terry richardson ad squid. Nihil anim keffiyeh
-              helvetica, craft beer labore wes anderson cred nesciunt sapiente
-              ea proident.
+              Kod nas 24’7 Support znaci da smo svaki dan ime svako doba dana tu
+              za vas. Naša kontrola Sustava omogućava nam pravovremeno
+              uklanjanje svih tehničkih poteškoća.
             </div>
           </Collapse>
         </div>
@@ -48,10 +47,8 @@ const SupportSection = () => {
           </h2>
           <Collapse in={openTwo}>
             <div id="example-collapse-text">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life
-              accusamus terry richardson ad squid. Nihil anim keffiyeh
-              helvetica, craft beer labore wes anderson cred nesciunt sapiente
-              ea proident.
+              We are still here for you. We continue to maintain your site and
+              constantly enrich it with new Updates and Features.
             </div>
           </Collapse>
         </div>
@@ -61,10 +58,8 @@ const SupportSection = () => {
           </h2>
           <Collapse in={openThree}>
             <div id="example-collapse-text">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life
-              accusamus terry richardson ad squid. Nihil anim keffiyeh
-              helvetica, craft beer labore wes anderson cred nesciunt sapiente
-              ea proident.
+              NO. We program all our Web pages and Web solutions according to
+              your wishes. Each of our Projects has a unique Code.
             </div>
           </Collapse>
         </div>
@@ -74,10 +69,10 @@ const SupportSection = () => {
           </h2>
           <Collapse in={openFour}>
             <div id="example-collapse-text">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life
-              accusamus terry richardson ad squid. Nihil anim keffiyeh
-              helvetica, craft beer labore wes anderson cred nesciunt sapiente
-              ea proident.
+              Do not worry. SEO is just one of our specialties. For the first
+              place on Google, certain predispositions are needed, which we
+              integrate during the project and later launch into the digital
+              world.
             </div>
           </Collapse>
         </div>
@@ -87,10 +82,10 @@ const SupportSection = () => {
           </h2>
           <Collapse in={openFive}>
             <div id="example-collapse-text">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life
-              accusamus terry richardson ad squid. Nihil anim keffiyeh
-              helvetica, craft beer labore wes anderson cred nesciunt sapiente
-              ea proident.
+              React is one of the programs we use to create complex software
+              solutions. We use it to build interactive user interfaces and
+              enable one-way data connection. Most complex Web sites like
+              Facebook use React.
             </div>
           </Collapse>
         </div>
