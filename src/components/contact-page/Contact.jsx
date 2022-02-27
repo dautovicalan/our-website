@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import TextField from "@mui/material/TextField";
 import InputLabel from "@mui/material/InputLabel";
 import styles from "./styles-contact.module.css";
@@ -62,6 +62,10 @@ const Contact = () => {
   const { languageId } = useContext(LanguageContext);
   let selectedLang = languageId === 0 && language.english.contact;
 
+  const [formName, setFormName] = useState();
+  const [formEmail, setFormEmail] = useState();
+  const [formMessage, setFormMessage] = useState();
+
   const props = useSpring({
     to: { opacity: 1 },
     from: { opacity: 0 },
@@ -77,6 +81,7 @@ const Contact = () => {
           data-netlify="true"
           className={styles.form_container}
           method="post"
+          onSubmit={handleSubmit}
         >
           <InputLabel htmlFor="name">{selectedLang.name.label}</InputLabel>
           <TextField
@@ -86,6 +91,8 @@ const Contact = () => {
             variant="outlined"
             required
             autoComplete="off"
+            value={formName}
+            onChange={(e) => setFormName(e.target.value)}
           />
           <InputLabel htmlFor="email">{selectedLang.email.label}</InputLabel>
           <TextField
@@ -96,6 +103,8 @@ const Contact = () => {
             name="email"
             required
             autoComplete="off"
+            value={formEmail}
+            onChange={(e) => setFormEmail(e.target.value)}
           />
           <InputLabel htmlFor="message">
             {selectedLang.message.label}
@@ -110,6 +119,8 @@ const Contact = () => {
               required
               autoComplete="off"
               placeholder={selectedLang.message.placeholder}
+              value={formMessage}
+              onChange={(e) => setFormMessage(e.target.value)}
             />
           </Form.Group>
           <Button
