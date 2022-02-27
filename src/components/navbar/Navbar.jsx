@@ -4,8 +4,6 @@ import { useNavigate, NavLink } from "react-router-dom";
 import "./styles-navbar.css";
 import { LanguageContext } from "../../context/LanguageContext.js";
 import { useContext } from "react";
-import LanguageIcon from "@mui/icons-material/Language";
-import Button from "@mui/material/Button";
 import { useTransition, animated } from "react-spring";
 import Hamburger from "hamburger-react";
 import HomeIcon from "@mui/icons-material/Home";
@@ -37,7 +35,7 @@ const language = {
 const Navbar = () => {
   const [showNav, setshowNav] = useState(false);
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-  const { languageId, setLanguageId } = useContext(LanguageContext);
+  const { languageId } = useContext(LanguageContext);
   let selectedLang = languageId === 0 && language.english.navbar;
 
   const navigator = useNavigate();
