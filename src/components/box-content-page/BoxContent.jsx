@@ -6,7 +6,7 @@ import { useSpring, animated } from "react-spring";
 
 const BoxContent = () => {
   const navigator = useNavigate();
-  const handleClick = (path) => navigator(`/add-ons/${path}`);
+  const handleClick = (path) => navigator(`/expertise/${path}`);
   const props = useSpring({
     to: { opacity: 1 },
     from: { opacity: 0 },

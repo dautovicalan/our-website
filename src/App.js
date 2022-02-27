@@ -58,7 +58,7 @@ function App() {
           />
           <Route path="/application-development" element={<ReactPage />} />
           <Route
-            path="/add-ons"
+            path="/expertise"
             element={
               <Suspense
                 fallback={
@@ -76,14 +76,20 @@ function App() {
             }
           >
             <Route
-              path="/add-ons/software-solution"
+              path="/expertise/software-solution"
               element={<SoftwareSolution />}
             />
-            <Route path="/add-ons/seo" element={<SeoSection />} />
-            <Route path="/add-ons/marketing" element={<MarketingSection />} />
-            <Route path="/add-ons/creativity" element={<CreativitySection />} />
-            <Route path="/add-ons/support" element={<SupportSection />} />
-            <Route path="/add-ons/consulting" element={<ConsultingSection />} />
+            <Route path="/expertise/seo" element={<SeoSection />} />
+            <Route path="/expertise/marketing" element={<MarketingSection />} />
+            <Route
+              path="/expertise/creativity"
+              element={<CreativitySection />}
+            />
+            <Route path="/expertise/support" element={<SupportSection />} />
+            <Route
+              path="/expertise/consulting"
+              element={<ConsultingSection />}
+            />
           </Route>
         </Routes>
         <Footer />

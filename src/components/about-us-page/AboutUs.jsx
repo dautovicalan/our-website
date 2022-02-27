@@ -74,29 +74,6 @@ const AboutUs = () => {
       </animated.div>
       <animated.div style={props} className={styles.text_container_second}>
         <p>{selectedLang.thirdSection}</p>
-        <Carousel>
-          <Carousel.Item>
-            <IKImage
-              urlEndpoint={"https://ik.imagekit.io/gmlbvtkzbzzf/our-website"}
-              path="office-aboutus_N8oqDGtS5.jpg"
-              width="400"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <IKImage
-              urlEndpoint={"https://ik.imagekit.io/gmlbvtkzbzzf/our-website"}
-              path="office-aboutus_N8oqDGtS5.jpg"
-              width="400"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <IKImage
-              urlEndpoint={"https://ik.imagekit.io/gmlbvtkzbzzf/our-website"}
-              path="office-aboutus_N8oqDGtS5.jpg"
-              width="400"
-            />
-          </Carousel.Item>
-        </Carousel>
         <div className={styles.list_icons}>
           <div>
             <img src={reactLogo} alt="React Logo" />
