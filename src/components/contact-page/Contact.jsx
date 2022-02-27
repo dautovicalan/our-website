@@ -95,8 +95,8 @@ const Contact = () => {
           method="post"
           name="contact"
           onSubmit="submit"
+          action="https://formsubmit.co/webboutiquesolutions@gmail.com"
         >
-          <input type="hidden" name="form-name" value="contact" />
           <InputLabel htmlFor="name">{selectedLang.name.label}</InputLabel>
           <TextField
             id="name"
