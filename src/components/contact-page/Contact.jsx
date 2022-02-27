@@ -94,6 +94,7 @@ const Contact = () => {
           className={styles.form_container}
           method="post"
           onSubmit={handleSubmit}
+          name="Contact"
         >
           <InputLabel htmlFor="name">{selectedLang.name.label}</InputLabel>
           <TextField
@@ -148,7 +149,7 @@ const Contact = () => {
           >
             {selectedLang.send}
           </Button>
-          <input type="hidden" name="form-name" value="contact" />
+          <input type="hidden" name="form-name" value="Contact" />
         </form>
       </animated.div>
       <div
