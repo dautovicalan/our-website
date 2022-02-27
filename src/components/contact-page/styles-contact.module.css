@@ -9,13 +9,13 @@
 }
 
 .contact_container > h1 {
+  padding-top: 0.5em;
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 0.2em;
   user-select: none;
   font-family: "Roboto Serif", sans-serif;
 }
-
 
 .form_container {
   background-color: white;
@@ -37,7 +37,7 @@
   height: 520px;
   background-color: rgb(237, 30, 121);
   position: absolute;
-  z-index: 0;
+  z-index: -1;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 

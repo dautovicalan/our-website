@@ -4,8 +4,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   gap: 2.5em;
   font-family: "Roboto Serif", sans-serif;
+}
+
+.main_container > div > h1 {
+  text-align: center;
 }
 
 .text_picture_container {
@@ -126,7 +131,7 @@
     font-size: 19px;
   }
   .text_container_second > .list_icons {
-    width: 100vw;
+    width: 100%;
   }
   .text_container_second > .list_icons > div {
     animation: flyInAnimationMobile 10s linear infinite;

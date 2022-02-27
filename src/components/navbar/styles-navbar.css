@@ -78,7 +78,7 @@ nav > .menu:hover {
   cursor: pointer;
 }
 
-@media all and (max-width: 760px) {
+@media all and (max-width: 1205px) {
   nav {
     flex-direction: row;
   }
@@ -92,6 +92,7 @@ nav > .menu:hover {
   }
   nav > .contents > a {
     border-bottom: 3px solid rgb(237, 30, 121);
+    background-image: none;
   }
   nav > .menu {
     display: block;

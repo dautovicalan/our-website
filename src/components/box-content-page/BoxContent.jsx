@@ -1,57 +1,126 @@
 import React from "react";
 import styles from "./styles-box-content.module.css";
-import officePic from "../../assets/office-aboutus.jpg";
-import Button from "@mui/material/Button";
+import { Outlet, useNavigate } from "react-router-dom";
+import { IKImage } from "imagekitio-react";
+import { useSpring, animated } from "react-spring";
 
 const BoxContent = () => {
+  const navigator = useNavigate();
+  const handleClick = (path) => navigator(`/expertise/${path}`);
+  const props = useSpring({
+    to: { opacity: 1 },
+    from: { opacity: 0 },
+    delay: 400,
+  });
   return (
-    <div className={styles.main_container}>
-      <div className={styles.box_content}>
-        <div>
-          <h1>Neki naslov</h1>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores
-            fugiat repellendus ipsam, quia nam, necessitatibus molestiae sed
-            deserunt et aliquid quas molestias harum vel eligendi eum fuga illum
-            ab? Cum.
-          </p>
-          <Button variant="outlined" style={{ backgroundColor: "pink" }}>
-            More Information
-          </Button>
+    <animated.div style={props}>
+      <h1
+        style={{
+          paddingTop: "6em",
+          paddingBottom: "0.5em",
+          textAlign: "center",
+          color: "var(--blue-color)",
+          textTransform: "uppercase",
+        }}
+      >
+        Expertise
+      </h1>
+      <div className={styles.main_container}>
+        <div className={styles.box_content}>
+          <div>
+            <h1>Software Solution</h1>
+            <a
+              href="#outlet_container"
+              onClick={() => handleClick("software-solution")}
+            >
+              Show information
+            </a>
+          </div>
+          <IKImage
+            urlEndpoint={"https://ik.imagekit.io/gmlbvtkzbzzf/our-website"}
+            path="third-pic_9UfloUQsK.jpg"
+            width="400"
+          />
         </div>
-        <img src={officePic} alt="" />
+        <div className={styles.box_content}>
+          <div>
+            <h1>Support</h1>
+            <a href="#outlet_container" onClick={() => handleClick("support")}>
+              Show information
+            </a>
+          </div>
+          <IKImage
+            urlEndpoint={"https://ik.imagekit.io/gmlbvtkzbzzf/our-website"}
+            path="third-pic_9UfloUQsK.jpg"
+            width="400"
+          />
+        </div>
+        <div className={styles.box_content}>
+          <div>
+            <h1>SEO</h1>
+            <a href="#outlet_container" onClick={() => handleClick("seo")}>
+              Show information
+            </a>
+          </div>
+          <IKImage
+            urlEndpoint={"https://ik.imagekit.io/gmlbvtkzbzzf/our-website"}
+            path="third-pic_9UfloUQsK.jpg"
+            width="400"
+          />
+        </div>
+        <div className={styles.box_content}>
+          <div>
+            <h1>Marketing</h1>
+            <a
+              href="#outlet_container"
+              onClick={() => handleClick("marketing")}
+            >
+              Show information
+            </a>
+          </div>
+          <IKImage
+            urlEndpoint={"https://ik.imagekit.io/gmlbvtkzbzzf/our-website"}
+            path="third-pic_9UfloUQsK.jpg"
+            width="400"
+          />
+        </div>
+        <div className={styles.box_content}>
+          <div>
+            <h1>Consulting</h1>
+            <a
+              href="#outlet_container"
+              onClick={() => handleClick("consulting")}
+            >
+              Show information
+            </a>
+          </div>
+          <IKImage
+            urlEndpoint={"https://ik.imagekit.io/gmlbvtkzbzzf/our-website"}
+            path="third-pic_9UfloUQsK.jpg"
+            width="400"
+          />
+        </div>
+        <div className={styles.box_content}>
+          <div>
+            <h1>Creativity</h1>
+            <a
+              href="#outlet_container"
+              onClick={() => handleClick("creativity")}
+            >
+              Show information
+            </a>
+          </div>
+          <IKImage
+            urlEndpoint={"https://ik.imagekit.io/gmlbvtkzbzzf/our-website"}
+            path="third-pic_9UfloUQsK.jpg"
+            width="400"
+          />
+        </div>
       </div>
-      <div>
-        Maxime optio blanditiis eos eveniet facilis, quod corrupti veritatis?
-        Quas esse, nemo dolore reiciendis possimus laudantium, ea minima
-        consectetur harum exercitationem ipsa obcaecati saepe, quidem quibusdam
-        commodi rerum cupiditate praesentium!
+      <div id="outlet_container">
+        <Outlet />
       </div>
-      <div>
-        Aspernatur esse, facilis iusto suscipit maiores est minus repellat
-        beatae rerum nihil! Dolor, dolorem! Inventore quo adipisci placeat rerum
-        optio totam fuga qui quibusdam? Ullam reprehenderit aperiam tempore
-        dignissimos cupiditate?
-      </div>
-      <div>
-        Animi eos similique sequi, repudiandae incidunt aspernatur ullam dolores
-        debitis qui quibusdam cum architecto? Sit ex saepe exercitationem
-        voluptates aliquam, pariatur amet laudantium cupiditate velit tenetur
-        rerum et assumenda commodi.
-      </div>
-      <div>
-        Cupiditate ducimus eaque repellendus aut vel veniam at facilis iste
-        consectetur consequuntur aliquam, blanditiis fugit aliquid quas! Dolor,
-        corrupti obcaecati! Explicabo assumenda blanditiis expedita quasi
-        perferendis, nihil sed. Inventore, reiciendis.
-      </div>
-      <div>
-        Doloremque esse aliquid perferendis mollitia minus totam beatae quas
-        libero, eius, magnam atque voluptas debitis autem dolorum iure ea
-        deleniti, ullam ut accusantium quo optio eligendi temporibus. Harum, ea
-        earum.
-      </div>
-    </div>
+    </animated.div>
   );
 };
 

@@ -1,6 +1,6 @@
 import "./App.css";
 import Navbar from "./components/navbar/Navbar";
-import React from "react";
+import React, { Suspense } from "react";
 import Sections from "./components/home/Sections";
 import AboutUs from "./components/about-us-page/AboutUs";
 import Contact from "./components/contact-page/Contact";
@@ -12,9 +12,23 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import NotFoundPage from "./components/not-found-page/NotFoundPage";
+// import BoxContent from "./components/box-content-page/BoxContent";
+import SoftwareSolution from "./components/box-content-page/nested-pages/SoftwareSolution";
+import SeoSection from "./components/box-content-page/nested-pages/SeoSection";
+import MarketingSection from "./components/box-content-page/nested-pages/MarketingSection";
+import CreativitySection from "./components/box-content-page/nested-pages/CreativitySection";
+import SupportSection from "./components/box-content-page/nested-pages/SupportSection";
+import ConsultingSection from "./components/box-content-page/nested-pages/ConsultingSection";
+import ReactPage from "./components/react-page/ReactPage";
+import Box from "@mui/material/Box";
+import Skeleton from "@mui/material/Skeleton";
+
+const BoxContent = React.lazy(() =>
+  import("./components/box-content-page/BoxContent")
+);
 
 function App() {
-  AOS.init({ duration: 2000, delay: 5000 });
+  AOS.init({ duration: 2000, delay: 5000, once: true });
   return (
     <React.Fragment>
       <LanguageContextProvider>
@@ -24,10 +38,59 @@ function App() {
           <Route path="/" element={<Sections />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/services" element={<Services />} />
-          {/* <Route path="/add-ons" element={<BoxContent />} />
-          <Route path="/add-ons/test" element={<AboutUs />} />
-          <Route path="/add-ons/cool" element={<p>Mars</p>} /> */}
+          <Route
+            path="/services"
+            element={
+              <Suspense
+                fallback={
+                  <div style={{ paddingTop: "11em" }}>
+                    <Box sx={{ width: "100% " }}>
+                      <Skeleton />
+                      <Skeleton />
+                      <Skeleton />
+                    </Box>
+                  </div>
+                }
+              >
+                <Services />
+              </Suspense>
+            }
+          />
+          <Route path="/application-development" element={<ReactPage />} />
+          <Route
+            path="/expertise"
+            element={
+              <Suspense
+                fallback={
+                  <div style={{ paddingTop: "11em" }}>
+                    <Box sx={{ width: "100% " }}>
+                      <Skeleton />
+                      <Skeleton />
+                      <Skeleton />
+                    </Box>
+                  </div>
+                }
+              >
+                <BoxContent />
+              </Suspense>
+            }
+          >
+            <Route
+              path="/expertise/software-solution"
+              element={<SoftwareSolution />}
+            />
+            <Route path="/expertise/seo" element={<SeoSection />} />
+            <Route path="/expertise/marketing" element={<MarketingSection />} />
+            <Route
+              path="/expertise/creativity"
+              element={<CreativitySection />}
+            />
+            <Route path="/expertise/support" element={<SupportSection />} />
+            <Route
+              path="/expertise/consulting"
+              element={<ConsultingSection />}
+            />
+          </Route>
         </Routes>
         <Footer />
       </LanguageContextProvider>

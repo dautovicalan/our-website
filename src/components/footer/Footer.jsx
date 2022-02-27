@@ -7,9 +7,32 @@ import { NavLink } from "react-router-dom";
 import { LanguageContext } from "../../context/LanguageContext.js";
 import { useContext } from "react";
 
+const language = {
+  english: {
+    navbar: {
+      home: "Home",
+      services: "Services",
+      aboutUs: "About Us",
+      addOns: "Expertise",
+      appDev: "Application Development",
+      contactUs: "Contact Us",
+    },
+  },
+  croatian: {
+    navbar: {
+      home: "Glavni Izbornik",
+      services: "Djelatnosti",
+      aboutUs: "O nama",
+      addOns: "Stručnost",
+      appDev: "Razvoj Aplikacija",
+      contactUs: "Kontaktiraj nas",
+    },
+  },
+};
+
 const Footer = () => {
-  const { language } = useContext(LanguageContext);
-  const { navbar } = language;
+  const { languageId } = useContext(LanguageContext);
+  let selectedLang = languageId === 0 && language.english.navbar;
 
   return (
     <footer>
@@ -26,10 +49,12 @@ const Footer = () => {
           </a>
         </div>
         <div className={styles.mini_navbar}>
-          <NavLink to="/">{navbar.home}</NavLink>
-          <NavLink to="/services">{navbar.services}</NavLink>
-          <NavLink to="/about-us">{navbar.aboutUs}</NavLink>
-          <NavLink to="/contact">{navbar.contactUs}</NavLink>
+          <NavLink to="/">{selectedLang.home}</NavLink>
+          <NavLink to="/services">{selectedLang.services}</NavLink>
+          <NavLink to="/application-development">{selectedLang.appDev}</NavLink>
+          <NavLink to="/add-ons">{selectedLang.addOns}</NavLink>
+          <NavLink to="/about-us">{selectedLang.aboutUs}</NavLink>
+          <NavLink to="/contact">{selectedLang.contactUs}</NavLink>
         </div>
         <div className={styles.copyright_container}>
           <p>&copy; 2022 Web Boutique</p>
