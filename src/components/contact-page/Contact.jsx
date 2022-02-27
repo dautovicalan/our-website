@@ -90,11 +90,13 @@ const Contact = () => {
         <h1>{selectedLang.header}</h1>
         <div className={styles.square}></div>
         <form
-          netlify
+          data-netlify="true"
           className={styles.form_container}
           method="post"
-          name="Contact"
+          name="contact"
+          onSubmit="submit"
         >
+          <input type="hidden" name="form-name" value="contact" />
           <InputLabel htmlFor="name">{selectedLang.name.label}</InputLabel>
           <TextField
             id="name"
@@ -148,7 +150,6 @@ const Contact = () => {
           >
             {selectedLang.send}
           </Button>
-          <input type="hidden" name="form-name" value="Contact" />
         </form>
       </animated.div>
       <div
