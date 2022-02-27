@@ -1,6 +1,5 @@
 import React from "react";
 import style from "./styles-consultingsection.module.css";
-import { IKImage } from "imagekitio-react";
 
 const ConsultingSection = () => {
   return (

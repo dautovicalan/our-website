@@ -1,5 +1,5 @@
 import React from "react";
-import { useState, useEffect, useMemo } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate, NavLink } from "react-router-dom";
 import "./styles-navbar.css";
 import { LanguageContext } from "../../context/LanguageContext.js";

@@ -10,8 +10,6 @@ import bootstraplogo from "./assets/bootstrap-logo.png";
 import { useSpring, animated } from "react-spring";
 import { useContext } from "react";
 import { LanguageContext } from "../../context/LanguageContext.js";
-import { Carousel } from "react-bootstrap";
-import { IKImage } from "imagekitio-react";
 
 const language = {
   english: {
