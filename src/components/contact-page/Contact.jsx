@@ -95,8 +95,13 @@ const Contact = () => {
           method="post"
           name="contact"
           onSubmit="submit"
-          action="https://formsubmit.co/webboutiquesolutions@gmail.com"
+          action="https://formsubmit.co/0e3abde04dd49ba78e2c4bcc8adac370"
         >
+          <input
+            type="hidden"
+            name="_autoresponse"
+            value="We will reach out to you in shortest amount of time"
+          ></input>
           <InputLabel htmlFor="name">{selectedLang.name.label}</InputLabel>
           <TextField
             id="name"
