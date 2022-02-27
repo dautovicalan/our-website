@@ -119,7 +119,7 @@ const Navbar = () => {
           >
             {selectedLang.contactUs}
           </NavLink>
-          <Button
+          {/* <Button
             variant="outlined"
             startIcon={<LanguageIcon />}
             onClick={() =>
@@ -128,7 +128,7 @@ const Navbar = () => {
             style={showNav || screenWidth > 760 ? { marginBottom: "1em" } : {}}
           >
             Change Language
-          </Button>
+          </Button> */}
         </div>
       )}
       {transition(
@@ -185,7 +185,7 @@ const Navbar = () => {
               >
                 {selectedLang.contactUs}
               </NavLink>
-              <Button
+              {/* <Button
                 variant="outlined"
                 startIcon={<LanguageIcon />}
                 onClick={() =>
@@ -196,7 +196,7 @@ const Navbar = () => {
                 }
               >
                 Change Language
-              </Button>
+              </Button> */}
             </animated.div>
           )
       )}
