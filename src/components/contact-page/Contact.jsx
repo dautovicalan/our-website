@@ -62,9 +62,21 @@ const Contact = () => {
   const { languageId } = useContext(LanguageContext);
   let selectedLang = languageId === 0 && language.english.contact;
 
-  const [formName, setFormName] = useState();
-  const [formEmail, setFormEmail] = useState();
-  const [formMessage, setFormMessage] = useState();
+  const [formName, setFormName] = useState("");
+  const [formEmail, setFormEmail] = useState("");
+  const [formMessage, setFormMessage] = useState("");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const data = { name: formName, email: formEmail, message: formMessage };
+    const response = await fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encodeURIComponent({ "form-name": "contact", ...data }),
+    });
+
+    if (response) alert("Thank you for sending us a message");
+  };
 
   const props = useSpring({
     to: { opacity: 1 },
@@ -81,6 +93,7 @@ const Contact = () => {
           data-netlify="true"
           className={styles.form_container}
           method="post"
+          onSubmit={handleSubmit}
         >
           <InputLabel htmlFor="name">{selectedLang.name.label}</InputLabel>
           <TextField
