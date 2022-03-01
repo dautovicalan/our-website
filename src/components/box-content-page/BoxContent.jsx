@@ -4,6 +4,15 @@ import { Outlet, useNavigate } from "react-router-dom";
 import { IKImage } from "imagekitio-react";
 import { useSpring, animated } from "react-spring";
 
+const languages = {
+  english: {
+    header: {},
+  },
+  croatian: {
+    header: {},
+  },
+};
+
 const BoxContent = () => {
   const navigator = useNavigate();
   const handleClick = (path) => navigator(`/expertise/${path}`);
