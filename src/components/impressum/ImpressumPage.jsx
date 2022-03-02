@@ -147,7 +147,11 @@ const ImpressumPage = () => {
       Telefon: <p>017629186698</p>
       Impressum:{" "}
       <p>
-        <a href="https://www.webboutiquesolutions.com/" target="_blank">
+        <a
+          href="https://www.webboutiquesolutions.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           https://www.webboutiquesolutions.com/
         </a>
       </p>
@@ -300,6 +304,7 @@ const ImpressumPage = () => {
         <a
           href="https://ec.europa.eu/info/law/law-topic/data-protection/international-dimension-data-protection_de"
           target="_blank"
+          rel="noopener noreferrer"
         >
           https://ec.europa.eu/info/law/law-topic/data-protection/international-dimension-data-protection_de
         </a>
@@ -682,11 +687,16 @@ const ImpressumPage = () => {
           <a
             href="https://marketingplatform.google.com/intl/de/about/analytics/"
             target="_blank"
+            rel="noopener noreferrer"
           >
             https://marketingplatform.google.com/intl/de/about/analytics/
           </a>
           ; <strong>Datenschutzerklärung:</strong>{" "}
-          <a href="https://policies.google.com/privacy" target="_blank">
+          <a
+            href="https://policies.google.com/privacy"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             https://policies.google.com/privacy
           </a>
           ; <strong>Weitere Informationen:</strong> Arten der Verarbeitung sowie
@@ -694,6 +704,7 @@ const ImpressumPage = () => {
           <a
             href="https://privacy.google.com/businesses/adsservices"
             target="_blank"
+            rel="noopener noreferrer"
           >
             https://privacy.google.com/businesses/adsservices
           </a>
@@ -702,6 +713,7 @@ const ImpressumPage = () => {
           <a
             href="https://business.safety.google/adsprocessorterms"
             target="_blank"
+            rel="noopener noreferrer"
           >
             https://business.safety.google/adsprocessorterms
           </a>
@@ -810,19 +822,35 @@ const ImpressumPage = () => {
           Onlineangebotes eingeschränkt werden. Wir empfehlen daher zusätzlich
           die folgenden Opt-Out-Möglichkeiten, die zusammenfassend auf jeweilige
           Gebiete gerichtet angeboten werden: a) Europa:{" "}
-          <a href="https://www.youronlinechoices.eu" target="_blank">
+          <a
+            href="https://www.youronlinechoices.eu"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             https://www.youronlinechoices.eu
           </a>
           . b) Kanada:{" "}
-          <a href="https://www.youradchoices.ca/choices" target="_blank">
+          <a
+            href="https://www.youradchoices.ca/choices"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             https://www.youradchoices.ca/choices
           </a>
           . c) USA:{" "}
-          <a href="https://www.aboutads.info/choices" target="_blank">
+          <a
+            href="https://www.aboutads.info/choices"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             https://www.aboutads.info/choices
           </a>
           . d) Gebietsübergreifend:{" "}
-          <a href="https://optout.aboutads.info" target="_blank">
+          <a
+            href="https://optout.aboutads.info"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             https://optout.aboutads.info
           </a>
           .
@@ -900,11 +928,19 @@ const ImpressumPage = () => {
           <strong>Instagram: </strong>Soziales Netzwerk;{" "}
           <strong>Dienstanbieter:</strong> Instagram Inc., 1601 Willow Road,
           Menlo Park, CA, 94025, USA; <strong>Website:</strong>{" "}
-          <a href="https://www.instagram.com" target="_blank">
+          <a
+            href="https://www.instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             https://www.instagram.com
           </a>
           ; <strong>Datenschutzerklärung:</strong>{" "}
-          <a href="https://instagram.com/about/legal/privacy" target="_blank">
+          <a
+            href="https://instagram.com/about/legal/privacy"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             https://instagram.com/about/legal/privacy
           </a>
           .
@@ -915,11 +951,19 @@ const ImpressumPage = () => {
           Cumberland Place, Fenian Street, Dublin 2 D02 AX07, Irland,
           Mutterunternehmen: Twitter Inc., 1355 Market Street, Suite 900, San
           Francisco, CA 94103, USA; <strong>Datenschutzerklärung:</strong>{" "}
-          <a href="https://twitter.com/privacy" target="_blank">
+          <a
+            href="https://twitter.com/privacy"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             https://twitter.com/privacy
           </a>
           , (Settings:{" "}
-          <a href="https://twitter.com/personalization" target="_blank">
+          <a
+            href="https://twitter.com/personalization"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             https://twitter.com/personalization
           </a>
           ).
@@ -999,11 +1043,19 @@ const ImpressumPage = () => {
           Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland,
           Mutterunternehmen: Google LLC, 1600 Amphitheatre Parkway, Mountain
           View, CA 94043, USA; <strong>Website:</strong>{" "}
-          <a href="https://fonts.google.com/" target="_blank">
+          <a
+            href="https://fonts.google.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             https://fonts.google.com/
           </a>
           ; <strong>Datenschutzerklärung:</strong>{" "}
-          <a href="https://policies.google.com/privacy" target="_blank">
+          <a
+            href="https://policies.google.com/privacy"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             https://policies.google.com/privacy
           </a>
           .
@@ -1018,17 +1070,26 @@ const ImpressumPage = () => {
           Barrow Street, Dublin 4, Irland, Mutterunternehmen: Google LLC, 1600
           Amphitheatre Parkway, Mountain View, CA 94043, USA;{" "}
           <strong>Website:</strong>{" "}
-          <a href="https://cloud.google.com/maps-platform" target="_blank">
+          <a
+            href="https://cloud.google.com/maps-platform"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             https://cloud.google.com/maps-platform
           </a>
           ; <strong>Datenschutzerklärung:</strong>{" "}
-          <a href="https://policies.google.com/privacy" target="_blank">
+          <a
+            href="https://policies.google.com/privacy"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             https://policies.google.com/privacy
           </a>
           ; <strong>Widerspruchsmöglichkeit (Opt-Out):</strong> Opt-Out-Plugin:{" "}
           <a
             href="https://tools.google.com/dlpage/gaoptout?hl=de"
             target="_blank"
+            rel="noopener noreferrer"
           >
             https://tools.google.com/dlpage/gaoptout?hl=de
           </a>
@@ -1036,6 +1097,7 @@ const ImpressumPage = () => {
           <a
             href="https://adssettings.google.com/authenticated"
             target="_blank"
+            rel="noopener noreferrer"
           >
             https://adssettings.google.com/authenticated
           </a>
