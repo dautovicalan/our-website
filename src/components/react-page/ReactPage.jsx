@@ -3,18 +3,18 @@ import style from "./styles-reactpage.module.css";
 import { IKImage } from "imagekitio-react";
 import { useSpring, animated } from "react-spring";
 
-const language = {
-  english: {
-    reactPage: {
-      text: "",
-    },
-  },
-  croatian: {
-    reactPage: {
-      text: ""
-    },
-  },
-};
+// const language = {
+//   english: {
+//     reactPage: {
+//       text: "",
+//     },
+//   },
+//   croatian: {
+//     reactPage: {
+//       text: ""
+//     },
+//   },
+// };
 
 const ReactPage = () => {
   const props = useSpring({
