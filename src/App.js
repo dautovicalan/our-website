@@ -22,6 +22,7 @@ import ConsultingSection from "./components/box-content-page/nested-pages/Consul
 import ReactPage from "./components/react-page/ReactPage";
 import Box from "@mui/material/Box";
 import Skeleton from "@mui/material/Skeleton";
+import ImpressumPage from "./components/impressum/ImpressumPage";
 
 const BoxContent = React.lazy(() =>
   import("./components/box-content-page/BoxContent")
@@ -91,6 +92,7 @@ function App() {
               element={<ConsultingSection />}
             />
           </Route>
+          <Route path="/impressum" element={<ImpressumPage />} />
         </Routes>
         <Footer />
       </LanguageContextProvider>

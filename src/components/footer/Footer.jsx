@@ -55,6 +55,7 @@ const Footer = () => {
           <NavLink to="/add-ons">{selectedLang.addOns}</NavLink>
           <NavLink to="/about-us">{selectedLang.aboutUs}</NavLink>
           <NavLink to="/contact">{selectedLang.contactUs}</NavLink>
+          <NavLink to="/impressum">Impressum</NavLink>
         </div>
         <div className={styles.copyright_container}>
           <p>&copy; 2022 Web Boutique</p>
