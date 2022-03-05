@@ -61,7 +61,11 @@ const SoftwareSolution = () => {
           item ? (
             <animated.h1
               style={{
-                opacity: opacity.to({ range: [0.0, 1.0], output: [0, 1] }),
+                opacity: opacity.to({
+                  range: [0.0, 1.0],
+                  output: [0, 1],
+                  fontFamily: '"Comfortaa", cursive',
+                }),
               }}
             >
               Think different!
