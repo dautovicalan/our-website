@@ -133,7 +133,10 @@ const Navbar = () => {
         (style, item) =>
           item &&
           screenWidth < 1205 && (
-            <animated.div style={style} className="contents">
+            <animated.div
+              style={{ ...style, paddingBottom: "1.2em" }}
+              className="contents"
+            >
               <NavLink
                 className={(navData) => (navData.isActive ? "active" : "")}
                 to="/"
