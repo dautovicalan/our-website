@@ -1,18 +1,15 @@
 import "./App.css";
 import Navbar from "./components/navbar/Navbar";
 import React, { Suspense } from "react";
-import Sections from "./components/home/Sections";
 import AboutUs from "./components/about-us-page/AboutUs";
 import Contact from "./components/contact-page/Contact";
 import { Routes, Route } from "react-router-dom";
 import Footer from "./components/footer/Footer";
 import LanguageContextProvider from "./context/LanguageContext";
-import Services from "./components/services-page/Services";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import NotFoundPage from "./components/not-found-page/NotFoundPage";
-// import BoxContent from "./components/box-content-page/BoxContent";
 import SoftwareSolution from "./components/box-content-page/nested-pages/SoftwareSolution";
 import SeoSection from "./components/box-content-page/nested-pages/SeoSection";
 import MarketingSection from "./components/box-content-page/nested-pages/MarketingSection";
@@ -28,6 +25,11 @@ const BoxContent = React.lazy(() =>
   import("./components/box-content-page/BoxContent")
 );
 
+const Sections = React.lazy(() => import("./components/home/Sections"));
+const Services = React.lazy(() =>
+  import("./components/services-page/Services")
+);
+
 function App() {
   AOS.init({ duration: 2000, delay: 5000, once: true });
   return (
@@ -36,7 +38,24 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="*" element={<NotFoundPage />} />
-          <Route path="/" element={<Sections />} />
+          <Route
+            path="/"
+            element={
+              <Suspense
+                fallback={
+                  <div style={{ paddingTop: "11em" }}>
+                    <Box sx={{ width: "100% " }}>
+                      <Skeleton />
+                      <Skeleton />
+                      <Skeleton />
+                    </Box>
+                  </div>
+                }
+              >
+                <Sections />
+              </Suspense>
+            }
+          />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/contact" element={<Contact />} />
           <Route

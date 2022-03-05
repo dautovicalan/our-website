@@ -3,7 +3,16 @@ import React from "react";
 const ImpressumPage = () => {
   return (
     <div
-      style={{ paddingTop: "11em", paddingLeft: "2em", paddingRight: "2em" }}
+      style={{
+        paddingTop: "11em",
+        paddingLeft: "2em",
+        paddingRight: "2em",
+        width: "100%",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        fontFamily: '"Rajdhani", sans-serif',
+      }}
     >
       <h1>Datenschutzerklärung</h1>
       <h2 id="m14">Einleitung</h2>
