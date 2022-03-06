@@ -3,17 +3,32 @@ import styles from "./styles-box-content.module.css";
 import { Outlet, useNavigate } from "react-router-dom";
 import { IKImage } from "imagekitio-react";
 import { useSpring, animated } from "react-spring";
+import { LanguageContext } from "../../context/LanguageContext";
+import { useContext } from "react";
+import selectLanguage from "../../functions/SelectLanguage";
 
-// const languages = {
-//   english: {
-//     header: {},
-//   },
-//   croatian: {
-//     header: {},
-//   },
-// };
+const language = {
+  english: {
+    titleOne: "Software Solution",
+    titleTwo: "Support",
+    titleThree: "SEO",
+    titleFour: "Marketing",
+    titleFive: "Consulting",
+    titleSix: "Creativity",
+  },
+  croatian: {
+    titleOne: "Softverska rješenja",
+    titleTwo: "Podrška",
+    titleThree: "SEO",
+    titleFour: "Marketing",
+    titleFive: "Savjetovanje",
+    titleSix: "Kreativnost",
+  },
+};
 
 const BoxContent = () => {
+  const { languageId } = useContext(LanguageContext);
+  let selectedLang = selectLanguage(languageId, language);
   const navigator = useNavigate();
   const handleClick = (path) => navigator(`/expertise/${path}`);
   const props = useSpring({
@@ -37,7 +52,7 @@ const BoxContent = () => {
       <div className={styles.main_container}>
         <div className={styles.box_content}>
           <div>
-            <h1>Software Solution</h1>
+            <h1>{selectedLang.titleOne}</h1>
             <a
               href="#outlet_container"
               onClick={() => handleClick("software-solution")}
@@ -53,7 +68,7 @@ const BoxContent = () => {
         </div>
         <div className={styles.box_content}>
           <div>
-            <h1>Support</h1>
+            <h1>{selectedLang.titleTwo}</h1>
             <a href="#outlet_container" onClick={() => handleClick("support")}>
               Show information
             </a>
@@ -66,7 +81,7 @@ const BoxContent = () => {
         </div>
         <div className={styles.box_content}>
           <div>
-            <h1>SEO</h1>
+            <h1>{selectedLang.titleThree}</h1>
             <a href="#outlet_container" onClick={() => handleClick("seo")}>
               Show information
             </a>
@@ -79,7 +94,7 @@ const BoxContent = () => {
         </div>
         <div className={styles.box_content}>
           <div>
-            <h1>Marketing</h1>
+            <h1>{selectedLang.titleFour}</h1>
             <a
               href="#outlet_container"
               onClick={() => handleClick("marketing")}
@@ -95,7 +110,7 @@ const BoxContent = () => {
         </div>
         <div className={styles.box_content}>
           <div>
-            <h1>Consulting</h1>
+            <h1>{selectedLang.titleFive}</h1>
             <a
               href="#outlet_container"
               onClick={() => handleClick("consulting")}
@@ -111,7 +126,7 @@ const BoxContent = () => {
         </div>
         <div className={styles.box_content}>
           <div>
-            <h1>Creativity</h1>
+            <h1>{selectedLang.titleSix}</h1>
             <a
               href="#outlet_container"
               onClick={() => handleClick("creativity")}

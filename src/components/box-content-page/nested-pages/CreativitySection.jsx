@@ -8,27 +8,58 @@ import GroupsIcon from "@mui/icons-material/Groups";
 import FilePresentIcon from "@mui/icons-material/FilePresent";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
+import { LanguageContext } from "../../../context/LanguageContext";
+import { useContext } from "react";
+import selectLanguage from "../../../functions/SelectLanguage";
+
+const language = {
+  english: {
+    header: "Think different",
+    textOne: "State-of-the-art technology",
+    textTwo: "Ideas",
+    textThree: "Teamwork",
+    textFour: "Dedication",
+    textFive: "Individual approach",
+    textSix: "Web development",
+    textSeven: "Best results",
+    question: "HOW WE CAN HELP YOU?",
+    buttonText: "Send Us A Message",
+  },
+  croatian: {
+    header: "Misli drugačije",
+    textOne: "Najnovija tehnologija",
+    textTwo: "Ideje",
+    textThree: "Timski rad",
+    textFour: "Posveta",
+    textFive: "Individualni pristup",
+    textSix: "Web razvoj",
+    textSeven: "Najbolji rezultati",
+    question: "KAKO VAM MOŽEMO POMOĆI?",
+    buttonText: "Pošaljite nam poruku",
+  },
+};
 
 const CreativitySection = () => {
+  const { languageId } = useContext(LanguageContext);
+  let selectedLang = selectLanguage(languageId, language);
   const navigator = useNavigate();
-
   const handleClick = () => navigator("/services");
 
   return (
     <div className={style.main_container}>
-      <h1>Think different</h1>
+      <h1>{selectedLang.header}</h1>
       <div>
         <div className={style.list_section}>
-          <p>State-of-the-art technology</p>
-          <p>Ideas</p>
-          <p>Teamwork</p>
-          <p>Dedication</p>
-          <p>Individual approach</p>
-          <p>Web development</p>
-          <p>Best results</p>
+          <p>{selectedLang.textOne}</p>
+          <p>{selectedLang.textTwo}</p>
+          <p>{selectedLang.textThree}</p>
+          <p>{selectedLang.textFour}</p>
+          <p>{selectedLang.textFive}</p>
+          <p>{selectedLang.textSix}</p>
+          <p>{selectedLang.textSeven}</p>
         </div>
       </div>
-      <h1>HOW WE CAN HELP YOU?</h1>
+      <h1>{selectedLang.question}</h1>
       <div className={style.circle_container}>
         <div onClick={handleClick}>
           <CodeIcon />
@@ -50,7 +81,7 @@ const CreativitySection = () => {
         </div>
       </div>
       <Link to="/contact" className={style["button-64"]} role="button">
-        <span className={style.text}>Send Us A Message</span>
+        <span className={style.text}>{selectedLang.buttonText}</span>
       </Link>
     </div>
   );

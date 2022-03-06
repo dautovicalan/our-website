@@ -5,67 +5,64 @@ import { useContext } from "react";
 import { LanguageContext } from "../../context/LanguageContext.js";
 import { useNavigate } from "react-router-dom";
 import { IKImage } from "imagekitio-react";
+import selectLanguage from "../../functions/SelectLanguage";
 
 const language = {
   english: {
-    home: {
-      quote: "I dream of painting and then I paint my dream.",
-      homeHeaderFirstPart: "With you from",
-      homeHeaderSecondPart: "start to finish",
-      firstText: `From the very beginning, we work out your wishes and ideas with you down to the smallest detail.
+    quote: "I dream of painting and then I paint my dream.",
+    homeHeaderFirstPart: "With you from",
+    homeHeaderSecondPart: "start to finish",
+    firstText: `From the very beginning, we work out your wishes and ideas with you down to the smallest detail.
       Our work begins with a detailed analysis of the project before us. Together we create the concept, structure and the first Web solutions.
       We put your Corporate Identity first, and as such we improve and enhance it.
       The individual design we provide gives your fat endless freedom.
       `,
-      secondText: `After a detailed process of selecting your desired page, we start with technical testing of other parameters that are extremely important to the page.
+    secondText: `After a detailed process of selecting your desired page, we start with technical testing of other parameters that are extremely important to the page.
       When the whole mosaic is assembled, your page will be available on all devices and in different formats.
       No worries and after launching the site into the digital world we remain your main partner for all questions.
       `,
-      singleParagraphFirstPart: `The most modern and professional Web design`,
-      singleParagraphSecondPart: `for your journey into the digital world`,
-      boxes: {
-        one: "Analysis",
-        second: "Concept",
-        thrid: "Consult",
-        fourth: "Design",
-        fifth: "Content",
-        sixth: "Code",
-        seventh: "Project",
-        eigth: "Launch",
-      },
+    singleParagraphFirstPart: `The most modern and professional Web design`,
+    singleParagraphSecondPart: `for your journey into the digital world`,
+    boxes: {
+      one: "Analysis",
+      second: "Concept",
+      thrid: "Consult",
+      fourth: "Design",
+      fifth: "Content",
+      sixth: "Code",
+      seventh: "Project",
+      eigth: "Launch",
     },
   },
   croatian: {
-    home: {
-      quote: "I dream of painting and then I paint my dream.",
-      firstText: `Od samog početka s Vama razradujemo vaše želje i ideje do najsitnijih detalja.
+    quote: "I dream of painting and then I paint my dream.",
+    firstText: `Od samog početka s Vama razradujemo vaše želje i ideje do najsitnijih detalja.
       Naš rad počinje sa detaljnom Analizom projekta koji je pred nama. Skupa svama stvaramo konzept ,Strukturu te prva Web rješenja. 
       Vaš Corporate Identity stavljamo na prvo mjesto , te ga kao takvog unaprijeđujemo i poboljsavamo.
       Individualan dizajn koji pružamo daje vašoj masti beskonačnu slobodu.
       `,
-      secondText: `Nakon detaljnog procesa odabira vaše željene stranice , krećemo sa tehničkim testiranjima ostalih parametara koji su iznimno važni ya stranicu.
+    secondText: `Nakon detaljnog procesa odabira vaše željene stranice , krećemo sa tehničkim testiranjima ostalih parametara koji su iznimno važni ya stranicu.
       Kad cijeli mozaik bude složen, vaša stranica će biti dostupna na svim uređajima i u različitim formatima .
       Bez brige i nakon lansiranja stranice u digitalni svijet mi ostajemo vas glavni partner za sva pitanja.
       
       `,
-      singleParagraph: `Najmodernija i najprofesionalnija izrada Web-stranica za vas put u digitalni svijet`,
-      boxes: {
-        one: "Analiza",
-        second: "Koncept",
-        thrid: "Savjetovanje",
-        fourth: "Dizajn",
-        fifth: "Sadržaj",
-        sixth: "Code",
-        seventh: "Projekt",
-        eigth: "Lansiranje",
-      },
+    singleParagraph: `Najmodernija i najprofesionalnija izrada Web-stranica za vas put u digitalni svijet`,
+    boxes: {
+      one: "Analiza",
+      second: "Koncept",
+      thrid: "Savjetovanje",
+      fourth: "Dizajn",
+      fifth: "Sadržaj",
+      sixth: "Code",
+      seventh: "Projekt",
+      eigth: "Lansiranje",
     },
   },
 };
 
 const Sections = () => {
   const { languageId } = useContext(LanguageContext);
-  let selectedLang = languageId === 0 && language.english.home;
+  let selectedLang = selectLanguage(languageId, language);
 
   const navigator = useNavigate();
   const handleClick = () => navigator("/services");

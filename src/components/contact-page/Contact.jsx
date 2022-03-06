@@ -8,59 +8,56 @@ import { useContext } from "react";
 import { LanguageContext } from "../../context/LanguageContext.js";
 import { useSpring, animated } from "react-spring";
 import { Form } from "react-bootstrap";
+import selectLanguage from "../../functions/SelectLanguage";
 
 const language = {
   english: {
-    contact: {
-      header: "Send us a message",
-      name: {
-        label: "Name",
-        placeholder: "Please enter your name",
-      },
-      surname: {
-        label: "Surname",
-        placeholder: "Please enter your surname",
-      },
-      email: {
-        label: "Email",
-        placeholder: "Please enter your Email",
-      },
-      message: {
-        label: "Message",
-        placeholder: "Please enter your message",
-      },
-      send: "Send",
-      findUsHere: "You can visit us here",
+    header: "Send us a message",
+    name: {
+      label: "Name",
+      placeholder: "Please enter your name",
     },
+    surname: {
+      label: "Surname",
+      placeholder: "Please enter your surname",
+    },
+    email: {
+      label: "Email",
+      placeholder: "Please enter your Email",
+    },
+    message: {
+      label: "Message",
+      placeholder: "Please enter your message",
+    },
+    send: "Send",
+    findUsHere: "You can visit us here",
   },
   croatian: {
-    contact: {
-      header: "Pošalji nam poruku",
-      name: {
-        label: "Ime",
-        placeholder: "Unesite svoje ime",
-      },
-      surname: {
-        label: "Prezime",
-        placeholder: "Unesite svoje Prezime",
-      },
-      email: {
-        label: "E-Mail",
-        placeholder: "Unesite svoj E-Mail",
-      },
-      message: {
-        label: "Poruka",
-        placeholder: "Unesite svoju Poruka",
-      },
-      send: "Pošalji",
-      findUsHere: "Naše lokacije",
+    header: "Pošalji nam poruku",
+    name: {
+      label: "Ime",
+      placeholder: "Unesite svoje ime",
     },
+    surname: {
+      label: "Prezime",
+      placeholder: "Unesite svoje Prezime",
+    },
+    email: {
+      label: "E-Mail",
+      placeholder: "Unesite svoj E-Mail",
+    },
+    message: {
+      label: "Poruka",
+      placeholder: "Unesite svoju Poruka",
+    },
+    send: "Pošalji",
+    findUsHere: "Naše lokacije",
   },
 };
 
 const Contact = () => {
   const { languageId } = useContext(LanguageContext);
-  let selectedLang = languageId === 0 && language.english.contact;
+  let selectedLang = selectLanguage(languageId, language);
 
   const [formName, setFormName] = useState("");
   const [formEmail, setFormEmail] = useState("");

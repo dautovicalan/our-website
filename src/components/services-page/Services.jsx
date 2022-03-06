@@ -11,13 +11,13 @@ import FileCopyIcon from "@mui/icons-material/FileCopy";
 import CodeIcon from "@mui/icons-material/Code";
 import RocketLaunchIcon from "@mui/icons-material/RocketLaunch";
 import { IKImage } from "imagekitio-react";
+import selectLanguage from "../../functions/SelectLanguage";
 
 const language = {
   english: {
-    services: {
-      pageTitle: `Our services`,
-      firstBoxTitle: `Analysis`,
-      firstBoxText: `Not satisfied with the current Website?
+    pageTitle: `Our services`,
+    firstBoxTitle: `Analysis`,
+    firstBoxText: `Not satisfied with the current Website?
       Don't worry, WE ARE HERE FOR YOU.
       We analyze all your projects in detail to make your step into the digital world even better.
       
@@ -34,19 +34,19 @@ const language = {
       
       We are developing the best SEO Strategy for you so that your site is always FIRST.
       `,
-      secondBoxTitle: `Consulting`,
-      secondBoxText: `We are with you from start to finish.
+    secondBoxTitle: `Consulting`,
+    secondBoxText: `We are with you from start to finish.
       We develop individual solutions for all your needs.
       After the completion of the project, we remain your main partner for all questions.
       Our support is 24’7. Tu ya vas.
       `,
-      thirdBoxTitle: `Concept`,
-      thirdBoxText: `With you we develop a strategy and concept to successfully achieve Corporate Goals.
+    thirdBoxTitle: `Concept`,
+    thirdBoxText: `With you we develop a strategy and concept to successfully achieve Corporate Goals.
       We get to know your philosophy in detail, and together we define the goals we want to achieve.
       After successfully testing all prototypes, we move on to finalizing the project.
       `,
-      fourthBoxTitle: `Design`,
-      fourthBoxText: `One of the most important items is just design. With love for detail, we program your site in a modern and compact way.
+    fourthBoxTitle: `Design`,
+    fourthBoxText: `One of the most important items is just design. With love for detail, we program your site in a modern and compact way.
 
       Beautiful Design is not forgotten so quickly.
       
@@ -59,34 +59,32 @@ const language = {
       
       Now put the icons on your laptop, tablet and cell phone, but with the effect that they come to this place.
       `,
-      fifthBoxTitle: `Content`,
-      fifthBoxText: `Another feature that adorns us is the individual creation of Content.
+    fifthBoxTitle: `Content`,
+    fifthBoxText: `Another feature that adorns us is the individual creation of Content.
       We make texts, images and videos according to your wishes, and integrate them into the Website.
       
       Our professional team attaches great importance to the theme of Content, because we at WEB Boutique believe that this is the heart and soul of the site.
       `,
-      sixthBoxTitle: `Code`,
-      sixthBoxText: `Do you not want ready-made Web pages that you cannot create according to your wishes?
+    sixthBoxTitle: `Code`,
+    sixthBoxText: `Do you not want ready-made Web pages that you cannot create according to your wishes?
       Professional coding of pages is our specialty.
       We create the complete technical infrastructure in the most modern programs, and even after the completion of the project we enrich your site with the latest Feauturs and Updates.
       `,
-      seventhBoxTitle: `Project`,
-      seventhBoxText: `we pay attention to each of our clients and together with you we create Web Projects.
+    seventhBoxTitle: `Project`,
+    seventhBoxText: `we pay attention to each of our clients and together with you we create Web Projects.
       All our projects are aimed at fulfilling all your wishes.
       Your successes are also our successes because only together can we change the world
       Each of our projects is accompanied by a presentation with which we present in detail all the functionalities of the site.
       Our Support is 24/7 here for you`,
-      eigthBoxTitle: `Launch`,
-      eigthBoxText: `Before the Website is launched into the digital world, each item is thoroughly checked and after your Feedback, we post the website on the Internet.
+    eigthBoxTitle: `Launch`,
+    eigthBoxText: `Before the Website is launched into the digital world, each item is thoroughly checked and after your Feedback, we post the website on the Internet.
       For all other issues we remain your strong partner.
       `,
-    },
   },
   croatian: {
-    services: {
-      pageTitle: `Naše usluge`,
-      firstBoxTitle: `Analiza`,
-      firstBoxText: `Niste zadovoljni trenutnom web-stranicom?
+    pageTitle: `Naše usluge`,
+    firstBoxTitle: `Analiza`,
+    firstBoxText: `Niste zadovoljni trenutnom web-stranicom?
       Ne brinite, MI SMO TU ZA VAS.
        Detaljno analiziramo sve vaše projekte kako bismo vaš korak u digitalni svijet učinili još boljim.
       
@@ -103,19 +101,19 @@ const language = {
       
        Razvijamo najbolju SEO strategiju za vas kako bi vaša stranica uvijek bila PRVA.
       `,
-      secondBoxTitle: `Savjetovanje`,
-      secondBoxText: `Uz vas smo od početka do kraja.
+    secondBoxTitle: `Savjetovanje`,
+    secondBoxText: `Uz vas smo od početka do kraja.
       Razvijamo individualna rješenja za sve Vaše potrebe.
       Nakon završetka projekta ostajemo Vaš glavni partner za sva pitanja.
       Naša podrška je 24'7. tu za vas.
       `,
-      thirdBoxTitle: `Koncept`,
-      thirdBoxText: `S vama razvijamo strategiju i koncept za uspješno postizanje korporativnih ciljeva.
+    thirdBoxTitle: `Koncept`,
+    thirdBoxText: `S vama razvijamo strategiju i koncept za uspješno postizanje korporativnih ciljeva.
       Detaljno upoznajemo vašu filozofiju, te zajedno definiramo ciljeve koje želimo postići.
       Nakon uspješnog testiranja svih prototipova, prelazimo na finalizaciju projekta.
       `,
-      fourthBoxTitle: `Dizajn`,
-      fourthBoxText: `Jedna od najvažnijih stvari je upravo dizajn. S ljubavlju prema detaljima, programiramo vašu stranicu na moderan i kompaktan način.
+    fourthBoxTitle: `Dizajn`,
+    fourthBoxText: `Jedna od najvažnijih stvari je upravo dizajn. S ljubavlju prema detaljima, programiramo vašu stranicu na moderan i kompaktan način.
 
       Prekrasan dizajn se ne zaboravlja tako brzo.
      
@@ -128,34 +126,33 @@ const language = {
      
       Sada stavite ikone na svoj laptop, tablet i mobitel, ali s učinkom da dolaze na ovo mjesto.
       `,
-      fifthBoxTitle: `Sadržaj`,
-      fifthBoxText: `Još jedna značajka koja nas krasi je individualna izrada sadržaja.
+    fifthBoxTitle: `Sadržaj`,
+    fifthBoxText: `Još jedna značajka koja nas krasi je individualna izrada sadržaja.
       Tekstove, slike i video zapise izrađujemo prema vašim željama i integriramo u web stranicu.
      
       Naš stručni tim pridaje veliku važnost temi Sadržaja, jer mi u WEB Boutiqueu vjerujemo da je to srce i duša stranice.
       `,
-      sixthBoxTitle: `Code`,
-      sixthBoxText: `Ne želite gotove web stranice koje ne možete izraditi prema svojim željama?
+    sixthBoxTitle: `Code`,
+    sixthBoxText: `Ne želite gotove web stranice koje ne možete izraditi prema svojim željama?
       Profesionalno kodiranje stranica naša je specijalnost.
       Izrađujemo kompletnu tehničku infrastrukturu u najsuvremenijim programima, a i nakon završetka projekta obogaćujemo Vašu stranicu najnovijim značajkama i ažuriranjima.
       `,
-      seventhBoxTitle: `Projekt`,
-      seventhBoxText: `Obraćamo pažnju na svakog našeg klijenta i zajedno s vama izrađujemo web projekte.
+    seventhBoxTitle: `Projekt`,
+    seventhBoxText: `Obraćamo pažnju na svakog našeg klijenta i zajedno s vama izrađujemo web projekte.
       Svi naši projekti usmjereni su na ispunjenje svih Vaših želja.
       Vaši uspjesi su i naši uspjesi jer samo zajedno možemo promijeniti svijet
       Svaki naš projekt popraćen je prezentacijom kojom detaljno prezentiramo sve funkcionalnosti stranice.
       Naša podrška je tu za vas 24/7`,
-      eigthBoxTitle: `Lansiranje`,
-      eigthBoxText: `Prije nego što web stranica bude lansirana u digitalni svijet, svaka se stavka temeljito provjerava i nakon vaših povratnih informacija, web stranicu objavljujemo na Internetu.
+    eigthBoxTitle: `Lansiranje`,
+    eigthBoxText: `Prije nego što web stranica bude lansirana u digitalni svijet, svaka se stavka temeljito provjerava i nakon vaših povratnih informacija, web stranicu objavljujemo na Internetu.
       Za sva ostala pitanja ostajemo Vaš snažan partner.
       `,
-    },
   },
 };
 
 const Services = () => {
   const { languageId } = useContext(LanguageContext);
-  let selectedLang = languageId === 0 && language.english.services;
+  let selectedLang = selectLanguage(languageId, language);
 
   return (
     <div className={styles.main_container}>
