@@ -56,8 +56,6 @@ const Footer = () => {
     window.scrollTo(0, 0);
   };
 
-  console.log(age, selectedLang);
-
   return (
     <footer>
       <div className={styles.footer_items}>
