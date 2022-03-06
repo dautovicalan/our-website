@@ -8,27 +8,24 @@ import { useTransition, animated } from "react-spring";
 import Hamburger from "hamburger-react";
 import HomeIcon from "@mui/icons-material/Home";
 import { IKImage } from "imagekitio-react";
+import selectLanguage from "../../functions/SelectLanguage";
 
 const language = {
   english: {
-    navbar: {
-      home: "Home",
-      services: "Services",
-      aboutUs: "About Us",
-      addOns: "Expertise",
-      appDev: "Application Development",
-      contactUs: "Contact Us",
-    },
+    home: "Home",
+    services: "Services",
+    aboutUs: "About Us",
+    addOns: "Expertise",
+    appDev: "Application Development",
+    contactUs: "Contact Us",
   },
   croatian: {
-    navbar: {
-      home: "Glavni Izbornik",
-      services: "Djelatnosti",
-      aboutUs: "O nama",
-      addOns: "Stručnost",
-      appDev: "Razvoj Aplikacija",
-      contactUs: "Kontaktiraj nas",
-    },
+    home: "Glavni Izbornik",
+    services: "Djelatnosti",
+    aboutUs: "O nama",
+    addOns: "Stručnost",
+    appDev: "Razvoj Aplikacija",
+    contactUs: "Kontaktiraj nas",
   },
 };
 
@@ -36,7 +33,7 @@ const Navbar = () => {
   const [showNav, setshowNav] = useState(false);
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   const { languageId } = useContext(LanguageContext);
-  let selectedLang = languageId === 0 && language.english.navbar;
+  let selectedLang = selectLanguage(languageId, language);
 
   const navigator = useNavigate();
   const transition = useTransition(showNav, {
@@ -117,16 +114,6 @@ const Navbar = () => {
           >
             {selectedLang.contactUs}
           </NavLink>
-          {/* <Button
-            variant="outlined"
-            startIcon={<LanguageIcon />}
-            onClick={() =>
-              language.langId === 0 ? setLanguageId(1) : setLanguageId(0)
-            }
-            style={showNav || screenWidth > 760 ? { marginBottom: "1em" } : {}}
-          >
-            Change Language
-          </Button> */}
         </div>
       )}
       {transition(
@@ -186,18 +173,6 @@ const Navbar = () => {
               >
                 {selectedLang.contactUs}
               </NavLink>
-              {/* <Button
-                variant="outlined"
-                startIcon={<LanguageIcon />}
-                onClick={() =>
-                  language.langId === 0 ? setLanguageId(1) : setLanguageId(0)
-                }
-                style={
-                  showNav || screenWidth > 760 ? { marginBottom: "1em" } : {}
-                }
-              >
-                Change Language
-              </Button> */}
             </animated.div>
           )
       )}

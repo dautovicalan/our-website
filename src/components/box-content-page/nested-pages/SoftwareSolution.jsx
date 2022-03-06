@@ -2,8 +2,40 @@ import { IKImage } from "imagekitio-react";
 import React, { useState } from "react";
 import style from "./styles-softwaresolutions.module.css";
 import { useTransition, animated } from "react-spring";
+import { useContext } from "react";
+import { LanguageContext } from "../../../context/LanguageContext";
+import selectLanguage from "../../../functions/SelectLanguage";
+
+const language = {
+  english: {
+    title: "Software Solution",
+    textOne: "Your page is your mirror",
+    textTwo:
+      "There are many ready-made solutions that at first glance seem quick and easy, but in fact they are everything but that.",
+    textThree:
+      "Wrong and bad remarks on the Internet can burn and damage any business",
+    textFour: "Don't worry we're a team that makes a difference",
+    textFive: "We create and create the most complex software solutions",
+    textSix:
+      "Unique codes that respond to contemporary challenges in the digital world",
+  },
+  croatian: {
+    title: "Softverska rješenje",
+    textOne: "Vaša stranica je vaše ogledalo",
+    textTwo:
+      "Mnogo je gotovih rješenja koja se na prvi pogled čine brza i laka, a zapravo su sve samo ne to.",
+    textThree:
+      "Pogrešne i loše primjedbe na internetu mogu spaliti i oštetiti svaki posao",
+    textFour: "Ne brinite, mi smo tim koji čini razliku",
+    textFive: "Kreiramo i izrađujemo najsloženija softverska rješenja",
+    textSix:
+      "Jedinstveni kodovi koji odgovaraju na suvremene izazove u digitalnom svijetu",
+  },
+};
 
 const SoftwareSolution = () => {
+  const { languageId } = useContext(LanguageContext);
+  let selectedLang = selectLanguage(languageId, language);
   const [toggle, setToggle] = useState(false);
 
   const transition = useTransition(toggle, {
@@ -33,27 +65,18 @@ const SoftwareSolution = () => {
           color: "var(--blue-color)",
         }}
       >
-        Software Solution
+        {selectedLang.title}
       </h1>
       <div className={style.text_container} data-aos="fade-right">
         <div>
-          <p>Your page is your mirror</p>
-          <p>
-            There are many ready-made solutions that at first glance seem quick
-            and easy, but in fact they are everything but that.
-          </p>
-          <p>
-            Wrong and bad remarks on the Internet can burn and damage any
-            business
-          </p>
+          <p>{selectedLang.textOne}</p>
+          <p>{selectedLang.textTwo}</p>
+          <p>{selectedLang.textThree}</p>
         </div>
         <div>
-          <p>Don't worry we're a team that makes a difference</p>
-          <p>We create and create the most complex software solutions</p>
-          <p>
-            Unique codes that respond to contemporary challenges in the digital
-            world
-          </p>
+          <p>{selectedLang.textFour}</p>
+          <p>{selectedLang.textFive}</p>
+          <p>{selectedLang.textSix}</p>
         </div>
       </div>
       <div className={style.image_container} data-aos="fade-right">
