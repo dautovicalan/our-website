@@ -36,83 +36,47 @@ function App() {
     <React.Fragment>
       <LanguageContextProvider>
         <Navbar />
-        <Routes>
-          <Route path="*" element={<NotFoundPage />} />
-          <Route
-            path="/"
-            element={
-              <Suspense
-                fallback={
-                  <div style={{ paddingTop: "11em" }}>
-                    <Box sx={{ width: "100% " }}>
-                      <Skeleton />
-                      <Skeleton />
-                      <Skeleton />
-                    </Box>
-                  </div>
-                }
-              >
-                <Sections />
-              </Suspense>
-            }
-          />
-          <Route path="/about-us" element={<AboutUs />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route
-            path="/services"
-            element={
-              <Suspense
-                fallback={
-                  <div style={{ paddingTop: "11em" }}>
-                    <Box sx={{ width: "100% " }}>
-                      <Skeleton />
-                      <Skeleton />
-                      <Skeleton />
-                    </Box>
-                  </div>
-                }
-              >
-                <Services />
-              </Suspense>
-            }
-          />
-          <Route path="/application-development" element={<ReactPage />} />
-          <Route
-            path="/expertise"
-            element={
-              <Suspense
-                fallback={
-                  <div style={{ paddingTop: "11em" }}>
-                    <Box sx={{ width: "100% " }}>
-                      <Skeleton />
-                      <Skeleton />
-                      <Skeleton />
-                    </Box>
-                  </div>
-                }
-              >
-                <BoxContent />
-              </Suspense>
-            }
-          >
-            <Route
-              path="/expertise/software-solution"
-              element={<SoftwareSolution />}
-            />
-            <Route path="/expertise/seo" element={<SeoSection />} />
-            <Route path="/expertise/marketing" element={<MarketingSection />} />
-            <Route
-              path="/expertise/creativity"
-              element={<CreativitySection />}
-            />
-            <Route path="/expertise/support" element={<SupportSection />} />
-            <Route
-              path="/expertise/consulting"
-              element={<ConsultingSection />}
-            />
-          </Route>
-          <Route path="/impressum" element={<ImpressumPage />} />
-        </Routes>
+        <Suspense
+          fallback={
+            <div style={{ paddingTop: "11em" }}>
+              <Box sx={{ width: "100% " }}>
+                <Skeleton />
+                <Skeleton />
+                <Skeleton />
+              </Box>
+            </div>
+          }
+        >
+          <Routes>
+            <Route path="*" element={<NotFoundPage />} />
+            <Route path="/" element={<Sections />} />
+            <Route path="/about-us" element={<AboutUs />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/application-development" element={<ReactPage />} />
+            <Route path="/expertise" element={<BoxContent />}>
+              <Route
+                path="/expertise/software-solution"
+                element={<SoftwareSolution />}
+              />
+              <Route path="/expertise/seo" element={<SeoSection />} />
+              <Route
+                path="/expertise/marketing"
+                element={<MarketingSection />}
+              />
+              <Route
+                path="/expertise/creativity"
+                element={<CreativitySection />}
+              />
+              <Route path="/expertise/support" element={<SupportSection />} />
+              <Route
+                path="/expertise/consulting"
+                element={<ConsultingSection />}
+              />
+            </Route>
+            <Route path="/impressum" element={<ImpressumPage />} />
+          </Routes>
+        </Suspense>
         <Footer />
       </LanguageContextProvider>
     </React.Fragment>
