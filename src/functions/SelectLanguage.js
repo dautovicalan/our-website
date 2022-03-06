@@ -1,5 +1,3 @@
-import React, { useEffect } from "react";
-
 const selectLanguage = (languageId, componentLanguage) => {
   let language;
   switch (languageId) {
