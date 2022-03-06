@@ -71,25 +71,25 @@ const AboutUs = () => {
         <p>{selectedLang.thirdSection}</p>
         <div className={styles.list_icons}>
           <div>
-            <img src={reactLogo} alt="React Logo" />
+            <img src={reactLogo} alt="React JS Framework Logo" />
           </div>
           <div>
             <img src={reactSpringLogo} alt="React Logo" />
           </div>
           <div>
-            <img src={jsLogo} alt="React Logo" />
+            <img src={jsLogo} alt="JavaScript Programming Language Logo" />
           </div>
           <div>
-            <img src={twLogo} alt="React Logo" />
+            <img src={twLogo} alt="Tailwind Libary Logo" />
           </div>
           <div>
-            <img src={muiLogo} alt="React Logo" />
+            <img src={muiLogo} alt="MUI Components Logo" />
           </div>
           <div>
-            <img src={bootstraplogo} alt="React Logo" />
+            <img src={bootstraplogo} alt="Bootstrap Libary Logo" />
           </div>
           <div>
-            <img src={cssLogo} alt="React Logo" />
+            <img src={cssLogo} alt="CSS Styles Logo" />
           </div>
         </div>
       </animated.div>
