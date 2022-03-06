@@ -26,14 +26,14 @@ const language = {
   },
   croatian: {
     firstTitle: "Tko stoji iza Web Botique Solutions?",
-    firstSection: `Mi smo jedan mladi tim koji sve vase snove pretvara u stvarnost.
-      Iza kulisa stvaramo Web rješenja koja će unaprijediti vase poslovanje i dignuti ga na još veći nivo.
+    firstSection: `Mi smo jedan mladi tim koji sve Vaše snove pretvara u stvarnost.
+      Iza kulisa stvaramo Web rješenja koja će unaprijediti Vaše poslovanje i dignuti ga na još veći nivo.
       Specijalizirani smo na najmodernije usluge na internetu.
       `,
     secondSection: `Individualnost, kreativnost, pedantnost… samo su jedne od vrlina koje krase nas tim.
-      Naši klijenti su naši partneri , koje pratimo na putu ka ostavrivanju svih vaših ciljeva.
-      Od prvog Kontakta s nama dobijate detaljnu razradu cijelog projekta.`,
-    thirdSection: `Mi smo vaš snažni partner na putu u digitalni svijet.`,
+      Naši klijenti su naši partneri , koje pratimo na putu ka ostavrivanju svih Vaših ciljeva.
+      Od prvog kontakta s nama dobijate detaljnu razradu cijelog projekta.`,
+    thirdSection: `Mi smo Vaš snažni partner na putu u digitalni svijet.`,
   },
 };
 

@@ -42,17 +42,17 @@ const language = {
     listSix: "Podrška 24/7",
     questionOne: "Što znači podrška 24/7?",
     answerOne:
-      "S nama podrška 24’7 znači da smo svaki dan ime za vas. Naša kontrola sustava omogućuje nam da na vrijeme otklonimo sve tehničke poteškoće.",
+      "S nama podrška 24’7 znači da smo svaki dan ime za Vas. Naša kontrola sustava omogućuje nam da na vrijeme otklonimo sve tehničke poteškoće.",
     questionTwo: "Što nakon kraja?",
     answerTwo:
-      "Još uvijek smo tu za vas. Nastavljamo održavati vašu stranicu i stalno je obogaćivati novim ažuriranjima i značajkama.",
+      "Još uvijek smo tu za Vas. Nastavljamo održavati Vašu stranicu i stalno je obogaćivati novim ažuriranjima i značajkama.",
     questionThree: "Koristimo li gotov dizajn?",
     answerThree:
-      "NE. Sve naše web stranice i web rješenja programiramo prema vašim željama. Svaki naš projekt ima jedinstveni kod.",
+      "NE. Sve naše web stranice i web rješenja programiramo prema Vašim željama. Svaki naš projekt ima jedinstveni kod.",
     questionFour:
       "Želim da moja stranica bude među prvima na Googleu, ali kako?",
     answerFour:
-      "Ne brini. SEO je samo jedna od naših specijalnosti. Za prvo mjesto na Googleu potrebne su određene predispozicije koje integriramo tijekom projekta i kasnije lansiramo u digitalni svijet.",
+      "Ne brinite se. SEO je samo jedna od naših specijalnosti. Za prvo mjesto na Googleu potrebne su određene predispozicije koje integriramo tijekom projekta i kasnije lansiramo u digitalni svijet.",
     questionFive: "Što je react?",
     answerFive:
       "React je jedan od programa koje koristimo za izradu složenih softverskih rješenja. Koristimo ga za izgradnju interaktivnih korisničkih sučelja i omogućavanje jednosmjerne podatkovne veze. Većina složenih web stranica poput Facebooka koristi React.",

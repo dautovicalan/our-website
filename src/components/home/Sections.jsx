@@ -36,14 +36,14 @@ const language = {
   },
   croatian: {
     quote: "I dream of painting and then I paint my dream.",
-    firstText: `Od samog početka s Vama razradujemo vaše želje i ideje do najsitnijih detalja.
+    firstText: `Od samog početka s Vama razradujemo Vaše želje i ideje do najsitnijih detalja.
       Naš rad počinje sa detaljnom Analizom projekta koji je pred nama. Skupa svama stvaramo konzept ,Strukturu te prva Web rješenja. 
-      Vaš Corporate Identity stavljamo na prvo mjesto , te ga kao takvog unaprijeđujemo i poboljsavamo.
-      Individualan dizajn koji pružamo daje vašoj masti beskonačnu slobodu.
+      Vaš Corporate Identity stavljamo na prvo mjesto , te ga kao takvog unaprijeđujemo i poboljšavamo.
+      Individualan dizajn koji pružamo daje Vašoj mašti beskonačnu slobodu.
       `,
-    secondText: `Nakon detaljnog procesa odabira vaše željene stranice , krećemo sa tehničkim testiranjima ostalih parametara koji su iznimno važni ya stranicu.
-      Kad cijeli mozaik bude složen, vaša stranica će biti dostupna na svim uređajima i u različitim formatima .
-      Bez brige i nakon lansiranja stranice u digitalni svijet mi ostajemo vas glavni partner za sva pitanja.
+    secondText: `Nakon detaljnog procesa odabira Vaše željene stranice , krećemo sa tehničkim testiranjima ostalih parametara koji su iznimno važni za stranicu.
+      Kad cijeli mozaik bude složen, Vaša stranica će biti dostupna na svim uređajima i u različitim formatima .
+      Bez brige i nakon lansiranja stranice u digitalni svijet mi ostajemo Vas glavni partner za sva pitanja.
       
       `,
     singleParagraph: `Najmodernija i najprofesionalnija izrada Web-stranica za vas put u digitalni svijet`,

@@ -33,7 +33,7 @@ const language = {
     findUsHere: "You can visit us here",
   },
   croatian: {
-    header: "Pošalji nam poruku",
+    header: "Pošaljite nam poruku",
     name: {
       label: "Ime",
       placeholder: "Unesite svoje ime",

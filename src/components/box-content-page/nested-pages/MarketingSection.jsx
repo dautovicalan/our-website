@@ -10,7 +10,7 @@ import selectLanguage from "../../../functions/SelectLanguage";
 const language = {
   english: {
     firstSection:
-      "Webboutique helps you improve Marketing. Today, that expression has become a philosophy unto itself. We have the answer to every challenge. With you, we are designing a new marketing strategy, regardless of the industry.",
+      "Web Boutique helps you improve Marketing. Today, that expression has become a philosophy unto itself. We have the answer to every challenge. With you, we are designing a new marketing strategy, regardless of the industry.",
     secondSection:
       "Does your target audience take advantage of social media? No problem. We help Corporate to present you on social media in a special way. In addition to paying great attention to existing followers, we also pay special attention to our special campaigns to win the heart.",
     thirdSection:
@@ -18,11 +18,11 @@ const language = {
   },
   croatian: {
     firstSection:
-      "Webboutique vam pomaze u unaprijedenju Marketinga. Danas je taj izraz postao filozofija za sebe. Mi imamo odgovor za svaki izazov. S vama koncipiramo novu marketinšku strategiju bez obzira o kojoj se branši radi.",
+      "Web Boutique Vam pomaze u unaprijedenju marketinga. Danas je taj izraz postao filozofija za sebe. Mi imamo odgovor za svaki izazov. S Vama koncipiramo novu marketinšku strategiju bez obzira o kojoj se branši radi.",
     secondSection:
-      "Vasa Target skupina najviše koristi Socijalne mreze? Nema problema. Mi vam pomažemo vas Corporate na društvenim mrežama prezentirati na jedan poseban način. Osim sto pridodajemo ogromnu pažnju postojećim Folowerima , mi također našim specijalnim kampanjama osvajača srca novih.",
+      "Vasa Target skupina najviše koristi Socijalne mreze? Nema problema. Mi Vam pomažemo Vas Corporate na društvenim mrežama prezentirati na jedan poseban način. Osim sto pridodajemo ogromnu pažnju postojećim Folowerima , mi također našim specijalnim kampanjama osvajača srca novih.",
     thirdSection:
-      "Mi radimo i analize koje pomažu da želje vaših klijenata približimo vašem načinu poslovanja. Ujedno naše se analize baziraju i na najnovije trendove na tržištu koje želimo implementirati u vas način rada te na taj način dolazimo i do novih korisnika vaših usluga",
+      "Mi radimo i analize koje pomažu da želje vaših klijenata približimo Vašem načinu poslovanja. Ujedno naše se analize baziraju i na najnovije trendove na tržištu koje želimo implementirati u Vas način rada te na taj način dolazimo i do novih korisnika Vaših usluga",
   },
 };
 
