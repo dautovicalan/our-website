@@ -36,7 +36,7 @@ const language = {
   },
   croatian: {
     quote: "I dream of painting and then I paint my dream.",
-    firstText: `Od samog početka s Vama razradujemo Vaše želje i ideje do najsitnijih detalja.
+    firstText: `Od samog početka s Vama razrađujemo Vaše želje i ideje do najsitnijih detalja.
       Naš rad počinje sa detaljnom Analizom projekta koji je pred nama. Skupa svama stvaramo konzept ,Strukturu te prva Web rješenja. 
       Vaš Corporate Identity stavljamo na prvo mjesto , te ga kao takvog unaprijeđujemo i poboljšavamo.
       Individualan dizajn koji pružamo daje Vašoj mašti beskonačnu slobodu.

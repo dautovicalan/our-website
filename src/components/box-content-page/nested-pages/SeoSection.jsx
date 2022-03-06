@@ -26,7 +26,7 @@ const language = {
   croatian: {
     textOne: "Jedan od naših zadataka je zadržati Vašu stranicu na vrhu",
     textTwo:
-      "Jedan od naših zadataka je zadržati Vašu stranicu na vrhu. Brzo učitavanje, vrhunska infrastruktura, sadržaj. Sve su to predispozicije koje ispunjavamo kako bi Vaša stranica uvijek bila PRVA",
+      "Brzo učitavanje, vrhunska infrastruktura, sadržaj. Sve su to predispozicije koje ispunjavamo kako bi Vaša stranica uvijek bila PRVA",
     listTitle: "SEO Paket",
     listOne: "Istraživanje ključnih riječi",
     listTwo: "Sadržaj",

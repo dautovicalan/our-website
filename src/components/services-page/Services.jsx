@@ -130,7 +130,7 @@ const language = {
     fifthBoxText: `Još jedna značajka koja nas krasi je individualna izrada sadržaja.
       Tekstove, slike i video zapise izrađujemo prema Vašim željama i integriramo u web stranicu.
      
-      Naš stručni tim pridaje veliku važnost temi sadržaja, jer mi u WEB Boutiqueu vjerujemo da je to srce i duša stranice.
+      Naš stručni tim pridaje veliku važnost temi sadržaja, jer mi u Web Boutiqueu vjerujemo da je to srce i duša stranice.
       `,
     sixthBoxTitle: `Code`,
     sixthBoxText: `Ne želite gotove web stranice koje ne možete izraditi prema svojim željama?

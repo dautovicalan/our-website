@@ -18,11 +18,11 @@ const language = {
   },
   croatian: {
     firstSection:
-      "Web Boutique Vam pomaze u unaprijedenju marketinga. Danas je taj izraz postao filozofija za sebe. Mi imamo odgovor za svaki izazov. S Vama koncipiramo novu marketinšku strategiju bez obzira o kojoj se branši radi.",
+      "Web Boutique Vam pomaže u unaprijeđenju marketinga. Danas je taj izraz postao filozofija za sebe. Mi imamo odgovor za svaki izazov. S Vama koncipiramo novu marketinšku strategiju bez obzira o kojoj se branši radi.",
     secondSection:
-      "Vasa Target skupina najviše koristi Socijalne mreze? Nema problema. Mi Vam pomažemo Vas Corporate na društvenim mrežama prezentirati na jedan poseban način. Osim sto pridodajemo ogromnu pažnju postojećim Folowerima , mi također našim specijalnim kampanjama osvajača srca novih.",
+      "Vaša Target skupina najviše koristi Socijalne mreže? Nema problema. Mi Vam pomažemo Vas Corporate na društvenim mrežama prezentirati na jedan poseban način. Osim što pridodajemo ogromnu pažnju postojećim Folowerima , mi također našim specijalnim kampanjama osvajača srca novih.",
     thirdSection:
-      "Mi radimo i analize koje pomažu da želje vaših klijenata približimo Vašem načinu poslovanja. Ujedno naše se analize baziraju i na najnovije trendove na tržištu koje želimo implementirati u Vas način rada te na taj način dolazimo i do novih korisnika Vaših usluga",
+      "Mi radimo i analize koje pomažu da želje Vaših klijenata približimo Vašem načinu poslovanja. Ujedno naše se analize baziraju i na najnovije trendove na tržištu koje želimo implementirati u Vaš način rada te na taj način dolazimo i do novih korisnika Vaših usluga",
   },
 };
 
