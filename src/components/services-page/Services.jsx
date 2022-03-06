@@ -86,34 +86,34 @@ const language = {
     firstBoxTitle: `Analiza`,
     firstBoxText: `Niste zadovoljni trenutnom web-stranicom?
       Ne brinite, MI SMO TU ZA VAS.
-       Detaljno analiziramo sve vaše projekte kako bismo vaš korak u digitalni svijet učinili još boljim.
+       Detaljno analiziramo sve Vaše projekte kako bismo Vaš korak u digitalni svijet učinili još boljim.
       
-       U potpunosti se koncentriramo na vaše ciljne skupine. Individualni i originalni izgled je zajamčen.
+       U potpunosti se koncentriramo na Vaše ciljne skupine. Individualni i originalni izgled je zajamčen.
       
        SEO-analiza
       
        S programiranjem i dizajniranjem stranica naš posao nestaje.
-       Također se brinemo da vaša stranica bude konkurent na tržištu
+       Također se brinemo da Vaša stranica bude konkurent na tržištu
       
        Google and Co. Imaju posebne tehničke zahtjeve, a tehnička infrastruktura je iznimno važna.
       
        S nama ćete uvijek biti 2 koraka ispred konkurencije.
       
-       Razvijamo najbolju SEO strategiju za vas kako bi vaša stranica uvijek bila PRVA.
+       Razvijamo najbolju SEO strategiju za vas kako bi Vaša stranica uvijek bila PRVA.
       `,
     secondBoxTitle: `Savjetovanje`,
-    secondBoxText: `Uz vas smo od početka do kraja.
+    secondBoxText: `Uz Vas smo od početka do kraja.
       Razvijamo individualna rješenja za sve Vaše potrebe.
       Nakon završetka projekta ostajemo Vaš glavni partner za sva pitanja.
       Naša podrška je 24'7. tu za vas.
       `,
     thirdBoxTitle: `Koncept`,
-    thirdBoxText: `S vama razvijamo strategiju i koncept za uspješno postizanje korporativnih ciljeva.
-      Detaljno upoznajemo vašu filozofiju, te zajedno definiramo ciljeve koje želimo postići.
+    thirdBoxText: `S Vama razvijamo strategiju i koncept za uspješno postizanje korporativnih ciljeva.
+      Detaljno upoznajemo Vašu filozofiju, te zajedno definiramo ciljeve koje želimo postići.
       Nakon uspješnog testiranja svih prototipova, prelazimo na finalizaciju projekta.
       `,
     fourthBoxTitle: `Dizajn`,
-    fourthBoxText: `Jedna od najvažnijih stvari je upravo dizajn. S ljubavlju prema detaljima, programiramo vašu stranicu na moderan i kompaktan način.
+    fourthBoxText: `Jedna od najvažnijih stvari je upravo dizajn. S ljubavlju prema detaljima, programiramo Vašu stranicu na moderan i kompaktan način.
 
       Prekrasan dizajn se ne zaboravlja tako brzo.
      
@@ -128,9 +128,9 @@ const language = {
       `,
     fifthBoxTitle: `Sadržaj`,
     fifthBoxText: `Još jedna značajka koja nas krasi je individualna izrada sadržaja.
-      Tekstove, slike i video zapise izrađujemo prema vašim željama i integriramo u web stranicu.
+      Tekstove, slike i video zapise izrađujemo prema Vašim željama i integriramo u web stranicu.
      
-      Naš stručni tim pridaje veliku važnost temi Sadržaja, jer mi u WEB Boutiqueu vjerujemo da je to srce i duša stranice.
+      Naš stručni tim pridaje veliku važnost temi sadržaja, jer mi u Web Boutiqueu vjerujemo da je to srce i duša stranice.
       `,
     sixthBoxTitle: `Code`,
     sixthBoxText: `Ne želite gotove web stranice koje ne možete izraditi prema svojim željama?
@@ -138,13 +138,13 @@ const language = {
       Izrađujemo kompletnu tehničku infrastrukturu u najsuvremenijim programima, a i nakon završetka projekta obogaćujemo Vašu stranicu najnovijim značajkama i ažuriranjima.
       `,
     seventhBoxTitle: `Projekt`,
-    seventhBoxText: `Obraćamo pažnju na svakog našeg klijenta i zajedno s vama izrađujemo web projekte.
+    seventhBoxText: `Obraćamo pažnju na svakog našeg klijenta i zajedno s Vama izrađujemo web projekte.
       Svi naši projekti usmjereni su na ispunjenje svih Vaših želja.
       Vaši uspjesi su i naši uspjesi jer samo zajedno možemo promijeniti svijet
       Svaki naš projekt popraćen je prezentacijom kojom detaljno prezentiramo sve funkcionalnosti stranice.
       Naša podrška je tu za vas 24/7`,
     eigthBoxTitle: `Lansiranje`,
-    eigthBoxText: `Prije nego što web stranica bude lansirana u digitalni svijet, svaka se stavka temeljito provjerava i nakon vaših povratnih informacija, web stranicu objavljujemo na Internetu.
+    eigthBoxText: `Prije nego što web stranica bude lansirana u digitalni svijet, svaka se stavka temeljito provjerava i nakon Vaših povratnih informacija, web stranicu objavljujemo na Internetu.
       Za sva ostala pitanja ostajemo Vaš snažan partner.
       `,
   },

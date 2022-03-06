@@ -21,7 +21,7 @@ const language = {
   },
   croatian: {
     title: "Softverska rješenje",
-    textOne: "Vaša stranica je vaše ogledalo",
+    textOne: "Vaša stranica je Vaše ogledalo",
     textTwo:
       "Mnogo je gotovih rješenja koja se na prvi pogled čine brza i laka, a zapravo su sve samo ne to.",
     textThree:
