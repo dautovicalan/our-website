@@ -53,6 +53,7 @@ const Footer = () => {
         setLanguageId(0);
         break;
     }
+    window.scrollTo(0, 0);
   };
 
   console.log(age, selectedLang);
@@ -93,7 +94,7 @@ const Footer = () => {
             >
               <MenuItem value={"EN"}>EN</MenuItem>
               <MenuItem value={"HR"}>HR</MenuItem>
-              <MenuItem value={"DE"}>DE</MenuItem>
+              {/* <MenuItem value={"DE"}>DE</MenuItem> */}
             </Select>
           </FormControl>
         </div>

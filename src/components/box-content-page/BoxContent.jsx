@@ -9,6 +9,7 @@ import selectLanguage from "../../functions/SelectLanguage";
 
 const language = {
   english: {
+    header: "Expertise",
     titleOne: "Software Solution",
     titleTwo: "Support",
     titleThree: "SEO",
@@ -17,6 +18,7 @@ const language = {
     titleSix: "Creativity",
   },
   croatian: {
+    header: "Stručnost",
     titleOne: "Softverska rješenja",
     titleTwo: "Podrška",
     titleThree: "SEO",
@@ -47,7 +49,7 @@ const BoxContent = () => {
           textTransform: "uppercase",
         }}
       >
-        Expertise
+        {selectedLang.header}
       </h1>
       <div className={styles.main_container}>
         <div className={styles.box_content}>

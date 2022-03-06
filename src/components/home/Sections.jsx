@@ -50,12 +50,12 @@ const language = {
     boxes: {
       one: "Analiza",
       second: "Koncept",
-      thrid: "Savjetovanje",
+      thrid: "Savjeti",
       fourth: "Dizajn",
       fifth: "Sadržaj",
       sixth: "Code",
       seventh: "Projekt",
-      eigth: "Lansiranje",
+      eigth: "Lansiraj",
     },
   },
 };
