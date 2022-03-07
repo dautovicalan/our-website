@@ -12,6 +12,7 @@ import CodeIcon from "@mui/icons-material/Code";
 import RocketLaunchIcon from "@mui/icons-material/RocketLaunch";
 import { IKImage } from "imagekitio-react";
 import selectLanguage from "../../functions/SelectLanguage";
+import LazyLoad from "react-lazyload";
 
 const language = {
   english: {
@@ -180,11 +181,13 @@ const Services = () => {
   return (
     <div className={styles.main_container}>
       <div className={styles.picture_container}>
-        <IKImage
-          urlEndpoint={"https://ik.imagekit.io/gmlbvtkzbzzf/our-website"}
-          path="first-pic_HuAv2cqi2.webp"
-          width="400"
-        />
+        <LazyLoad>
+          <IKImage
+            urlEndpoint={"https://ik.imagekit.io/gmlbvtkzbzzf/our-website"}
+            path="first-pic_HuAv2cqi2.webp"
+            width="400"
+          />
+        </LazyLoad>
       </div>
       <div className={styles.services_container}>
         <div className={styles.single_service} data-aos="fade-right">

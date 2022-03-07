@@ -6,6 +6,7 @@ import { LanguageContext } from "../../context/LanguageContext.js";
 import { useNavigate } from "react-router-dom";
 import { IKImage } from "imagekitio-react";
 import selectLanguage from "../../functions/SelectLanguage";
+import LazyLoad from "react-lazyload";
 
 const language = {
   english: {
@@ -91,11 +92,13 @@ const Sections = () => {
   return (
     <div className={styles.main_container}>
       <div className={styles.background_image_container}>
-        <video autoPlay muted={true} loop>
-          <source src={video} type="video/mp4" />
-        </video>
-        <h2>{selectedLang.quote}</h2>
-        <h2 className={styles.second_header}>~ Vincent Van Gogh</h2>
+        <LazyLoad classNamePrefix={styles.lazyload_wrapper}>
+          <video autoPlay muted={true} loop>
+            <source src={video} type="video/mp4" />
+          </video>
+          <h2>{selectedLang.quote}</h2>
+          <h2 className={styles.second_header}>~ Vincent Van Gogh</h2>
+        </LazyLoad>
       </div>
       <div className={styles.about_us_container}>
         <div className={styles.about_us_info}>
@@ -107,11 +110,13 @@ const Sections = () => {
               {selectedLang.singleParagraphSecondPart}
             </span>
           </p>
-          <IKImage
-            urlEndpoint={"https://ik.imagekit.io/gmlbvtkzbzzf/our-website"}
-            path="third-pic_9UfloUQsK.jpg"
-            width="400"
-          />
+          <LazyLoad classNamePrefix={styles.lazyload_wrapper}>
+            <IKImage
+              urlEndpoint={"https://ik.imagekit.io/gmlbvtkzbzzf/our-website"}
+              path="third-pic_9UfloUQsK.jpg"
+              width="400"
+            />
+          </LazyLoad>
         </div>
       </div>
       <div className={styles.paragraphed_container}>
