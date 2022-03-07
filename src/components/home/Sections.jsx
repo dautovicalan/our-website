@@ -58,6 +58,27 @@ const language = {
       eigth: "Lansiraj",
     },
   },
+  german: {
+    quote: "I dream of painting and then I paint my dream.",
+    homeHeaderFirstPart: "Mit Ihnen von",
+    homeHeaderSecondPart: "Anfang bis Ende",
+    firstText: `Von Anfang an erarbeiten wir mit Ihnen Ihre Wünsche und Vorstellungen bis ins kleinste Detail. Unsere Arbeit beginnt mit einer detaillierten Analyse des vor uns liegenden Projekts. Gemeinsam erstellen wir das Konzept, die Struktur und die ersten Weblösungen. Wir stellen Ihre Corporate Identity an die erste Stelle und verbessern und erweitern sie als solche. Die individuelle Gestaltung durch uns gibt Ihrem Fett grenzenlose Freiheit.
+      `,
+    secondText: `Nach einem ausführlichen Auswahlprozess Ihrer Wunschseite beginnen wir mit der technischen Prüfung weiterer Parameter, die für die Seite äußerst wichtig sind. Wenn das gesamte Mosaik zusammengesetzt ist, ist Ihre Seite auf allen Geräten und in verschiedenen Formaten verfügbar. Keine Sorge und auch nach dem Launch der Seite in die digitale Welt bleiben wir Ihr Hauptpartner für alle Fragen.
+      `,
+    singleParagraphFirstPart: `Das modernste und professionellste Webdesign`,
+    singleParagraphSecondPart: `für Ihre Reise in die digitale Welt`,
+    boxes: {
+      one: "Analyse",
+      second: "Konzept",
+      thrid: "Consult",
+      fourth: "Design",
+      fifth: "Inhalt",
+      sixth: "Code",
+      seventh: "Projekt",
+      eigth: "Launch",
+    },
+  },
 };
 
 const Sections = () => {

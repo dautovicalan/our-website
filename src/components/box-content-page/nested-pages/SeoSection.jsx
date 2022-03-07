@@ -40,6 +40,23 @@ const language = {
     listTen: "Web ažuriranja",
     listEleven: "Nadzorne ploče",
   },
+  german: {
+    textOne: "Eine unserer Aufgaben ist es, Ihre Seite an der Spitze zu halten",
+    textTwo:
+      "Eine unserer Aufgaben ist es, Ihre Seite an der Spitze zu halten. Schnelles Laden, überlegene Infrastruktur, Inhalt. Das sind alles Voraussetzungen, die wir erfüllen, damit Ihre Seite immer ERSTE ist",
+    listTitle: "SEO-Paket",
+    listOne: "Stichwortforschung",
+    listTwo: "Content",
+    listThree: "Tracking-Setup",
+    listFour: "Tagesmanager",
+    listFive: "Webmaster",
+    listSix: "Suchmaschine",
+    listSeven: "Aktualisiert",
+    listEight: "Verfolgung, Überwachung",
+    listNine: "Berichterstattung",
+    listTen: "Web-Updates",
+    listEleven: "Dashboards",
+  },
 };
 
 const SeoSection = () => {

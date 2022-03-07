@@ -26,6 +26,15 @@ const language = {
     titleFive: "Savjetovanje",
     titleSix: "Kreativnost",
   },
+  german: {
+    header: "Sachverstand",
+    titleOne: "Softwarelösung",
+    titleTwo: "Support",
+    titleThree: "SEO",
+    titleFour: "Marketing",
+    titleFive: "Beratung",
+    titleSix: "Kreativität",
+  },
 };
 
 const BoxContent = () => {

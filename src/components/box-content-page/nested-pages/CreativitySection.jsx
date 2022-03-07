@@ -37,6 +37,18 @@ const language = {
     question: "KAKO VAM MOŽEMO POMOĆI?",
     buttonText: "Pošaljite nam poruku",
   },
+  german: {
+    header: "Denke anders",
+    textOne: "Stand der Technik",
+    textTwo: "Ideen",
+    textThree: "Teamwork",
+    textFour: "Einsatz",
+    textFive: "Individueller Ansatz",
+    textSix: "Web Entwicklung",
+    textSeven: "Beste Ergebnisse",
+    question: "WIE KÖNNEN WIR IHNEN HELFEN?",
+    buttonText: "Schick uns eine Nachricht",
+  },
 };
 
 const CreativitySection = () => {

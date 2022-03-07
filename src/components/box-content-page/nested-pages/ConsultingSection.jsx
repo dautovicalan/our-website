@@ -23,6 +23,15 @@ const language = {
     headerThree: "Lansiranje",
     textThree: "Lansiranje prvog mjesta na internetu",
   },
+  german: {
+    pageTitle: "Beratung",
+    headerOne: "Implementierung",
+    textOne: "Individuelle Softwarelösungen",
+    headerTwo: "Plan",
+    textTwo: "Eine Strategie für erfolgreichere Geschäfte",
+    headerThree: "Starten",
+    textThree: "Starten Sie den ersten Platz im Internet",
+  },
 };
 
 const ConsultingSection = () => {

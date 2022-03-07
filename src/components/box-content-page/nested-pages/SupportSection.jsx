@@ -57,6 +57,32 @@ const language = {
     answerFive:
       "React je jedan od programa koje koristimo za izradu složenih softverskih rješenja. Koristimo ga za izgradnju interaktivnih korisničkih sučelja i omogućavanje jednosmjerne podatkovne veze. Većina složenih web stranica poput Facebooka koristi React.",
   },
+  german: {
+    listTitleOne: "Hosting",
+    listOne: "Schnelle Ladezeit",
+    listTwo: "SEO-Vorteile",
+    listThree: "Schutz",
+    listTitleTwo: "Unterstützung",
+    listFour: "Kontrolle",
+    listFive: "Aktualisierung",
+    listSix: "Unterstützung rund um die Uhr",
+    questionOne: "Was bedeutet 24/7-Support?",
+    answerOne:
+      "24’7 Support bedeutet bei uns, dass wir jeden Tag für Sie ein Begriff sind. Unsere Kontrolle über das System ermöglicht es uns, alle technischen Schwierigkeiten rechtzeitig zu beseitigen.",
+    questionTwo: "Was nach dem Ende?",
+    answerTwo:
+      "Wir sind weiterhin für Sie da. Wir pflegen Ihre Website weiterhin und bereichern sie ständig mit neuen Updates und Funktionen.",
+    questionThree: "Verwenden wir fertiges Design?",
+    answerThree:
+      "NEIN. Alle unsere Webseiten und Weblösungen programmieren wir nach Ihren Wünschen. Jedes unserer Projekte hat einen einzigartigen Code.",
+    questionFour:
+      "Ich möchte, dass meine Website zu den ersten bei Google gehört, aber wie?",
+    answerFour:
+      "Mach dir keine Sorgen. SEO ist nur eine unserer Spezialitäten. Für den ersten Platz bei Google braucht es gewisse Voraussetzungen, die wir während des Projekts integrieren und später in die digitale Welt lancieren.",
+    questionFive: "Was ist react?",
+    answerFive:
+      "React ist eines der Programme, mit denen wir komplexe Softwarelösungen erstellen. Wir verwenden es, um interaktive Benutzeroberflächen zu erstellen und eine Einweg-Datenverbindung zu ermöglichen. Die meisten komplexen Websites wie Facebook verwenden React.",
+  },
 };
 
 const SupportSection = () => {

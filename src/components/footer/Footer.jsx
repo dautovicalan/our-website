@@ -29,6 +29,14 @@ const language = {
     appDev: "Razvoj Aplikacija",
     contactUs: "Kontaktiraj nas",
   },
+  german: {
+    home: "Home",
+    services: "Dienstleistungen",
+    aboutUs: "Über uns",
+    addOns: "Expertise",
+    appDev: "Anwendungsentwicklung",
+    contactUs: "Kontaktiere uns",
+  },
 };
 
 const Footer = () => {
@@ -92,7 +100,7 @@ const Footer = () => {
             >
               <MenuItem value={"EN"}>EN</MenuItem>
               <MenuItem value={"HR"}>HR</MenuItem>
-              {/* <MenuItem value={"DE"}>DE</MenuItem> */}
+              <MenuItem value={"DE"}>DE</MenuItem>
             </Select>
           </FormControl>
         </div>

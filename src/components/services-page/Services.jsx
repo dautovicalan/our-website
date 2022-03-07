@@ -148,6 +148,29 @@ const language = {
       Za sva ostala pitanja ostajemo Vaš snažan partner.
       `,
   },
+  german: {
+    pageTitle: `Unsere Dienstleistungen`,
+    firstBoxTitle: `Analyse`,
+    firstBoxText: `Unzufrieden mit der aktuellen Website? Keine Sorge, WIR SIND FÜR SIE DA. Wir analysieren all Ihre Projekte im Detail, um Ihren Schritt in die digitale Welt noch besser zu machen. Wir konzentrieren uns voll und ganz auf Ihre Zielgruppen. Ein individueller und origineller Look ist garantiert. SEO-Analyse Mit dem Programmieren und Gestalten von Websites verschwindet unser Geschäft. Wir sorgen auch dafür, dass Ihre Seite auf dem Markt von Google und Co. konkurrenzfähig ist. Sie haben besondere technische Voraussetzungen, und die technische Infrastruktur ist enorm wichtig. Mit uns sind Sie der Konkurrenz immer 2 Schritte voraus. Wir entwickeln die beste SEO-Strategie für Sie, damit Ihre Website immer ERSTE ist.
+      `,
+    secondBoxTitle: `Beratung`,
+    secondBoxText: `Wir sind von Anfang bis Ende bei Ihnen. Wir entwickeln individuelle Lösungen für alle Ihre Anforderungen. Auch nach Abschluss des Projektes bleiben wir Ihr zentraler Ansprechpartner für alle Fragen. Unser Support ist 24’7. Tu ja vas.
+      `,
+    thirdBoxTitle: `Konzept`,
+    thirdBoxText: `Gemeinsam mit Ihnen entwickeln wir eine Strategie und ein Konzept zur erfolgreichen Erreichung der Unternehmensziele. Wir lernen Ihre Philosophie im Detail kennen und definieren gemeinsam die Ziele, die wir erreichen wollen. Nachdem wir alle Prototypen erfolgreich getestet haben, fahren wir mit dem Abschluss des Projekts fort.
+      `,
+    fourthBoxTitle: `Design`,
+    fourthBoxText: `Eines der wichtigsten Elemente ist einfach das Design. Mit Liebe zum Detail programmieren wir Ihre Seite modern und kompakt. Schönes Design gerät so schnell nicht in Vergessenheit. Abgesehen davon, dass das schöne Design nicht in Vergessenheit gerät, gewinnt es auch neue Herzen. Unsere Designseiten sind für alle Benutzergruppen extrem einfach zu bedienen. Unsere Seiten sind für alle Formate und Gerätetypen kompatibel. In dieser schnelllebigen Welt legen wir besonderen Wert auf mobile Endgeräte. Unsere Website durchläuft detaillierte Tests in allen Formaten, um die volle Funktionalität zu haben, egal welches Gerät Sie verwenden. Legen Sie nun die Icons auf Ihren Laptop, Ihr Tablet und Ihr Handy, aber mit dem Effekt, dass sie an diesen Ort kommen.`,
+    fifthBoxTitle: `Inhalt`,
+    fifthBoxText: `Ein weiteres Merkmal, das uns ziert, ist die individuelle Erstellung von Inhalten. Wir erstellen Texte, Bilder und Videos nach Ihren Wünschen und binden diese in die Website ein. Unser professionelles Team legt großen Wert auf das Thema Content, denn wir von WEB Boutique glauben, dass dies das Herz und die Seele der Website ist.`,
+    sixthBoxTitle: `Code`,
+    sixthBoxText: `Sie möchten keine vorgefertigten Webseiten, die Sie nicht nach Ihren Wünschen erstellen können? Professionelles Kodieren von Seiten ist unsere Spezialität. Wir erstellen die komplette technische Infrastruktur in modernsten Programmen und reichern Ihre Seite auch nach Abschluss des Projekts mit den neusten Feauturen und Updates an.`,
+    seventhBoxTitle: `Projekt`,
+    seventhBoxText: `Wir achten auf jeden unserer Kunden und erstellen gemeinsam mit Ihnen Webprojekte. Alle unsere Projekte sind darauf ausgerichtet, alle Ihre Wünsche zu erfüllen. Ihre Erfolge sind auch unsere Erfolge, denn nur gemeinsam können wir die Welt verändern Jedes unserer Projekte wird von einer Präsentation begleitet, mit der wir alle Funktionalitäten der Seite ausführlich vorstellen. Unser Support ist 24/7 für Sie da`,
+    eigthBoxTitle: `Launch`,
+    eigthBoxText: `Bevor die Website in die digitale Welt geht, wird jeder Artikel gründlich geprüft und nach Ihrem Feedback stellen wir die Website ins Internet. Für alle anderen Themen bleiben wir Ihr starker Partner.
+      `,
+  },
 };
 
 const Services = () => {
