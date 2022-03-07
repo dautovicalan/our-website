@@ -53,6 +53,27 @@ const language = {
     send: "Pošalji",
     findUsHere: "Naše lokacije",
   },
+  german: {
+    header: "Schick uns eine Nachricht",
+    name: {
+      label: "Name",
+      placeholder: "Bitte geben Sie Ihren Namen ein",
+    },
+    surname: {
+      label: "Nachname",
+      placeholder: "Bitte geben Sie Ihren Nachnamen ein",
+    },
+    email: {
+      label: "Email",
+      placeholder: "Bitte geben Sie ihre E-Mail-Adresse ein",
+    },
+    message: {
+      label: "Nachricht",
+      placeholder: "Bitte gib deine Nachricht ein",
+    },
+    send: "Schicken",
+    findUsHere: "Hier können Sie uns besuchen",
+  },
 };
 
 const Contact = () => {

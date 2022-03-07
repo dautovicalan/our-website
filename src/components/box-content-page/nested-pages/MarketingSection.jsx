@@ -24,6 +24,14 @@ const language = {
     thirdSection:
       "Mi radimo i analize koje pomažu da želje Vaših klijenata približimo Vašem načinu poslovanja. Ujedno naše se analize baziraju i na najnovije trendove na tržištu koje želimo implementirati u Vaš način rada te na taj način dolazimo i do novih korisnika Vaših usluga",
   },
+  german: {
+    firstSection:
+      "Web Boutique hilft Ihnen, das Marketing zu verbessern. Heute ist dieser Ausdruck zu einer eigenen Philosophie geworden. Wir haben die Antwort auf jede Herausforderung. Wir gestalten mit Ihnen branchenunabhängig eine neue Marketingstrategie.",
+    secondSection:
+      "Nutzt Ihre Zielgruppe Social Media? Kein Problem. Wir helfen Corporate dabei, Sie in den sozialen Medien besonders zu präsentieren. Neben der großen Aufmerksamkeit für bestehende Follower legen wir auch besonderes Augenmerk auf unsere speziellen Kampagnen, um das Herz zu gewinnen.",
+    thirdSection:
+      "Wir führen auch Analysen durch, die helfen, die Wünsche Ihrer Kunden näher an Ihre Arbeitsweise heranzuführen. Gleichzeitig basieren unsere Analysen auf aktuellen Markttrends, die wir in Ihre Arbeitsweise umsetzen wollen, und erreichen so neue Nutzer Ihrer Dienste.",
+  },
 };
 
 const MarketingSection = () => {

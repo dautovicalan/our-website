@@ -35,6 +35,13 @@ const language = {
       Od prvog kontakta s nama dobijate detaljnu razradu cijelog projekta.`,
     thirdSection: `Mi smo Vaš snažni partner na putu u digitalni svijet.`,
   },
+  german: {
+    firstTitle: "Wer steckt hinter Web Botique Solutions?",
+    firstSection: `Wir sind ein junges Team, das alle Ihre Träume wahr werden lässt. Hinter den Kulissen erstellen wir Weblösungen, die Ihr Geschäft verbessern und auf ein noch höheres Niveau heben. Wir sind spezialisiert auf die modernsten Dienste im Internet.
+      `,
+    secondSection: `Individualität, Kreativität, Akribie… sind nur einige der Tugenden, die unser Team auszeichnen. Unsere Kunden sind unsere Partner, denen wir auf dem Weg zur Erreichung alle Ihrer Ziele folgen. Ab dem ersten Kontakt mit uns erhalten Sie eine detaillierte Ausarbeitung des gesamten Projekts.`,
+    thirdSection: `Wir sind Ihr starker Partner auf dem Weg in die digitale Welt.`,
+  },
 };
 
 const AboutUs = () => {

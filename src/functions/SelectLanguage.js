@@ -8,6 +8,7 @@ const selectLanguage = (languageId, componentLanguage) => {
       language = componentLanguage.croatian;
       break;
     case 2:
+      language = componentLanguage.german;
       break;
     default:
       language = componentLanguage.english;

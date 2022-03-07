@@ -31,6 +31,18 @@ const language = {
     textSix:
       "Jedinstveni kodovi koji odgovaraju na suvremene izazove u digitalnom svijetu",
   },
+  german: {
+    title: "Softwarelösung",
+    textOne: "Ihre Seite ist Ihr Spiegel",
+    textTwo:
+      "Es gibt viele vorgefertigte Lösungen, die auf den ersten Blick schnell und einfach erscheinen, aber eigentlich alles andere als das sind.",
+    textThree:
+      "Falsche und schlechte Bemerkungen im Internet können jedem Unternehmen schaden und schaden",
+    textFour: "Keine Sorge, wir sind ein Team, das den Unterschied macht",
+    textFive: "Wir erstellen und erstellen die komplexesten Softwarelösungen",
+    textSix:
+      "Einzigartige Codes, die auf aktuelle Herausforderungen in der digitalen Welt reagieren",
+  },
 };
 
 const SoftwareSolution = () => {

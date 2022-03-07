@@ -27,6 +27,14 @@ const language = {
     appDev: "Razvoj Aplikacija",
     contactUs: "Kontaktiraj nas",
   },
+  german: {
+    home: "Home",
+    services: "Dienstleistungen",
+    aboutUs: "Über uns",
+    addOns: "Expertise",
+    appDev: "Anwendungsentwicklung",
+    contactUs: "Kontaktiere uns",
+  },
 };
 
 const Navbar = () => {
