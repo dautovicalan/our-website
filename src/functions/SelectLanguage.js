@@ -1,13 +1,13 @@
-const selectLanguage = (languageId, componentLanguage) => {
+const selectLanguage = (languageId, componentLanguage = "EN") => {
   let language;
   switch (languageId) {
-    case 0:
+    case "EN":
       language = componentLanguage.english;
       break;
-    case 1:
+    case "HR":
       language = componentLanguage.croatian;
       break;
-    case 2:
+    case "DE":
       language = componentLanguage.german;
       break;
     default:

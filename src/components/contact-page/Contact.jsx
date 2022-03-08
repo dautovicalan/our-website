@@ -84,18 +84,6 @@ const Contact = () => {
   const [formEmail, setFormEmail] = useState("");
   const [formMessage, setFormMessage] = useState("");
 
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-  //   const data = { name: formName, email: formEmail, message: formMessage };
-  //   const response = await fetch("/", {
-  //     method: "POST",
-  //     headers: { "Content-Type": "application/x-www-form-urlencoded" },
-  //     body: encodeURIComponent({ "form-name": "contact", ...data }),
-  //   });
-
-  //   if (response) alert("Thank you for sending us a message");
-  // };
-
   const props = useSpring({
     to: { opacity: 1 },
     from: { opacity: 0 },
@@ -112,7 +100,6 @@ const Contact = () => {
           className={styles.form_container}
           method="post"
           name="contact"
-          onSubmit="submit"
           action="https://formsubmit.co/0e3abde04dd49ba78e2c4bcc8adac370"
         >
           <input

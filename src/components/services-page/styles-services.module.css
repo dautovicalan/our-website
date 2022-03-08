@@ -75,6 +75,9 @@
   .main_container {
     padding-top: 10em;
   }
+  .picture_container > div > img {
+    height: 200px;
+  }
 
   .single_service {
     height: 100%;
