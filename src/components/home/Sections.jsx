@@ -115,7 +115,7 @@ const Sections = () => {
             <IKImage
               urlEndpoint={"https://ik.imagekit.io/gmlbvtkzbzzf/our-website"}
               path="third-pic_9UfloUQsK.jpg"
-              width="400"
+              width="800"
             />
           </LazyLoad>
         </div>
