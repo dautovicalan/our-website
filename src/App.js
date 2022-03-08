@@ -5,7 +5,6 @@ import AboutUs from "./components/about-us-page/AboutUs";
 import Contact from "./components/contact-page/Contact";
 import { Routes, Route } from "react-router-dom";
 import Footer from "./components/footer/Footer";
-// import LanguageContextProvider from "./context/LanguageContext";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -33,8 +32,7 @@ const Services = React.lazy(() =>
 );
 
 function App() {
-  const { languageId, setLanguageId } = useContext(LanguageContext);
-  console.log(languageId);
+  const { languageId } = useContext(LanguageContext);
   AOS.init({ duration: 2000, delay: 5000, once: true });
 
   if (languageId === undefined) {

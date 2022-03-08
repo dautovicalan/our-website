@@ -8,6 +8,9 @@ export default function ScrollToTop() {
     if (pathname !== "/add-ons/marketing") {
       window.scrollTo(0, 0);
     }
+    return () => {
+      window.scrollTo(0, 0);
+    };
   }, [pathname]);
 
   return null;

@@ -14,10 +14,13 @@ const LanguageContextProvider = (props) => {
     const checkStorage = () => {
       if (localStorage.getItem("languageId")) {
         setLanguageId(localStorage.getItem("languageId"));
-        console.log("Bok iz uspjenog getanja");
       }
     };
     checkStorage();
+
+    return () => {
+      localStorage.getItem("languageId");
+    };
   }, []);
 
   return (
