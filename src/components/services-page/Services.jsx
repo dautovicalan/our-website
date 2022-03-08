@@ -184,7 +184,7 @@ const Services = () => {
         <LazyLoad>
           <IKImage
             urlEndpoint={"https://ik.imagekit.io/gmlbvtkzbzzf/our-website"}
-            path="first-pic_HuAv2cqi2.webp"
+            path="ezgif-5-4a8b62b3cb-min_LYTf4EYXT.jpg"
             width="400"
           />
         </LazyLoad>
