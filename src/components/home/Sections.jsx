@@ -47,7 +47,8 @@ const language = {
       Bez brige i nakon lansiranja stranice u digitalni svijet mi ostajemo Vas glavni partner za sva pitanja.
       
       `,
-    singleParagraph: `Najmodernija i najprofesionalnija izrada Web-stranica za vas put u digitalni svijet`,
+    singleParagraphFirstPart: `Najmoderniji i najprofesionalniji web dizajn`,
+    singleParagraphSecondPart: `za Vaše putovanje u digitalni svijet`,
     boxes: {
       one: "Analiza",
       second: "Koncept",

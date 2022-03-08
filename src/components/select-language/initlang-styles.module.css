@@ -1,0 +1,33 @@
+.main_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 1.2em;
+  gap: 1em;
+}
+
+.main_container > img {
+  height: 200px;
+  width: 200px;
+}
+
+.main_container > h1 {
+  font-family: "Comfortaa", cursive;
+}
+
+.main_container > p {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 1.5em;
+  width: 60%;
+  margin: auto;
+}
+
+@media all and (max-width: 760px) {
+  .main_container > img {
+    width: 200px;
+    height: 200px;
+  }
+}

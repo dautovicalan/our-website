@@ -43,25 +43,31 @@ const Footer = () => {
   const { languageId, setLanguageId } = useContext(LanguageContext);
   let selectedLang = selectLanguage(languageId, language);
 
-  const [age, setAge] = React.useState("EN");
+  const [age, setAge] = React.useState(languageId);
 
   const handleChange = (event) => {
+    let langId;
     setAge(event.target.value);
     switch (event.target.value) {
       case "EN":
-        setLanguageId(0);
+        setLanguageId("EN");
+        langId = "EN";
         break;
       case "HR":
-        setLanguageId(1);
+        setLanguageId("HR");
+        langId = "HR";
         break;
       case "DE":
-        setLanguageId(2);
+        setLanguageId("DE");
+        langId = "DE";
         break;
       default:
-        setLanguageId(0);
+        setLanguageId("EN");
+        langId = "EN";
         break;
     }
     window.scrollTo(0, 0);
+    localStorage.setItem("languageId", langId);
   };
 
   return (
